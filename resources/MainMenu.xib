@@ -12,6 +12,7 @@
         <customObject id="bJx-VU-Yp1" customClass="AppDelegate">
             <connections>
                 <outlet property="webView" destination="fhG-04-65t" id="OzX-83-pte"/>
+                <outlet property="window" destination="W83-mx-YEi" id="nCx-nX-Sh6"/>
             </connections>
         </customObject>
         <menu title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
