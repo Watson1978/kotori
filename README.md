@@ -1,5 +1,5 @@
 # kotori
 
-A client OS X app for [esa.io](https://esa.io/)
+A OS X client app for [esa.io](https://esa.io/)
 
 ![screenshot](screenshot.png)
