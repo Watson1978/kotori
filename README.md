@@ -12,7 +12,7 @@ You can download this app from [releases page](https://github.com/Watson1978/kot
 
 This app is written by RubyMotion and you will require it. 
 
-1. Fork it ( https://github.com/[my-github-username]/foo/fork )
+1. Fork it ( https://github.com/Watson1978/kotori )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
