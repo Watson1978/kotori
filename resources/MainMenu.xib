@@ -305,7 +305,25 @@
                 </menuItem>
                 <menuItem title="View" id="H8h-7b-M4v">
                     <modifierMask key="keyEquivalentModifierMask"/>
-                    <menu key="submenu" title="View" id="HyV-fh-RgO"/>
+                    <menu key="submenu" title="View" id="HyV-fh-RgO">
+                        <items>
+                            <menuItem title="Actual Size" keyEquivalent="0" id="fJ3-xZ-4dW">
+                                <connections>
+                                    <action selector="makeTextStandardSize:" target="fhG-04-65t" id="vYh-rs-zAE"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Zoom In" keyEquivalent="+" id="IhS-yE-WxN">
+                                <connections>
+                                    <action selector="makeTextLarger:" target="fhG-04-65t" id="aef-YJ-xCb"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Zoom Out" keyEquivalent="-" id="SVO-AB-nW8">
+                                <connections>
+                                    <action selector="makeTextSmaller:" target="fhG-04-65t" id="kPg-8t-gYq"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
                 </menuItem>
                 <menuItem title="Window" id="aUF-d1-5bR">
                     <modifierMask key="keyEquivalentModifierMask"/>
