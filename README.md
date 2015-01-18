@@ -1,4 +1,4 @@
-# kotori
+# kotori (小鳥)
 
 A OS X client app for [esa.io](https://esa.io/)
 
