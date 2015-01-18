@@ -16,6 +16,22 @@ class AppDelegate
     true
   end
 
+  def applicationShouldTerminate(application)
+    alert = NSAlert.new.tap do |v|
+      v.messageText = "Quit kotori?"
+      v.addButtonWithTitle("OK")
+      v.addButtonWithTitle("Cancel")
+      v.alertStyle = NSWarningAlertStyle
+    end
+
+    ret = alert.runModal
+    if ret == NSAlertFirstButtonReturn
+      true
+    else
+      false
+    end
+  end
+
   # actions
   def showHelp(sender)
     NSWorkspace.sharedWorkspace.openURL("https://docs.esa.io/".to_nsurl)
