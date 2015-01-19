@@ -5,6 +5,7 @@ class AppDelegate
 
   def awakeFromNib
     NSApp.delegate = self    
+    webView.UIDelegate = self
     webView.setMaintainsBackForwardList(false)
 
     request = NSURLRequest.requestWithURL("https://esa.io/".to_nsurl)
@@ -30,6 +31,11 @@ class AppDelegate
     else
       false
     end
+  end
+
+  def webView(sender, createWebViewWithRequest:request)
+    sender.mainFrame.loadRequest(request)
+    sender
   end
 
   # actions
