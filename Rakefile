@@ -11,7 +11,7 @@ end
 Motion::Project::App.setup do |app|
   # Use `rake config' to see complete project settings.
   app.name = 'kotori'
-  app.version = '0.3'
+  app.version = '0.4'
   app.identifier = 'jp.cat-soft.kotori'
   app.deployment_target = '10.8'
   app.codesign_certificate = '3rd Party Mac Developer Application: Shizuo Fujita (KQ572MNR73)'
