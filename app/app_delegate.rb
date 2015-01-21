@@ -44,6 +44,12 @@ class AppDelegate
     loadURL("https://#{team}.esa.io/posts/new")
   end
 
+  def showHome(sender)
+    team = teamName()
+    return unless team
+    loadURL("https://#{team}.esa.io/")
+  end
+
   def showHelp(sender)
     NSWorkspace.sharedWorkspace.openURL("https://docs.esa.io/".to_nsurl)
   end

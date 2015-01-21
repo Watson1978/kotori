@@ -308,6 +308,12 @@
                                     <action selector="showNewPost:" target="bJx-VU-Yp1" id="pjZ-Tw-dud"/>
                                 </connections>
                             </menuItem>
+                            <menuItem title="Home" keyEquivalent="H" id="eoq-p4-n9l">
+                                <modifierMask key="keyEquivalentModifierMask" shift="YES" command="YES"/>
+                                <connections>
+                                    <action selector="showHome:" target="bJx-VU-Yp1" id="mUx-4u-CV7"/>
+                                </connections>
+                            </menuItem>
                             <menuItem isSeparatorItem="YES" id="xB6-tG-tC5"/>
                             <menuItem title="Actual Size" keyEquivalent="0" id="fJ3-xZ-4dW">
                                 <connections>
