@@ -24,12 +24,7 @@ class AppDelegate
       v.alertStyle = NSWarningAlertStyle
     end
 
-    ret = alert.runModal
-    if ret == NSAlertFirstButtonReturn
-      true
-    else
-      false
-    end
+    alert.runModal == NSAlertFirstButtonReturn ? true : false
   end
 
   def webView(sender, createWebViewWithRequest:request)
