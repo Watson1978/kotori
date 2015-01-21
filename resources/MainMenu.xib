@@ -320,6 +320,12 @@
                                     <action selector="showPosts:" target="bJx-VU-Yp1" id="vSi-J7-yST"/>
                                 </connections>
                             </menuItem>
+                            <menuItem title="Team" keyEquivalent="T" id="AHv-7D-nJZ">
+                                <modifierMask key="keyEquivalentModifierMask" shift="YES" command="YES"/>
+                                <connections>
+                                    <action selector="showTeam:" target="bJx-VU-Yp1" id="niH-Jm-zaU"/>
+                                </connections>
+                            </menuItem>
                             <menuItem isSeparatorItem="YES" id="xB6-tG-tC5"/>
                             <menuItem title="Actual Size" keyEquivalent="0" id="fJ3-xZ-4dW">
                                 <connections>
