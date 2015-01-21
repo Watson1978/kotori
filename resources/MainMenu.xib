@@ -305,13 +305,19 @@
                             <menuItem title="New Post" keyEquivalent="N" id="zj1-ru-DgV">
                                 <modifierMask key="keyEquivalentModifierMask" shift="YES" command="YES"/>
                                 <connections>
-                                    <action selector="showNewPost:" target="bJx-VU-Yp1" id="pjZ-Tw-dud"/>
+                                    <action selector="showNewPost:" target="bJx-VU-Yp1" id="3CT-Xa-a2h"/>
                                 </connections>
                             </menuItem>
                             <menuItem title="Home" keyEquivalent="H" id="eoq-p4-n9l">
                                 <modifierMask key="keyEquivalentModifierMask" shift="YES" command="YES"/>
                                 <connections>
-                                    <action selector="showHome:" target="bJx-VU-Yp1" id="mUx-4u-CV7"/>
+                                    <action selector="showHome:" target="bJx-VU-Yp1" id="mje-7C-3RP"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Posts" keyEquivalent="P" id="qpW-T9-T8k">
+                                <modifierMask key="keyEquivalentModifierMask" shift="YES" command="YES"/>
+                                <connections>
+                                    <action selector="showPosts:" target="bJx-VU-Yp1" id="vSi-J7-yST"/>
                                 </connections>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="xB6-tG-tC5"/>
