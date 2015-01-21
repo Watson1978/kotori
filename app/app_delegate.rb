@@ -7,6 +7,8 @@ class AppDelegate
     NSApp.delegate = self    
     webView.UIDelegate = self
     webView.setMaintainsBackForwardList(false)
+    version = NSBundle.mainBundle.objectForInfoDictionaryKey("CFBundleShortVersionString")
+    webView.customUserAgent = "kotori #{version}"
 
     loadURL("https://esa.io/")
   end
