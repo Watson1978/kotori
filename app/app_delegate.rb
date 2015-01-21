@@ -8,8 +8,7 @@ class AppDelegate
     webView.UIDelegate = self
     webView.setMaintainsBackForwardList(false)
 
-    request = NSURLRequest.requestWithURL("https://esa.io/".to_nsurl)
-    webView.mainFrame.loadRequest(request)
+    loadURL("https://esa.io/")
   end
 
   def applicationShouldHandleReopen(application, hasVisibleWindows:flag)
@@ -39,7 +38,28 @@ class AppDelegate
   end
 
   # actions
+  def showNewPost(sender)
+    team = teamName()
+    return unless team
+    loadURL("https://#{team}.esa.io/posts/new")
+  end
+
   def showHelp(sender)
     NSWorkspace.sharedWorkspace.openURL("https://docs.esa.io/".to_nsurl)
+  end
+
+  private
+
+  def loadURL(url)
+    request = NSURLRequest.requestWithURL(url.to_nsurl)
+    webView.mainFrame.loadRequest(request)
+  end
+
+  def teamName
+    url = webView.mainFrameURL
+    if url =~ /https:\/\/(.+)\.esa\.io/
+      return $1
+    end
+    nil
   end
 end

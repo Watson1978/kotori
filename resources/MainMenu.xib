@@ -65,11 +65,6 @@
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <menu key="submenu" title="File" id="bib-Uj-vzu">
                         <items>
-                            <menuItem title="New" keyEquivalent="n" id="Was-JA-tGl">
-                                <connections>
-                                    <action selector="newDocument:" target="-1" id="4Si-XN-c54"/>
-                                </connections>
-                            </menuItem>
                             <menuItem title="Close" keyEquivalent="w" id="DVo-aG-piG">
                                 <connections>
                                     <action selector="performClose:" target="-1" id="HmO-Ls-i7Q"/>
@@ -307,6 +302,13 @@
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <menu key="submenu" title="View" id="HyV-fh-RgO">
                         <items>
+                            <menuItem title="New Post" keyEquivalent="N" id="zj1-ru-DgV">
+                                <modifierMask key="keyEquivalentModifierMask" shift="YES" command="YES"/>
+                                <connections>
+                                    <action selector="showNewPost:" target="bJx-VU-Yp1" id="pjZ-Tw-dud"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="xB6-tG-tC5"/>
                             <menuItem title="Actual Size" keyEquivalent="0" id="fJ3-xZ-4dW">
                                 <connections>
                                     <action selector="makeTextStandardSize:" target="fhG-04-65t" id="vYh-rs-zAE"/>
