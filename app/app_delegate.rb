@@ -63,6 +63,11 @@ class AppDelegate
     NSWorkspace.sharedWorkspace.openURL("https://docs.esa.io/".to_nsurl)
   end
 
+  def showPreferencesWindow(sender)
+    preferences = PreferencesWindowController.sharedInstance
+    preferences.showWindow(sender)
+  end
+
   private
 
   def loadURL(url)
