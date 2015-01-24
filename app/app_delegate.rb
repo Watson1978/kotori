@@ -3,14 +3,18 @@ class AppDelegate
   outlet :window, NSWindow
   outlet :webView, WebView
 
+  UserDefault = NSUserDefaults.standardUserDefaults
+
   def awakeFromNib
+    UserDefault["startPage"] ||= "https://esa.io/"
+
     NSApp.delegate = self    
     webView.UIDelegate = self
     webView.setMaintainsBackForwardList(false)
     version = NSBundle.mainBundle.objectForInfoDictionaryKey("CFBundleShortVersionString")
     webView.customUserAgent = "kotori #{version}"
 
-    loadURL("https://esa.io/")
+    loadURL(UserDefault["startPage"])
   end
 
   def applicationShouldHandleReopen(application, hasVisibleWindows:flag)
