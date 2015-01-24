@@ -40,6 +40,10 @@ class AppDelegate
     sender
   end
 
+  def currentViewPage
+    webView.mainFrameURL
+  end
+
   # actions
   def showNewPost(sender)
     team = teamName()
@@ -71,6 +75,7 @@ class AppDelegate
 
   def showPreferencesWindow(sender)
     preferences = PreferencesWindowController.sharedInstance
+    preferences.delegate = self
     preferences.showWindow(sender)
   end
 

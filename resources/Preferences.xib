@@ -30,7 +30,7 @@
                         </textFieldCell>
                     </textField>
                     <textField verticalHuggingPriority="750" id="s5b-00-UZJ">
-                        <rect key="frame" x="48" y="202" width="385" height="22"/>
+                        <rect key="frame" x="48" y="202" width="309" height="22"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" title="https://esa.io/" placeholderString="" drawsBackground="YES" id="YKH-nd-sfe">
                             <font key="font" metaFont="system"/>
@@ -69,6 +69,17 @@
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
+                    <button verticalHuggingPriority="750" id="rLu-8D-bRT">
+                        <rect key="frame" x="359" y="195" width="107" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="current page" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="zPE-Ge-eQZ">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="cellTitle"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="setCurrentAsStartPage:" target="-2" id="tQ3-mX-v8g"/>
+                        </connections>
+                    </button>
                 </subviews>
             </view>
             <toolbar key="toolbar" implicitIdentifier="F54CA26F-B69A-479B-8993-2FB98B7CD5AC" autosavesConfiguration="NO" displayMode="iconAndLabel" sizeMode="regular" id="PjU-gU-D0L">
