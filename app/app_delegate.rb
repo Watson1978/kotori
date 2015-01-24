@@ -2,6 +2,7 @@ class AppDelegate
   extend IB
   outlet :window, NSWindow
   outlet :webView, WebView
+  outlet :progress, NSProgressIndicator
 
   UserDefaults = NSUserDefaults.standardUserDefaults
 
@@ -12,6 +13,11 @@ class AppDelegate
     webView.setMaintainsBackForwardList(false)
     version = NSBundle.mainBundle.objectForInfoDictionaryKey("CFBundleShortVersionString")
     webView.customUserAgent = "kotori #{version}"
+
+    nc = NSNotificationCenter.defaultCenter
+    nc.addObserver(self, selector:"startLoading:", name:WebViewProgressStartedNotification, object:nil)
+    nc.addObserver(self, selector:"progressLoading:", name:WebViewProgressEstimateChangedNotification, object:nil)
+    nc.addObserver(self, selector:"finishedLoading:", name:WebViewProgressFinishedNotification, object:nil)
 
     loadURL(UserDefaults["startPage"])
   end
@@ -37,6 +43,18 @@ class AppDelegate
   def webView(sender, createWebViewWithRequest:request)
     sender.mainFrame.loadRequest(request)
     sender
+  end
+
+  def startLoading(notification)
+    progress.startAnimation(nil)
+  end
+
+  def progressLoading(notification)
+    progress.setDoubleValue(webView.estimatedProgress)
+  end
+
+  def finishedLoading(notification)
+    progress.stopAnimation(nil)
   end
 
   def currentURL
