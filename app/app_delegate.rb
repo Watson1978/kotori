@@ -3,14 +3,18 @@ class AppDelegate
   outlet :window, NSWindow
   outlet :webView, WebView
 
+  UserDefault = NSUserDefaults.standardUserDefaults
+
   def awakeFromNib
+    UserDefault["startPage"] ||= "https://esa.io/"
+
     NSApp.delegate = self    
     webView.UIDelegate = self
     webView.setMaintainsBackForwardList(false)
     version = NSBundle.mainBundle.objectForInfoDictionaryKey("CFBundleShortVersionString")
     webView.customUserAgent = "kotori #{version}"
 
-    loadURL("https://esa.io/")
+    loadURL(UserDefault["startPage"])
   end
 
   def applicationShouldHandleReopen(application, hasVisibleWindows:flag)
@@ -19,6 +23,8 @@ class AppDelegate
   end
 
   def applicationShouldTerminate(application)
+    return true if UserDefault["confirmQuitting"] == false
+
     alert = NSAlert.new.tap do |v|
       v.messageText = "Quit kotori?"
       v.addButtonWithTitle("OK")
@@ -61,6 +67,11 @@ class AppDelegate
 
   def showHelp(sender)
     NSWorkspace.sharedWorkspace.openURL("https://docs.esa.io/".to_nsurl)
+  end
+
+  def showPreferencesWindow(sender)
+    preferences = PreferencesWindowController.sharedInstance
+    preferences.showWindow(sender)
   end
 
   private
