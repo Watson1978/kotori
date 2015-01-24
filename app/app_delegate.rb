@@ -8,7 +8,6 @@ class AppDelegate
   def awakeFromNib
     UserDefaults["startPage"] ||= "https://esa.io/"
 
-    NSApp.delegate = self
     webView.UIDelegate = self
     webView.setMaintainsBackForwardList(false)
     version = NSBundle.mainBundle.objectForInfoDictionaryKey("CFBundleShortVersionString")
