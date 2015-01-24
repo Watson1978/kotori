@@ -23,6 +23,8 @@ class AppDelegate
   end
 
   def applicationShouldTerminate(application)
+    return true if UserDefault["confirmQuitting"] == false
+
     alert = NSAlert.new.tap do |v|
       v.messageText = "Quit kotori?"
       v.addButtonWithTitle("OK")
