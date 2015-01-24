@@ -53,7 +53,11 @@
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <binding destination="zMh-yv-iRH" name="value" keyPath="values.confirmQuitting" id="geU-pY-feG"/>
+                            <binding destination="zMh-yv-iRH" name="value" keyPath="values.confirmQuitting" id="SnY-h7-UNs">
+                                <dictionary key="options">
+                                    <integer key="NSNullPlaceholder" value="1"/>
+                                </dictionary>
+                            </binding>
                         </connections>
                     </button>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="dvP-RW-Zgb">
