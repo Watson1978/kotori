@@ -8,6 +8,6 @@ class PreferencesWindowController < NSWindowController
   # actions
   def setCurrentAsStartPage(sender)
     defaluts = NSUserDefaults.standardUserDefaults
-    defaluts["startPage"] = delegate.currentViewPage
+    defaluts["startPage"] = delegate.currentURL
   end
 end

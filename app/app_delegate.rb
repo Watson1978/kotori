@@ -40,7 +40,7 @@ class AppDelegate
     sender
   end
 
-  def currentViewPage
+  def currentURL
     webView.mainFrameURL
   end
 
@@ -87,7 +87,7 @@ class AppDelegate
   end
 
   def teamName
-    url = webView.mainFrameURL
+    url = currentURL
     if url =~ /https:\/\/(.+)\.esa\.io/
       return $1
     end
