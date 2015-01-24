@@ -3,18 +3,18 @@ class AppDelegate
   outlet :window, NSWindow
   outlet :webView, WebView
 
-  UserDefault = NSUserDefaults.standardUserDefaults
+  UserDefaults = NSUserDefaults.standardUserDefaults
 
   def awakeFromNib
-    UserDefault["startPage"] ||= "https://esa.io/"
+    UserDefaults["startPage"] ||= "https://esa.io/"
 
-    NSApp.delegate = self    
+    NSApp.delegate = self
     webView.UIDelegate = self
     webView.setMaintainsBackForwardList(false)
     version = NSBundle.mainBundle.objectForInfoDictionaryKey("CFBundleShortVersionString")
     webView.customUserAgent = "kotori #{version}"
 
-    loadURL(UserDefault["startPage"])
+    loadURL(UserDefaults["startPage"])
   end
 
   def applicationShouldHandleReopen(application, hasVisibleWindows:flag)
@@ -23,7 +23,7 @@ class AppDelegate
   end
 
   def applicationShouldTerminate(application)
-    return true if UserDefault["confirmQuitting"] == false
+    return true if UserDefaults["confirmQuitting"] == false
 
     alert = NSAlert.new.tap do |v|
       v.messageText = "Quit kotori?"
@@ -46,25 +46,25 @@ class AppDelegate
 
   # actions
   def showNewPost(sender)
-    team = teamName()
+    team = teamName
     return unless team
     loadURL("https://#{team}.esa.io/posts/new")
   end
 
   def showHome(sender)
-    team = teamName()
+    team = teamName
     return unless team
     loadURL("https://#{team}.esa.io/")
   end
 
   def showPosts(sender)
-    team = teamName()
+    team = teamName
     return unless team
     loadURL("https://#{team}.esa.io/posts")
   end
 
   def showTeam(sender)
-    team = teamName()
+    team = teamName
     return unless team
     loadURL("https://#{team}.esa.io/team")
   end
