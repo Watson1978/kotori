@@ -6,6 +6,19 @@
     <description>Most recent changes with links to updates.</description>
     <language>en</language>
       <item>
+        <title>Version 0.5</title>
+        <description>
+          <![CDATA[
+            <ul>
+              <li>Preferencesパネルを用意しました。スタートページが設定でき、起動直後に表示したいページを設定しておくと便利です(\( ⁰⊖⁰)/)</li>
+              <li>ページ読み込み時にインジケータを表示するようにしました</li>
+            </ul>
+          ]]>
+        </description>
+        <pubDate>Mon, 26 Jan 2015 00:19:17 +0900</pubDate>
+        <enclosure url="https://github.com/Watson1978/kotori/releases/download/v0.5/kotori_0.5.zip" sparkle:version="0.5" length="4638555" />
+      </item>
+      <item>
         <title>Version 0.4</title>
         <description>
           <![CDATA[
