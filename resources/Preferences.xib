@@ -14,14 +14,14 @@
         <window title="Preferences" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" animationBehavior="default" id="QvC-M9-y7g" customClass="PreferencesWindow">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="196" y="240" width="480" height="270"/>
+            <rect key="contentRect" x="196" y="240" width="480" height="180"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1177"/>
             <view key="contentView" id="EiT-Mj-1SZ">
-                <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                <rect key="frame" x="0.0" y="-1" width="480" height="180"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="POq-4u-1lC">
-                        <rect key="frame" x="18" y="232" width="102" height="18"/>
+                        <rect key="frame" x="18" y="142" width="102" height="18"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="Startup page" id="h6p-2Q-4Xe">
                             <font key="font" size="13" name="Helvetica-Bold"/>
@@ -30,7 +30,7 @@
                         </textFieldCell>
                     </textField>
                     <textField verticalHuggingPriority="750" id="s5b-00-UZJ">
-                        <rect key="frame" x="48" y="202" width="309" height="22"/>
+                        <rect key="frame" x="48" y="112" width="309" height="22"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" title="https://esa.io/" placeholderString="" drawsBackground="YES" id="YKH-nd-sfe">
                             <font key="font" metaFont="system"/>
@@ -46,7 +46,7 @@
                         </connections>
                     </textField>
                     <button id="ltf-d6-Crz">
-                        <rect key="frame" x="46" y="138" width="153" height="18"/>
+                        <rect key="frame" x="46" y="48" width="153" height="18"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="check" title="Confirm &quot;Quit Kotori&quot;" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="HhU-aN-wt0">
                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -61,7 +61,7 @@
                         </connections>
                     </button>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="dvP-RW-Zgb">
-                        <rect key="frame" x="18" y="165" width="102" height="18"/>
+                        <rect key="frame" x="18" y="75" width="102" height="18"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="Confirm" id="X97-0V-oqK">
                             <font key="font" size="13" name="Helvetica-Bold"/>
@@ -70,7 +70,7 @@
                         </textFieldCell>
                     </textField>
                     <button verticalHuggingPriority="750" id="rLu-8D-bRT">
-                        <rect key="frame" x="359" y="195" width="107" height="32"/>
+                        <rect key="frame" x="359" y="105" width="107" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="push" title="current page" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="zPE-Ge-eQZ">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -90,7 +90,7 @@
                     <toolbarItem reference="f7x-cP-NBU"/>
                 </defaultToolbarItems>
             </toolbar>
-            <point key="canvasLocation" x="404" y="448"/>
+            <point key="canvasLocation" x="404" y="403"/>
         </window>
         <userDefaultsController representsSharedInstance="YES" id="zMh-yv-iRH"/>
     </objects>
