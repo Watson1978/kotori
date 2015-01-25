@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>kotori</title>
+    <link>https://raw.githubusercontent.com/Watson1978/kotori/master/sparkle.xml</link>
+    <description>Most recent changes with links to updates.</description>
+    <language>en</language>
+      <item>
+        <title>Version 0.4</title>
+        <description>
+          <![CDATA[
+            <ul>
+              <li>チームを選択した後、"NEW POST"、"HOME"、"POSTS"、"TEAM"へ簡単に移動できるショートカットキーを追加しました。メニュー[Vew]で確認ください。</li>
+            </ul>
+          ]]>
+        </description>
+        <pubDate>Wed, 21 Jan 2015 22:56:48 +0900</pubDate>
+        <enclosure url="https://github.com/Watson1978/kotori/releases/download/v0.4/kotori_0.4.zip" sparkle:version="0.4" length="916859" />
+      </item>
+  </channel>
+</rss>

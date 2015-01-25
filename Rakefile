@@ -18,6 +18,11 @@ Motion::Project::App.setup do |app|
   app.info_plist['NSMainNibFile'] = 'MainMenu'
   app.info_plist['CFBundleIconFile'] = 'kotori.icns'
   app.frameworks << 'WebKit'
+
+  app.release do
+    app.info_plist['SUFeedURL'] = 'https://raw.githubusercontent.com/Watson1978/kotori/master/sparkle.xml'
+    app.embedded_frameworks << 'vendor/Sparkle.framework'
+  end
 end
 
 namespace :gen do
@@ -30,7 +35,7 @@ end
 
 namespace :archive do
   desc "Generate kotori.zip to release"
-  task :zip => [:clean, :"build:release"] do
+  task :zip => [:"build:release"] do
     config = Motion::Project::App.config
     zip_name = "#{config.name}_#{config.version}.zip"
     sh "rsync -a build/MacOSX-#{config.deployment_target}-Release/#{config.name}.app build/Release"
