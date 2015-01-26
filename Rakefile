@@ -40,7 +40,7 @@ namespace :archive do
     zip_name = "#{config.name}_#{config.version}.zip"
     sh "rsync -a build/MacOSX-#{config.deployment_target}-Release/#{config.name}.app build/Release"
     Dir.chdir("build/Release") do
-      sh "zip -r #{zip_name} #{config.name}.app"
+      sh "zip -9 -r #{zip_name} #{config.name}.app"
     end
   end
 end
