@@ -14,7 +14,7 @@ Motion::Project::App.setup do |app|
   app.version = '0.5.1'
   app.identifier = 'jp.cat-soft.kotori'
   app.deployment_target = '10.8'
-  app.codesign_certificate = '3rd Party Mac Developer Application: Shizuo Fujita (KQ572MNR73)'
+  app.codesign_certificate = 'Developer ID Application: Shizuo Fujita (KQ572MNR73)'
   app.info_plist['NSMainNibFile'] = 'MainMenu'
   app.info_plist['CFBundleIconFile'] = 'kotori.icns'
   app.frameworks << 'WebKit'
