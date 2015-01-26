@@ -40,6 +40,7 @@ namespace :archive do
   task :zip => [:"build:release"] do
     config = Motion::Project::App.config
     zip_name = "#{config.name}_#{config.version}.zip"
+    sh "/usr/bin/codesign --force --verbose --sign 'Developer ID Application: Shizuo Fujita (KQ572MNR73)' './build/MacOSX-10.8-Release/kotori.app/Contents/Frameworks/Sparkle.framework/'"
     sh "rsync -a build/MacOSX-#{config.deployment_target}-Release/#{config.name}.app build/Release"
     Dir.chdir("build/Release") do
       sh "zip -9 -r #{zip_name} #{config.name}.app"
