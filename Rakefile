@@ -21,6 +21,8 @@ Motion::Project::App.setup do |app|
 
   app.release do
     app.info_plist['SUFeedURL'] = 'https://raw.githubusercontent.com/Watson1978/kotori/master/sparkle.xml'
+    app.info_plist['SUEnableAutomaticChecks'] = true
+    app.info_plist['SUScheduledCheckInterval'] = 86400 # 24hrs * 60mins/hr * 60sec/min
     app.embedded_frameworks << 'vendor/Sparkle.framework'
   end
 end
