@@ -36,14 +36,14 @@ namespace :gen do
 end
 
 namespace :archive do
-  desc "Generate kotori.zip to release"
-  task :zip => [:"build:release"] do
+  desc "Generate kotori.dmg to release"
+  task :dmg => [:"build:release"] do
     config = Motion::Project::App.config
-    zip_name = "#{config.name}_#{config.version}.zip"
-    sh "/usr/bin/codesign --force --verbose --sign 'Developer ID Application: Shizuo Fujita (KQ572MNR73)' './build/MacOSX-10.8-Release/kotori.app/Contents/Frameworks/Sparkle.framework/'"
+    dmg_name = "#{config.name}_#{config.version}"
     sh "rsync -a build/MacOSX-#{config.deployment_target}-Release/#{config.name}.app build/Release"
-    Dir.chdir("build/Release") do
-      sh "zip -9 -r #{zip_name} #{config.name}.app"
-    end
+    sh "ln -sf /Applications build/Release"
+    sh "hdiutil create build/tmp.dmg -volname #{dmg_name} -srcfolder build/Release"
+    sh "hdiutil convert -format UDBZ build/tmp.dmg -o build/#{dmg_name}.dmg"
+    sh "rm -f build/tmp.dmg"
   end
 end
