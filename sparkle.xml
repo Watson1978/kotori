@@ -6,17 +6,16 @@
     <description>Most recent changes with links to updates.</description>
     <language>en</language>
       <item>
-        <title>Version 0.5.1</title>
+        <title>Version 0.6</title>
         <description>
           <![CDATA[
             <ul>
-              <li>不要なリソースファイルを削除して、配布アーカイブのサイズを減らしました</li>
-              <li>アップデートチェックの設定を調整しました</li>
+              <li>JavaScriptのconfirm()を処理していなかったため、コメントを削除することができなかったのを修正しました。</li>
             </ul>
           ]]>
         </description>
-        <pubDate>Mon, 26 Jan 2015 21:22:58 +0900</pubDate>
-        <enclosure url="https://github.com/Watson1978/kotori/releases/download/v0.5.1/kotori_0.5.1.dmg" sparkle:version="0.5.1" length="1265632" />
+        <pubDate>Fri, 30 Jan 2015 08:46:02 +0900</pubDate>
+        <enclosure url="https://github.com/Watson1978/kotori/releases/download/v0.6/kotori_0.6.dmg" sparkle:version="0.6" length="1277468" />
       </item>
   </channel>
 </rss>
