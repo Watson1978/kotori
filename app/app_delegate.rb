@@ -11,7 +11,7 @@ class AppDelegate
     @webViewController = WebViewController.alloc.initWithWebView(webView)
     @webViewController.configureProgress(progress)
 
-    loadURL(UserDefaults["startPage"])
+    @webViewController.loadURL(UserDefaults["startPage"])
   end
 
   def applicationShouldHandleReopen(application, hasVisibleWindows:flag)
@@ -33,32 +33,32 @@ class AppDelegate
   end
 
   def currentURL
-    @webViewController.webView.mainFrameURL
+    @webViewController.currentURL
   end
 
   # actions
   def showNewPost(sender)
     team = teamName
     return unless team
-    loadURL("https://#{team}.esa.io/posts/new")
+    @webViewController.loadURL("https://#{team}.esa.io/posts/new")
   end
 
   def showHome(sender)
     team = teamName
     return unless team
-    loadURL("https://#{team}.esa.io/")
+    @webViewController.loadURL("https://#{team}.esa.io/")
   end
 
   def showPosts(sender)
     team = teamName
     return unless team
-    loadURL("https://#{team}.esa.io/posts")
+    @webViewController.loadURL("https://#{team}.esa.io/posts")
   end
 
   def showTeam(sender)
     team = teamName
     return unless team
-    loadURL("https://#{team}.esa.io/team")
+    @webViewController.loadURL("https://#{team}.esa.io/team")
   end
 
   def showHelp(sender)
@@ -72,11 +72,6 @@ class AppDelegate
   end
 
   private
-
-  def loadURL(url)
-    request = NSURLRequest.requestWithURL(url.to_nsurl)
-    @webViewController.webView.mainFrame.loadRequest(request)
-  end
 
   def teamName
     url = currentURL

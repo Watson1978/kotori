@@ -11,6 +11,15 @@ class WebViewController
     self
   end
 
+  def loadURL(url)
+    request = NSURLRequest.requestWithURL(url.to_nsurl)
+    webView.mainFrame.loadRequest(request)
+  end
+
+  def currentURL
+    webView.mainFrameURL
+  end
+
   def configureProgress(progress)
     @progress = progress
     nc = NSNotificationCenter.defaultCenter
