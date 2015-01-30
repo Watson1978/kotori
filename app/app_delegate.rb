@@ -8,15 +8,8 @@ class AppDelegate
 
   def awakeFromNib
     UserDefaults["startPage"] ||= "https://esa.io/"
-
-    webView.setMaintainsBackForwardList(false)
-    version = NSBundle.mainBundle.objectForInfoDictionaryKey("CFBundleShortVersionString")
-    webView.customUserAgent = "kotori #{version}"
-
-    nc = NSNotificationCenter.defaultCenter
-    nc.addObserver(self, selector:"startLoading:", name:WebViewProgressStartedNotification, object:nil)
-    nc.addObserver(self, selector:"progressLoading:", name:WebViewProgressEstimateChangedNotification, object:nil)
-    nc.addObserver(self, selector:"finishedLoading:", name:WebViewProgressFinishedNotification, object:nil)
+    @webViewController = WebViewController.alloc.initWithWebView(webView)
+    @webViewController.configureProgress(progress)
 
     loadURL(UserDefaults["startPage"])
   end
@@ -39,20 +32,8 @@ class AppDelegate
     alert.runModal == NSAlertFirstButtonReturn ? true : false
   end
 
-  def startLoading(notification)
-    progress.startAnimation(nil)
-  end
-
-  def progressLoading(notification)
-    progress.setDoubleValue(webView.estimatedProgress)
-  end
-
-  def finishedLoading(notification)
-    progress.stopAnimation(nil)
-  end
-
   def currentURL
-    webView.mainFrameURL
+    @webViewController.webView.mainFrameURL
   end
 
   # actions
@@ -94,7 +75,7 @@ class AppDelegate
 
   def loadURL(url)
     request = NSURLRequest.requestWithURL(url.to_nsurl)
-    webView.mainFrame.loadRequest(request)
+    @webViewController.webView.mainFrame.loadRequest(request)
   end
 
   def teamName
