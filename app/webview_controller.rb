@@ -1,4 +1,4 @@
-class WebViewDelegate
+class WebViewController
   def webView(sender, createWebViewWithRequest:request)
     sender.mainFrame.loadRequest(request)
     sender
