@@ -395,6 +395,12 @@
                                     <action selector="showHelp:" target="bJx-VU-Yp1" id="kz2-Qs-Hvc"/>
                                 </connections>
                             </menuItem>
+                            <menuItem title="Markdown Help" id="yPy-3g-YFA">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="showMarkdownHelp:" target="bJx-VU-Yp1" id="4mi-se-uJr"/>
+                                </connections>
+                            </menuItem>
                         </items>
                     </menu>
                 </menuItem>
