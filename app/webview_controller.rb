@@ -4,6 +4,7 @@ class WebViewController
   def initWithWebView(webView)
     @webView = webView
     @webView.UIDelegate = self
+    @webView.frameLoadDelegate = self
     @webView.setMaintainsBackForwardList(false)
     version = NSBundle.mainBundle.objectForInfoDictionaryKey("CFBundleShortVersionString")
     @webView.customUserAgent = "kotori #{version}"
@@ -44,6 +45,10 @@ class WebViewController
   def webView(sender, createWebViewWithRequest:request)
     sender.mainFrame.loadRequest(request)
     sender
+  end
+
+  def webView(sender, didReceiveTitle:title, forFrame:frame)
+    NSApp.delegate.window.title = title
   end
 
   def webView(sender, runJavaScriptAlertPanelWithMessage:message, initiatedByFrame:frame)
