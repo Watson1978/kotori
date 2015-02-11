@@ -7,6 +7,8 @@ class AppDelegate
   UserDefaults = NSUserDefaults.standardUserDefaults
 
   def awakeFromNib
+    @window.makeFirstResponder(webView)
+
     UserDefaults["startPage"] ||= "https://esa.io/"
     @webViewController = WebViewController.alloc.initWithWebView(webView)
     @webViewController.configureProgress(progress)

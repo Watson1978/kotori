@@ -416,7 +416,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="800" height="720"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <webView id="fhG-04-65t">
+                    <webView id="fhG-04-65t" customClass="CustomWebView">
                         <rect key="frame" x="0.0" y="0.0" width="800" height="720"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <webPreferences key="preferences" defaultFontSize="12" defaultFixedFontSize="12">
