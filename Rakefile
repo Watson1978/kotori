@@ -11,7 +11,7 @@ end
 Motion::Project::App.setup do |app|
   # Use `rake config' to see complete project settings.
   app.name = 'kotori'
-  app.version = '0.7'
+  app.version = '0.7.1'
   app.identifier = 'jp.cat-soft.kotori'
   app.deployment_target = '10.8'
   app.codesign_certificate = 'Developer ID Application: Shizuo Fujita (KQ572MNR73)'
@@ -37,7 +37,7 @@ end
 
 namespace :archive do
   desc "Generate kotori.dmg to release"
-  task :dmg => [:"build:release"] do
+  task :dmg => [:clean, :"build:release"] do
     config = Motion::Project::App.config
     dmg_name = "#{config.name}_#{config.version}"
     sh "rsync -a build/MacOSX-#{config.deployment_target}-Release/#{config.name}.app build/Release"
