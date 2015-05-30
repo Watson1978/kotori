@@ -6,7 +6,7 @@
     <description>Most recent changes with links to updates.</description>
     <language>en</language>
       <item>
-        <title>Version 0.7</title>
+        <title>Version 0.7.1</title>
         <description>
           <![CDATA[
             <ul>
@@ -15,8 +15,8 @@
             </ul>
           ]]>
         </description>
-        <pubDate>Wed, 11 Feb 2015 19:08:13 +0900</pubDate>
-        <enclosure url="https://github.com/Watson1978/kotori/releases/download/v0.7/kotori_0.7.dmg" sparkle:version="0.7" length="1278314" />
+        <pubDate>Sat, 30 May 2015 11:51:39 +0900</pubDate>
+        <enclosure url="https://github.com/Watson1978/kotori/releases/download/v0.7.1/kotori_0.7.1.dmg" sparkle:version="0.7.1" length="989972" />
       </item>
   </channel>
 </rss>
