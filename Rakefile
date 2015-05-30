@@ -13,7 +13,7 @@ Motion::Project::App.setup do |app|
   app.name = 'kotori'
   app.version = '0.7.1'
   app.identifier = 'jp.cat-soft.kotori'
-  app.deployment_target = '10.8'
+  app.deployment_target = '10.9'
   app.codesign_certificate = 'Developer ID Application: Shizuo Fujita (KQ572MNR73)'
   app.info_plist['NSMainNibFile'] = 'MainMenu'
   app.info_plist['CFBundleIconFile'] = 'kotori.icns'
