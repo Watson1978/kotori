@@ -38,6 +38,15 @@ end
 namespace :archive do
   desc "Generate kotori.dmg to release"
   task :dmg => [:clean, :"build:release"] do
+    # FIXME
+    osx_version = `sw_vers -productVersion`.strip
+    unless osx_version.include?("10.9")
+      puts "---------------------------------------------------------"
+      puts "!! Should build app with OS X 10.9 to release new version"
+      puts "---------------------------------------------------------"
+      raise
+    end
+
     config = Motion::Project::App.config
     dmg_name = "#{config.name}_#{config.version}"
     sh "rsync -a build/MacOSX-#{config.deployment_target}-Release/#{config.name}.app build/Release"
