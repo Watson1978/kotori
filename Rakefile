@@ -37,7 +37,7 @@ end
 
 namespace :archive do
   desc "Generate kotori.dmg to release"
-  task :dmg => [:clean, :"build:release"] do
+  task :dmg => [:"build:release"] do
     # FIXME
     osx_version = `sw_vers -productVersion`.strip
     unless osx_version.include?("10.9")
