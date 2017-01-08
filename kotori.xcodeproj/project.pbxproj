@@ -1,0 +1,337 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A90E64C31E229F30002BD997 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = A90E64C11E229F30002BD997 /* Preferences.xib */; };
+		A90E64C51E22A14D002BD997 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90E64C41E22A14D002BD997 /* WebView.swift */; };
+		A90E64C71E22A198002BD997 /* PreferencesWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90E64C61E22A198002BD997 /* PreferencesWindowController.swift */; };
+		A91F69BC1E230D040036CDCF /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A91F69BB1E230D040036CDCF /* WebKit.framework */; };
+		A9943DE41E22747A00FBA718 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9943DE31E22747A00FBA718 /* AppDelegate.swift */; };
+		A9943DE61E22747A00FBA718 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9943DE51E22747A00FBA718 /* ViewController.swift */; };
+		A9943DE81E22747A00FBA718 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9943DE71E22747A00FBA718 /* Document.swift */; };
+		A9943DEA1E22747A00FBA718 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9943DE91E22747A00FBA718 /* Assets.xcassets */; };
+		A9943DED1E22747A00FBA718 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9943DEB1E22747A00FBA718 /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A90E64C21E229F30002BD997 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Preferences.xib; sourceTree = "<group>"; };
+		A90E64C41E22A14D002BD997 /* WebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		A90E64C61E22A198002BD997 /* PreferencesWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesWindowController.swift; sourceTree = "<group>"; };
+		A91F69BB1E230D040036CDCF /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		A9943DE01E22747A00FBA718 /* kotori.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kotori.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9943DE31E22747A00FBA718 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A9943DE51E22747A00FBA718 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A9943DE71E22747A00FBA718 /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
+		A9943DE91E22747A00FBA718 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A9943DEC1E22747A00FBA718 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A9943DEE1E22747A00FBA718 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A9943DDD1E22747A00FBA718 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A91F69BC1E230D040036CDCF /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A91F69BA1E230D040036CDCF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A91F69BB1E230D040036CDCF /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A9943DD71E22747A00FBA718 = {
+			isa = PBXGroup;
+			children = (
+				A9943DE21E22747A00FBA718 /* kotori */,
+				A9943DE11E22747A00FBA718 /* Products */,
+				A91F69BA1E230D040036CDCF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A9943DE11E22747A00FBA718 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9943DE01E22747A00FBA718 /* kotori.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A9943DE21E22747A00FBA718 /* kotori */ = {
+			isa = PBXGroup;
+			children = (
+				A9943DE31E22747A00FBA718 /* AppDelegate.swift */,
+				A9943DE51E22747A00FBA718 /* ViewController.swift */,
+				A90E64C61E22A198002BD997 /* PreferencesWindowController.swift */,
+				A9943DE71E22747A00FBA718 /* Document.swift */,
+				A90E64C41E22A14D002BD997 /* WebView.swift */,
+				A9943DE91E22747A00FBA718 /* Assets.xcassets */,
+				A9943DEB1E22747A00FBA718 /* Main.storyboard */,
+				A90E64C11E229F30002BD997 /* Preferences.xib */,
+				A9943DEE1E22747A00FBA718 /* Info.plist */,
+			);
+			path = kotori;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A9943DDF1E22747A00FBA718 /* kotori */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9943DF11E22747A00FBA718 /* Build configuration list for PBXNativeTarget "kotori" */;
+			buildPhases = (
+				A9943DDC1E22747A00FBA718 /* Sources */,
+				A9943DDD1E22747A00FBA718 /* Frameworks */,
+				A9943DDE1E22747A00FBA718 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = kotori;
+			productName = kotori;
+			productReference = A9943DE01E22747A00FBA718 /* kotori.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9943DD81E22747A00FBA718 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Watson;
+				TargetAttributes = {
+					A9943DDF1E22747A00FBA718 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = KQ572MNR73;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A9943DDB1E22747A00FBA718 /* Build configuration list for PBXProject "kotori" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A9943DD71E22747A00FBA718;
+			productRefGroup = A9943DE11E22747A00FBA718 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A9943DDF1E22747A00FBA718 /* kotori */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A9943DDE1E22747A00FBA718 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9943DEA1E22747A00FBA718 /* Assets.xcassets in Resources */,
+				A90E64C31E229F30002BD997 /* Preferences.xib in Resources */,
+				A9943DED1E22747A00FBA718 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A9943DDC1E22747A00FBA718 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9943DE61E22747A00FBA718 /* ViewController.swift in Sources */,
+				A90E64C51E22A14D002BD997 /* WebView.swift in Sources */,
+				A90E64C71E22A198002BD997 /* PreferencesWindowController.swift in Sources */,
+				A9943DE41E22747A00FBA718 /* AppDelegate.swift in Sources */,
+				A9943DE81E22747A00FBA718 /* Document.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A90E64C11E229F30002BD997 /* Preferences.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A90E64C21E229F30002BD997 /* Base */,
+			);
+			name = Preferences.xib;
+			sourceTree = "<group>";
+		};
+		A9943DEB1E22747A00FBA718 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9943DEC1E22747A00FBA718 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A9943DEF1E22747A00FBA718 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A9943DF01E22747A00FBA718 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		A9943DF21E22747A00FBA718 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = KQ572MNR73;
+				INFOPLIST_FILE = kotori/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.cat-soft.kotori";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		A9943DF31E22747A00FBA718 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = KQ572MNR73;
+				INFOPLIST_FILE = kotori/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.cat-soft.kotori";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A9943DDB1E22747A00FBA718 /* Build configuration list for PBXProject "kotori" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9943DEF1E22747A00FBA718 /* Debug */,
+				A9943DF01E22747A00FBA718 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9943DF11E22747A00FBA718 /* Build configuration list for PBXNativeTarget "kotori" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9943DF21E22747A00FBA718 /* Debug */,
+				A9943DF31E22747A00FBA718 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A9943DD81E22747A00FBA718 /* Project object */;
+}
