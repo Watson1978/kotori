@@ -2,6 +2,7 @@ VERSION = "0.8.1"
 
 desc "Generate kotori.dmg to release"
 task :archive do
+  sh "rm -rf build"
   sh "xcodebuild -configuration Release"
   mkdir_p "build/package"
   sh "rsync -a build/Release/kotori.app build/package"
