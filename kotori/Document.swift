@@ -43,10 +43,10 @@ class Document: NSDocument, WebFrameLoadDelegate, WebUIDelegate {
     }
 
     private func loadWebView(_ webView : WebView, url : String) {
-        let request = NSURLRequest(url: NSURL(string: url)! as URL)
+        let request = URLRequest(url: URL(string: url)!)
         webView.frameLoadDelegate = self
         webView.uiDelegate = self
-        webView.mainFrame.load(request as URLRequest)
+        webView.mainFrame.load(request)
     }
     
     // MARK: Delegate - Called when the page title of a frame loads or changes.
