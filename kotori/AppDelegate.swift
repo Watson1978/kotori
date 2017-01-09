@@ -3,9 +3,6 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
     
-    // FIXME : require to keep reference count when create new Window from action
-    var documents = [Document]()
-
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
     }
@@ -32,6 +29,15 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         return NSApplicationTerminateReply.terminateCancel
     }
 
+    private func openNewDocument() -> Document? {
+        do {
+            return try (NSDocumentController.shared().openUntitledDocumentAndDisplay(false) as? Document)
+        }
+        catch {
+            return nil
+        }
+    }
+
     // MARK: Actions
     @IBAction func showPreferencesWindow(sender : AnyObject) {
         let preferences = PreferencesWindowController.sharedInstance
@@ -40,48 +46,43 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     @available(macOS 10.12, *)
     @IBAction func newDocumentAsTab(sender : Any?) {
-        let doc = Document()
-        documents.append(doc)
-        doc.makeWindowControllers()
+        let doc = openNewDocument()
+        doc?.makeWindowControllers()
         
-        doc.windowControllers.first?.window?.tabbingMode = .preferred
-        doc.showWindows()
+        doc?.windowControllers.first?.window?.tabbingMode = .preferred
+        doc?.showWindows()
     }
 
     @IBAction func showNewPost(sender : AnyObject) {
-        let doc = Document()
-        documents.append(doc)
-        doc.makeWindowControllers()
+        let doc = openNewDocument()
+        doc?.makeWindowControllers()
 
-        doc.loadURL(suffix: "posts/new")
-        doc.showWindows()
+        doc?.loadURL(suffix: "posts/new")
+        doc?.showWindows()
     }
 
     @IBAction func showHome(sender : AnyObject) {
-        let doc = Document()
-        documents.append(doc)
-        doc.makeWindowControllers()
+        let doc = openNewDocument()
+        doc?.makeWindowControllers()
 
-        doc.loadURL(suffix: "")
-        doc.showWindows()
+        doc?.loadURL(suffix: "")
+        doc?.showWindows()
     }
 
     @IBAction func showPosts(sender : AnyObject) {
-        let doc = Document()
-        documents.append(doc)
-        doc.makeWindowControllers()
+        let doc = openNewDocument()
+        doc?.makeWindowControllers()
 
-        doc.loadURL(suffix: "posts")
-        doc.showWindows()
+        doc?.loadURL(suffix: "posts")
+        doc?.showWindows()
     }
 
     @IBAction func showTeam(sender : AnyObject) {
-        let doc = Document()
-        documents.append(doc)
-        doc.makeWindowControllers()
+        let doc = openNewDocument()
+        doc?.makeWindowControllers()
         
-        doc.loadURL(suffix: "team")
-        doc.showWindows()
+        doc?.loadURL(suffix: "team")
+        doc?.showWindows()
     }
 
     @IBAction func showMarkdownHelp(sender : AnyObject) {
