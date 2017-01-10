@@ -1,4 +1,4 @@
-VERSION = "0.8.3"
+VERSION = "0.8.4"
 
 desc "Generate kotori.dmg to release"
 task :archive do
