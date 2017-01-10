@@ -46,7 +46,7 @@ class Document: NSDocument, WebFrameLoadDelegate, WebUIDelegate, WebPolicyDelega
         return windowController.contentViewController?.view as! WebView
     }
 
-    private func loadWebView(_ webView: WebView, request: URLRequest, delegate: Document) {
+    private func loadWebView(_ webView: WebView!, request: URLRequest!, delegate: Document) {
         webView.frameLoadDelegate = delegate
         webView.uiDelegate = delegate
         webView.policyDelegate = delegate
@@ -65,6 +65,21 @@ class Document: NSDocument, WebFrameLoadDelegate, WebUIDelegate, WebPolicyDelega
         }
     }
 
+    func webView(_ sender: WebView!, createWebViewWith request: URLRequest!) -> WebView? {
+        var doc : Document
+        do {
+            doc = try (NSDocumentController.shared().openUntitledDocumentAndDisplay(false) as? Document)!
+        }
+        catch {
+            return nil
+        }
+        doc.makeWindowControllers()
+        let webView = getWebView(in: doc.windowController)
+        loadWebView(webView, request: request, delegate: doc)
+        doc.showWindows()
+        return webView
+    }
+    
     func webView(_ webView: WebView!, decidePolicyForNewWindowAction actionInformation: [AnyHashable : Any]!, request: URLRequest!, newFrameName frameName: String!, decisionListener listener: WebPolicyDecisionListener!) {
         var doc : Document
         do {
