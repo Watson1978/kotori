@@ -60,7 +60,7 @@ class Document: NSDocument, WebFrameLoadDelegate, WebUIDelegate, WebPolicyDelega
     
     // MARK: Delegate - Called when the page title of a frame loads or changes.
     func webView(_ sender: WebView!, didReceiveTitle title: String!, for frame: WebFrame!) {
-        if (windowController?.window?.title.hasPrefix("Untitle"))! {
+        if sender.mainFrame == frame {
             windowController?.window?.title = title
         }
     }
