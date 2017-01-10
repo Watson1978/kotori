@@ -14,6 +14,10 @@ class Document: NSDocument, WebFrameLoadDelegate, WebUIDelegate, WebPolicyDelega
         return false
     }
     
+    override var isDocumentEdited: Bool {
+        get { return false }
+    }
+        
     override func makeWindowControllers() {
         // Returns the Storyboard that contains your Document window.
         let storyboard = NSStoryboard(name: "Main", bundle: nil)
