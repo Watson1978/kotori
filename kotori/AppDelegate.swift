@@ -23,7 +23,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         alert.addButton(withTitle: "OK")
         alert.addButton(withTitle: "Cancel")
         alert.alertStyle = NSAlertStyle.warning
-        if (alert.runModal() == NSAlertFirstButtonReturn) {
+        if alert.runModal() == NSAlertFirstButtonReturn {
             return NSApplicationTerminateReply.terminateNow
         }
         return NSApplicationTerminateReply.terminateCancel
@@ -39,13 +39,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     // MARK: Actions
-    @IBAction func showPreferencesWindow(sender : AnyObject) {
+    @IBAction func showPreferencesWindow(sender: Any?) {
         let preferences = PreferencesWindowController.sharedInstance
         preferences.showWindow(sender)
     }
 
     @available(macOS 10.12, *)
-    @IBAction func newDocumentAsTab(sender : Any?) {
+    @IBAction func newDocumentAsTab(sender: Any?) {
         let doc = openNewDocument()
         doc?.makeWindowControllers()
         
@@ -53,7 +53,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         doc?.showWindows()
     }
 
-    @IBAction func showNewPost(sender : AnyObject) {
+    @IBAction func showNewPost(sender: Any?) {
         let doc = openNewDocument()
         doc?.makeWindowControllers()
 
@@ -61,7 +61,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         doc?.showWindows()
     }
 
-    @IBAction func showHome(sender : AnyObject) {
+    @IBAction func showHome(sender: Any?) {
         let doc = openNewDocument()
         doc?.makeWindowControllers()
 
@@ -69,7 +69,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         doc?.showWindows()
     }
 
-    @IBAction func showPosts(sender : AnyObject) {
+    @IBAction func showPosts(sender: Any?) {
         let doc = openNewDocument()
         doc?.makeWindowControllers()
 
@@ -77,7 +77,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         doc?.showWindows()
     }
 
-    @IBAction func showTeam(sender : AnyObject) {
+    @IBAction func showTeam(sender: Any?) {
         let doc = openNewDocument()
         doc?.makeWindowControllers()
         

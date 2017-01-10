@@ -38,18 +38,18 @@ class Document: NSDocument, WebFrameLoadDelegate, WebUIDelegate, WebPolicyDelega
         return url
     }
     
-    private func getWebView(in windowController : NSWindowController) -> WebView {
+    private func getWebView(in windowController: NSWindowController) -> WebView {
         return windowController.contentViewController?.view as! WebView
     }
 
-    private func loadWebView(_ webView : WebView, request : URLRequest) {
+    private func loadWebView(_ webView: WebView, request: URLRequest) {
         webView.frameLoadDelegate = self
         webView.uiDelegate = self
         webView.policyDelegate = self
         webView.mainFrame.load(request)
     }
 
-    private func loadWebView(_ webView : WebView, url : String) {
+    private func loadWebView(_ webView: WebView, url: String) {
         let request = URLRequest(url: URL(string: url)!)
         loadWebView(webView, request: request)
     }
@@ -86,7 +86,7 @@ class Document: NSDocument, WebFrameLoadDelegate, WebUIDelegate, WebPolicyDelega
         alert.addButton(withTitle: "OK")
         alert.addButton(withTitle: "Cancel")
         alert.alertStyle = NSAlertStyle.warning
-        if (alert.runModal() == NSAlertFirstButtonReturn) {
+        if alert.runModal() == NSAlertFirstButtonReturn {
             return true
         }
         return false

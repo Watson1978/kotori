@@ -1,5 +1,5 @@
 import Cocoa
 
-class PreferencesWindowController : NSWindowController {
+class PreferencesWindowController: NSWindowController {
     static let sharedInstance: PreferencesWindowController = PreferencesWindowController(windowNibName: "Preferences")
 }
