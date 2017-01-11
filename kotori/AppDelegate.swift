@@ -55,33 +55,25 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     @IBAction func showNewPost(sender: Any?) {
         let doc = openNewDocument()
-        doc?.makeWindowControllers()
-
-        doc?.loadURL(suffix: "posts/new")
+        doc?.makeWindowControllers(withPageName: "posts/new")
         doc?.showWindows()
     }
 
     @IBAction func showHome(sender: Any?) {
         let doc = openNewDocument()
-        doc?.makeWindowControllers()
-
-        doc?.loadURL(suffix: "")
+        doc?.makeWindowControllers(withPageName: "")
         doc?.showWindows()
     }
 
     @IBAction func showPosts(sender: Any?) {
         let doc = openNewDocument()
-        doc?.makeWindowControllers()
-
-        doc?.loadURL(suffix: "posts")
+        doc?.makeWindowControllers(withPageName: "posts")
         doc?.showWindows()
     }
 
     @IBAction func showTeam(sender: Any?) {
         let doc = openNewDocument()
-        doc?.makeWindowControllers()
-        
-        doc?.loadURL(suffix: "team")
+        doc?.makeWindowControllers(withPageName: "team")
         doc?.showWindows()
     }
 

@@ -17,20 +17,24 @@ class Document: NSDocument, WebFrameLoadDelegate, WebUIDelegate, WebPolicyDelega
     override var isDocumentEdited: Bool {
         get { return false }
     }
-        
-    override func makeWindowControllers() {
-        // Returns the Storyboard that contains your Document window.
+    
+    private func makeWindowControllers(withURLString url: String) {
         let storyboard = NSStoryboard(name: "Main", bundle: nil)
         windowController = storyboard.instantiateController(withIdentifier: "Document Window Controller") as! NSWindowController
-
-        let page = getStartPage()
-        loadWebView(getWebView(in: windowController), url: page)
+        loadWebView(getWebView(in: windowController), url: url)
         self.addWindowController(windowController)
     }
-    
-    func loadURL(suffix : String) {
-        let page = getStartPage() + suffix
-        loadWebView(getWebView(in: windowController), url: page)
+
+    override func makeWindowControllers() {
+        // Returns the Storyboard that contains your Document window.
+        let url = getStartPage()
+        makeWindowControllers(withURLString: url)
+    }
+
+    func makeWindowControllers(withPageName page: String) {
+        // Returns the Storyboard that contains your Document window.
+        let url = getStartPage() + page
+        makeWindowControllers(withURLString: url)
     }
 
     // MARK: Private
