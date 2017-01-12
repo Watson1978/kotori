@@ -4,6 +4,8 @@ An OS X client app for [esa.io](https://esa.io/)
 
 ![screenshot](screenshot.png)
 
+kotori v0.8 からは複数のウィンドウで記事を開けるようになりました。OS X 10.12 では、複数ウィンドウが表示されている状態で [Window] -> [Merge All Windows] メニューや、[View] -> [Show Tab Bar] メニューでタブ表示できるようになります。
+
 ## Downloading
 
 You can download this app from [releases page](https://github.com/Watson1978/kotori/releases)
