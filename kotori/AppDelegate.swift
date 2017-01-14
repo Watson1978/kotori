@@ -29,13 +29,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         return NSApplicationTerminateReply.terminateCancel
     }
 
-    private func openNewDocument() -> Document? {
-        do {
-            return try (NSDocumentController.shared().openUntitledDocumentAndDisplay(false) as? Document)
-        }
-        catch {
-            return nil
-        }
+    private func openNewDocument() -> Document! {
+        return try! NSDocumentController.shared().openUntitledDocumentAndDisplay(false) as! Document
     }
 
     // MARK: Actions
