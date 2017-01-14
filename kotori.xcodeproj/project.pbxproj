@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		A90E64C31E229F30002BD997 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = A90E64C11E229F30002BD997 /* Preferences.xib */; };
-		A90E64C51E22A14D002BD997 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90E64C41E22A14D002BD997 /* WebView.swift */; };
 		A90E64C71E22A198002BD997 /* PreferencesWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90E64C61E22A198002BD997 /* PreferencesWindowController.swift */; };
 		A91F69BC1E230D040036CDCF /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A91F69BB1E230D040036CDCF /* WebKit.framework */; };
 		A9943DE41E22747A00FBA718 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9943DE31E22747A00FBA718 /* AppDelegate.swift */; };
@@ -20,7 +19,6 @@
 
 /* Begin PBXFileReference section */
 		A90E64C21E229F30002BD997 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Preferences.xib; sourceTree = "<group>"; };
-		A90E64C41E22A14D002BD997 /* WebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		A90E64C61E22A198002BD997 /* PreferencesWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesWindowController.swift; sourceTree = "<group>"; };
 		A91F69BB1E230D040036CDCF /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		A9943DE01E22747A00FBA718 /* kotori.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kotori.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,7 +74,6 @@
 				A9943DE51E22747A00FBA718 /* ViewController.swift */,
 				A90E64C61E22A198002BD997 /* PreferencesWindowController.swift */,
 				A9943DE71E22747A00FBA718 /* Document.swift */,
-				A90E64C41E22A14D002BD997 /* WebView.swift */,
 				A9943DE91E22747A00FBA718 /* Assets.xcassets */,
 				A9943DEB1E22747A00FBA718 /* Main.storyboard */,
 				A90E64C11E229F30002BD997 /* Preferences.xib */,
@@ -159,7 +156,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9943DE61E22747A00FBA718 /* ViewController.swift in Sources */,
-				A90E64C51E22A14D002BD997 /* WebView.swift in Sources */,
 				A90E64C71E22A198002BD997 /* PreferencesWindowController.swift in Sources */,
 				A9943DE41E22747A00FBA718 /* AppDelegate.swift in Sources */,
 				A9943DE81E22747A00FBA718 /* Document.swift in Sources */,
