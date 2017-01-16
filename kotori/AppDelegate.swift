@@ -2,7 +2,7 @@ import Cocoa
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
-    
+
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
         if #available(macOS 10.12, *) {
@@ -56,7 +56,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBAction func newDocumentAsTab(sender: Any?) {
         let doc = openNewDocument()
         doc?.makeWindowControllers()
-        
+
         doc?.windowControllers.first?.window?.tabbingMode = .preferred
         doc?.showWindows()
     }
@@ -91,4 +91,3 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
 }
-

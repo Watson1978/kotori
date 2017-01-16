@@ -18,7 +18,7 @@ class ViewController: NSViewController, WKNavigationDelegate, WKUIDelegate {
     func load(withRequest request: URLRequest) {
         webView.load(request)
     }
-    
+
     func load(withURLString url: String) {
         let request = URLRequest(url: URL(string: url)!)
         load(withRequest: request)
@@ -33,7 +33,7 @@ class ViewController: NSViewController, WKNavigationDelegate, WKUIDelegate {
         NSWorkspace.shared().open(navigationAction.request.url!)
         return nil
     }
-    
+
     func webView(_ webView: WKWebView, runJavaScriptAlertPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping () -> Void) {
         let alert = NSAlert()
         alert.messageText = message
@@ -42,7 +42,7 @@ class ViewController: NSViewController, WKNavigationDelegate, WKUIDelegate {
         alert.runModal()
         completionHandler()
     }
-    
+
     func webView(_ webView: WKWebView, runJavaScriptConfirmPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping (Bool) -> Void) {
         let alert = NSAlert()
         alert.messageText = message
@@ -55,4 +55,3 @@ class ViewController: NSViewController, WKNavigationDelegate, WKUIDelegate {
         return completionHandler(false)
     }
 }
-

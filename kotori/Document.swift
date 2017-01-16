@@ -11,7 +11,7 @@ class Document: NSDocument, WKNavigationDelegate, WKUIDelegate {
     override class func autosavesInPlace() -> Bool {
         return false
     }
-    
+
     override var isDocumentEdited: Bool {
         get { return false }
     }
@@ -49,4 +49,3 @@ class Document: NSDocument, WKNavigationDelegate, WKUIDelegate {
         return url
     }
 }
-
