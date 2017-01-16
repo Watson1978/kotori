@@ -3,11 +3,6 @@ import WebKit
 
 class Document: NSDocument, WKNavigationDelegate, WKUIDelegate {
 
-    override init() {
-        super.init()
-        // Add your subclass-specific initialization here.
-    }
-
     override class func autosavesInPlace() -> Bool {
         return false
     }
