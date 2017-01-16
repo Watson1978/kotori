@@ -1,4 +1,5 @@
-VERSION = "0.11"
+VERSION = `/usr/libexec/PlistBuddy -c "Print :CFBundleShortVersionString" kotori/Info.plist`.strip
+
 desc "Release"
 task :release => [:archive, :"update:sparkle"] do
 end
@@ -55,6 +56,7 @@ desc "Update sparkle.xml"
 task :"update:sparkle" do
   require 'erb'
   require 'time'
+
   signature = `./sign_update ./build/kotori_#{VERSION}.dmg dsa_priv.pem`.strip
   title_version = "Version #{VERSION}"
   version = VERSION
@@ -73,6 +75,7 @@ task :"update:sparkle" do
     end
   end
   description = desc.map { |x| x.sub(/^\*\s*/, '') }.map { |x| " " * 12 + "<li>#{x}</li>"}.join("\n")
+
   erb = ERB.new(sparkle_template)
   File.open("sparkle.xml", "w") { |io|
     io.puts erb.result(binding)
