@@ -1,4 +1,7 @@
 VERSION = "0.10"
+desc "Release"
+task :release => [:archive, :"update:sparkle"] do
+end
 
 desc "Generate kotori.dmg to release"
 task :archive do
