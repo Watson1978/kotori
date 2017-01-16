@@ -4,22 +4,18 @@ import WebKit
 class ViewController: NSViewController, WKNavigationDelegate, WKUIDelegate {
     var webView : WKWebView!
 
-    required init?(coder: NSCoder) {
-        super.init(coder: coder)
-
-        webView = WKWebView()
-        webView.autoresizingMask =  NSAutoresizingMaskOptions(arrayLiteral: .viewWidthSizable, .viewHeightSizable)
-        self.view = webView
-    }
-
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        webView = WKWebView()
+        webView.frame = self.view.frame
+        webView.autoresizingMask =  NSAutoresizingMaskOptions(arrayLiteral: .viewWidthSizable, .viewHeightSizable)
+        webView.navigationDelegate = self
+        webView.uiDelegate = self
+        self.view.addSubview(webView)
     }
 
     func load(withRequest request: URLRequest) {
-        webView.navigationDelegate = self
-        webView.uiDelegate = self
         webView.load(request)
     }
     
