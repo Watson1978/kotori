@@ -1,4 +1,4 @@
-VERSION = "0.10"
+VERSION = "0.11"
 desc "Release"
 task :release => [:archive, :"update:sparkle"] do
 end

@@ -4,18 +4,18 @@
     <title>kotori</title>
     <link>https://raw.githubusercontent.com/Watson1978/kotori/master/sparkle.xml</link>
     <description>Most recent changes with links to updates.</description>
-    <language>en</language>
-      <item>
-        <title>Version 0.7.1</title>
-        <description>
-          <![CDATA[
-            <ul>
-              <li>OS X 10.9 でクラッシュしていたのでビルドし直しました。</li>
-            </ul>
-          ]]>
-        </description>
-        <pubDate>Sat, 30 May 2015 11:51:39 +0900</pubDate>
-        <enclosure url="https://github.com/Watson1978/kotori/releases/download/v0.7.1/kotori_0.7.1.dmg" sparkle:version="0.7.1" length="989972" />
-      </item>
+    <item>
+      <title>Version 0.11</title>
+      <description>
+        <![CDATA[
+          <ul>
+            <li>target="_blank" なリンクはブラウザで開くように変更しました。</li>
+            <li>Sparkle.framework を追加し、アプリが自動更新されるようにしました。</li>
+          </ul>
+        ]]>
+      </description>
+      <pubDate>Mon, 16 Jan 2017 12:43:36 +0900</pubDate>
+      <enclosure url="https://github.com/Watson1978/kotori/releases/download/v0.11/kotori_0.11.dmg" sparkle:version="0.11" sparkle:dsaSignature="MC4CFQCDXR2BwbyVG9da3FFc2Xgec033uAIVAKX8C7YHbT/kF+AMcQNZyna0MkB1" />
+    </item>
   </channel>
 </rss>
