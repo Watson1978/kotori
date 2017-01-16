@@ -9,17 +9,22 @@
 /* Begin PBXBuildFile section */
 		A90E64C31E229F30002BD997 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = A90E64C11E229F30002BD997 /* Preferences.xib */; };
 		A90E64C71E22A198002BD997 /* PreferencesWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90E64C61E22A198002BD997 /* PreferencesWindowController.swift */; };
+		A912B5111E2C5569007DB154 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = A912B5101E2C5569007DB154 /* dsa_pub.pem */; };
 		A91F69BC1E230D040036CDCF /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A91F69BB1E230D040036CDCF /* WebKit.framework */; };
 		A9943DE41E22747A00FBA718 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9943DE31E22747A00FBA718 /* AppDelegate.swift */; };
 		A9943DE61E22747A00FBA718 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9943DE51E22747A00FBA718 /* ViewController.swift */; };
 		A9943DE81E22747A00FBA718 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9943DE71E22747A00FBA718 /* Document.swift */; };
 		A9943DEA1E22747A00FBA718 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9943DE91E22747A00FBA718 /* Assets.xcassets */; };
 		A9943DED1E22747A00FBA718 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9943DEB1E22747A00FBA718 /* Main.storyboard */; };
+		CC814E10E7488FF25328B3A1 /* Pods_kotori.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFCEAE5681C4370551247B3A /* Pods_kotori.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B1227ABE27811A6AE9B2F71 /* Pods-kotori.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kotori.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kotori/Pods-kotori.debug.xcconfig"; sourceTree = "<group>"; };
+		7D0060BC96575BF9F89AC2BC /* Pods-kotori.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kotori.release.xcconfig"; path = "Pods/Target Support Files/Pods-kotori/Pods-kotori.release.xcconfig"; sourceTree = "<group>"; };
 		A90E64C21E229F30002BD997 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Preferences.xib; sourceTree = "<group>"; };
 		A90E64C61E22A198002BD997 /* PreferencesWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesWindowController.swift; sourceTree = "<group>"; };
+		A912B5101E2C5569007DB154 /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
 		A91F69BB1E230D040036CDCF /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		A9943DE01E22747A00FBA718 /* kotori.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kotori.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9943DE31E22747A00FBA718 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +33,7 @@
 		A9943DE91E22747A00FBA718 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9943DEC1E22747A00FBA718 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A9943DEE1E22747A00FBA718 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFCEAE5681C4370551247B3A /* Pods_kotori.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kotori.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,16 +42,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				A91F69BC1E230D040036CDCF /* WebKit.framework in Frameworks */,
+				CC814E10E7488FF25328B3A1 /* Pods_kotori.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F8EF836CD745419FF08BD09 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3B1227ABE27811A6AE9B2F71 /* Pods-kotori.debug.xcconfig */,
+				7D0060BC96575BF9F89AC2BC /* Pods-kotori.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A91F69BA1E230D040036CDCF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				A91F69BB1E230D040036CDCF /* WebKit.framework */,
+				CFCEAE5681C4370551247B3A /* Pods_kotori.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -56,6 +73,7 @@
 				A9943DE21E22747A00FBA718 /* kotori */,
 				A9943DE11E22747A00FBA718 /* Products */,
 				A91F69BA1E230D040036CDCF /* Frameworks */,
+				2F8EF836CD745419FF08BD09 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,6 +96,7 @@
 				A9943DEB1E22747A00FBA718 /* Main.storyboard */,
 				A90E64C11E229F30002BD997 /* Preferences.xib */,
 				A9943DEE1E22747A00FBA718 /* Info.plist */,
+				A912B5101E2C5569007DB154 /* dsa_pub.pem */,
 			);
 			path = kotori;
 			sourceTree = "<group>";
@@ -89,9 +108,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A9943DF11E22747A00FBA718 /* Build configuration list for PBXNativeTarget "kotori" */;
 			buildPhases = (
+				2FC91ED73E04B4B71EA5C90B /* [CP] Check Pods Manifest.lock */,
 				A9943DDC1E22747A00FBA718 /* Sources */,
 				A9943DDD1E22747A00FBA718 /* Frameworks */,
 				A9943DDE1E22747A00FBA718 /* Resources */,
+				53E5FFBD7AF50D7350D64C23 /* [CP] Embed Pods Frameworks */,
+				9713F46700C7F30C878959D5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -143,12 +165,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9943DEA1E22747A00FBA718 /* Assets.xcassets in Resources */,
+				A912B5111E2C5569007DB154 /* dsa_pub.pem in Resources */,
 				A90E64C31E229F30002BD997 /* Preferences.xib in Resources */,
 				A9943DED1E22747A00FBA718 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2FC91ED73E04B4B71EA5C90B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		53E5FFBD7AF50D7350D64C23 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kotori/Pods-kotori-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9713F46700C7F30C878959D5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kotori/Pods-kotori-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A9943DDC1E22747A00FBA718 /* Sources */ = {
@@ -276,6 +347,7 @@
 		};
 		A9943DF21E22747A00FBA718 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B1227ABE27811A6AE9B2F71 /* Pods-kotori.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Mac Developer";
@@ -292,6 +364,7 @@
 		};
 		A9943DF31E22747A00FBA718 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D0060BC96575BF9F89AC2BC /* Pods-kotori.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Developer ID Application";
