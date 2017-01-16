@@ -42,7 +42,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         return NSApplicationTerminateReply.terminateCancel
     }
 
-    private func openNewDocument() -> Document! {
+    private func openNewDocument() -> Document {
         return try! NSDocumentController.shared().openUntitledDocumentAndDisplay(false) as! Document
     }
 
@@ -55,34 +55,34 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @available(macOS 10.12, *)
     @IBAction func newDocumentAsTab(sender: Any?) {
         let doc = openNewDocument()
-        doc?.makeWindowControllers()
+        doc.makeWindowControllers()
 
-        doc?.windowControllers.first?.window?.tabbingMode = .preferred
-        doc?.showWindows()
+        doc.windowControllers.first?.window?.tabbingMode = .preferred
+        doc.showWindows()
     }
 
     @IBAction func showNewPost(sender: Any?) {
         let doc = openNewDocument()
-        doc?.makeWindowControllers(withPageName: "posts/new")
-        doc?.showWindows()
+        doc.makeWindowControllers(withPageName: "posts/new")
+        doc.showWindows()
     }
 
     @IBAction func showHome(sender: Any?) {
         let doc = openNewDocument()
-        doc?.makeWindowControllers(withPageName: "")
-        doc?.showWindows()
+        doc.makeWindowControllers(withPageName: "")
+        doc.showWindows()
     }
 
     @IBAction func showPosts(sender: Any?) {
         let doc = openNewDocument()
-        doc?.makeWindowControllers(withPageName: "posts")
-        doc?.showWindows()
+        doc.makeWindowControllers(withPageName: "posts")
+        doc.showWindows()
     }
 
     @IBAction func showTeam(sender: Any?) {
         let doc = openNewDocument()
-        doc?.makeWindowControllers(withPageName: "team")
-        doc?.showWindows()
+        doc.makeWindowControllers(withPageName: "team")
+        doc.showWindows()
     }
 
     @IBAction func showMarkdownHelp(sender : AnyObject) {
