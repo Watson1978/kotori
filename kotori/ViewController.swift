@@ -9,7 +9,7 @@ class ViewController: NSViewController, WKNavigationDelegate, WKUIDelegate {
         // Do any additional setup after loading the view.
         webView = WKWebView()
         webView.frame = self.view.frame
-        webView.autoresizingMask =  NSAutoresizingMaskOptions(arrayLiteral: .viewWidthSizable, .viewHeightSizable)
+        webView.autoresizingMask = NSAutoresizingMaskOptions(arrayLiteral: .viewWidthSizable, .viewHeightSizable)
         webView.navigationDelegate = self
         webView.uiDelegate = self
         self.view.addSubview(webView)
