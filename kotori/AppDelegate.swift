@@ -4,9 +4,7 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        if #available(macOS 10.12, *) {
-        }
-        else {
+        guard #available(macOS 10.12, *) else {
             // "New Tab" menu is not available with OS X 10.11 or below
             let mainMenu = NSApp.mainMenu
             let fileMenu = mainMenu!.item(at:1)!.submenu!
@@ -16,6 +14,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                     break
                 }
             }
+            return
         }
     }
 
