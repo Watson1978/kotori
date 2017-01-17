@@ -30,7 +30,7 @@
                                         <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
                                         <menuItem title="Preferences…" keyEquivalent="," id="BOF-NM-1cW">
                                             <connections>
-                                                <action selector="showPreferencesWindowWithSender:" target="Voe-Tx-rLC" id="Qne-19-bzw"/>
+                                                <action selector="showPreferencesWindow:" target="Voe-Tx-rLC" id="b5R-CB-ZBL"/>
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="wFC-TO-SCJ"/>
@@ -76,7 +76,7 @@
                                         </menuItem>
                                         <menuItem title="New Tab" keyEquivalent="t" id="jny-wr-PEB">
                                             <connections>
-                                                <action selector="newDocumentAsTabWithSender:" target="Voe-Tx-rLC" id="Kj1-wL-rw6"/>
+                                                <action selector="newDocumentAsTab:" target="Voe-Tx-rLC" id="rZH-ta-wjm"/>
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="m54-Is-iLE"/>
@@ -321,25 +321,25 @@
                                         <menuItem title="New Post" keyEquivalent="N" id="aiY-aR-lEI">
                                             <modifierMask key="keyEquivalentModifierMask" shift="YES" command="YES"/>
                                             <connections>
-                                                <action selector="showNewPostWithSender:" target="Voe-Tx-rLC" id="xgC-Qb-Vuy"/>
+                                                <action selector="showNewPost:" target="Voe-Tx-rLC" id="ASA-Xu-Xle"/>
                                             </connections>
                                         </menuItem>
                                         <menuItem title="Home" keyEquivalent="H" id="cfe-Qr-WYx">
                                             <modifierMask key="keyEquivalentModifierMask" shift="YES" command="YES"/>
                                             <connections>
-                                                <action selector="showHomeWithSender:" target="Voe-Tx-rLC" id="Vyk-Zu-lrx"/>
+                                                <action selector="showHome:" target="Voe-Tx-rLC" id="dlD-o2-wZy"/>
                                             </connections>
                                         </menuItem>
                                         <menuItem title="Posts" keyEquivalent="P" id="Ppl-Ck-GTB">
                                             <modifierMask key="keyEquivalentModifierMask" shift="YES" command="YES"/>
                                             <connections>
-                                                <action selector="showPostsWithSender:" target="Voe-Tx-rLC" id="ACw-25-F2D"/>
+                                                <action selector="showPosts:" target="Voe-Tx-rLC" id="kYr-4y-P9X"/>
                                             </connections>
                                         </menuItem>
                                         <menuItem title="Team" keyEquivalent="T" id="KkM-yD-A4K">
                                             <modifierMask key="keyEquivalentModifierMask" shift="YES" command="YES"/>
                                             <connections>
-                                                <action selector="showTeamWithSender:" target="Voe-Tx-rLC" id="QvX-IB-0gL"/>
+                                                <action selector="showTeam:" target="Voe-Tx-rLC" id="w3d-m5-Md4"/>
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="CRE-d1-0u3"/>
@@ -409,7 +409,7 @@
                                         <menuItem title="Markdown Help" id="1tE-HQ-eqN" userLabel="Markdown Help">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
-                                                <action selector="showMarkdownHelpWithSender:" target="Voe-Tx-rLC" id="Flk-el-XtV"/>
+                                                <action selector="showMarkdownHelp:" target="Voe-Tx-rLC" id="yKf-R8-8Ku"/>
                                             </connections>
                                         </menuItem>
                                     </items>
