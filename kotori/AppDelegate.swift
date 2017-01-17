@@ -4,7 +4,6 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        // Insert code here to initialize your application
         if #available(macOS 10.12, *) {
         }
         else {
@@ -21,7 +20,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
-        // Insert code here to tear down your application
     }
 
     // MARK: Delegate - Sent to notify the delegate that the application is about to terminate.

@@ -24,13 +24,11 @@ class Document: NSDocument, WKNavigationDelegate, WKUIDelegate {
     }
 
     override func makeWindowControllers() {
-        // Returns the Storyboard that contains your Document window.
         let url = getStartPage()
         makeWindowControllers(withURLString: url)
     }
 
     func makeWindowControllers(withPageName page: String) {
-        // Returns the Storyboard that contains your Document window.
         let url = getStartPage() + page
         makeWindowControllers(withURLString: url)
     }
