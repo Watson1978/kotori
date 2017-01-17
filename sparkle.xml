@@ -13,8 +13,8 @@
           </ul>
         ]]>
       </description>
-      <pubDate>Tue, 17 Jan 2017 13:05:25 +0900</pubDate>
-      <enclosure url="https://github.com/Watson1978/kotori/releases/download/v0.12/kotori_0.12.dmg" sparkle:version="0.12" sparkle:dsaSignature="MC0CFQDSnv4sEXVrwqX5oqQBROMAJiXtLgIUTzuXvPQkKohXN3J1XifXnduT4Vg=" />
+      <pubDate>Tue, 17 Jan 2017 13:25:57 +0900</pubDate>
+      <enclosure url="https://github.com/Watson1978/kotori/releases/download/v0.12/kotori_0.12.dmg" sparkle:version="0.12" type="application/octet-stream" length="2905736" sparkle:dsaSignature="MC0CFFuUR64rwCH2MXhKxeCv/80yvB1uAhUA54CQSPYF0xxXEAkKeIfyDbv34GQ=" />
     </item>
   </channel>
 </rss>

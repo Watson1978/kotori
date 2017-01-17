@@ -46,7 +46,7 @@ sparkle_template =<<END
         ]]>
       </description>
       <pubDate><%= date %></pubDate>
-      <enclosure url="https://github.com/Watson1978/kotori/releases/download/v<%= version %>/kotori_<%= version %>.dmg" sparkle:version="<%= version %>" sparkle:dsaSignature="<%= signature %>" />
+      <enclosure url="https://github.com/Watson1978/kotori/releases/download/v<%= version %>/kotori_<%= version %>.dmg" sparkle:version="<%= version %>" type="application/octet-stream" length="<%= length %>" sparkle:dsaSignature="<%= signature %>" />
     </item>
   </channel>
 </rss>
@@ -61,6 +61,7 @@ task :"update:sparkle" do
   title_version = "Version #{VERSION}"
   version = VERSION
   date = Time.now.rfc2822.to_s
+  length = File.size("./build/kotori_#{VERSION}.dmg")
 
   desc = []
   data = File.read("CHANGES.md")
