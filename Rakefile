@@ -36,6 +36,7 @@ sparkle_template =<<END
     <title>kotori</title>
     <link>https://raw.githubusercontent.com/Watson1978/kotori/master/sparkle.xml</link>
     <description>Most recent changes with links to updates.</description>
+    <language>en</language>
     <item>
       <title><%= title_version %></title>
       <description>
