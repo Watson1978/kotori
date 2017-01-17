@@ -6,16 +6,16 @@
     <description>Most recent changes with links to updates.</description>
     <language>en</language>
     <item>
-      <title>Version 0.12</title>
+      <title>Version 0.12.1</title>
       <description>
         <![CDATA[
           <ul>
-            <li>テキストを拡大・縮小するためのメニューを追加しました。</li>
+            <li>自動更新機能が動作していなかったのを修正しました。</li>
           </ul>
         ]]>
       </description>
-      <pubDate>Tue, 17 Jan 2017 13:25:57 +0900</pubDate>
-      <enclosure url="https://github.com/Watson1978/kotori/releases/download/v0.12/kotori_0.12.dmg" sparkle:version="0.12" type="application/octet-stream" length="2905736" sparkle:dsaSignature="MC0CFFuUR64rwCH2MXhKxeCv/80yvB1uAhUA54CQSPYF0xxXEAkKeIfyDbv34GQ=" />
+      <pubDate>Tue, 17 Jan 2017 15:43:38 +0900</pubDate>
+      <enclosure url="https://github.com/Watson1978/kotori/releases/download/v0.12.1/kotori_0.12.1.dmg" sparkle:version="0.12.1" type="application/octet-stream" length="2905969" sparkle:dsaSignature="MC0CFDiRFELKMvLMmfY9SCOjwbXfZqfHAhUAj4OwUkG/tcZPmXRA82hlypC0nyY=" />
     </item>
   </channel>
 </rss>
