@@ -19,9 +19,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
     }
 
-    func applicationWillTerminate(_ aNotification: Notification) {
-    }
-
     // MARK: Delegate - Sent to notify the delegate that the application is about to terminate.
     func applicationShouldTerminate(_ sender: NSApplication) -> NSApplicationTerminateReply {
         let confirm_terminate = UserDefaults.standard.bool(forKey: "confirmQuitting")
