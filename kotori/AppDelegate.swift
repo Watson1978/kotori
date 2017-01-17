@@ -47,13 +47,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     // MARK: Actions
-    @IBAction func showPreferencesWindow(sender: Any?) {
+    @IBAction func showPreferencesWindow(sender: Any) {
         let preferences = PreferencesWindowController.sharedInstance
         preferences.showWindow(sender)
     }
 
     @available(macOS 10.12, *)
-    @IBAction func newDocumentAsTab(sender: Any?) {
+    @IBAction func newDocumentAsTab(sender: Any) {
         let doc = openNewDocument()
         doc.makeWindowControllers()
 
@@ -61,31 +61,31 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         doc.showWindows()
     }
 
-    @IBAction func showNewPost(sender: Any?) {
+    @IBAction func showNewPost(sender: Any) {
         let doc = openNewDocument()
         doc.makeWindowControllers(withPageName: "posts/new")
         doc.showWindows()
     }
 
-    @IBAction func showHome(sender: Any?) {
+    @IBAction func showHome(sender: Any) {
         let doc = openNewDocument()
         doc.makeWindowControllers(withPageName: "")
         doc.showWindows()
     }
 
-    @IBAction func showPosts(sender: Any?) {
+    @IBAction func showPosts(sender: Any) {
         let doc = openNewDocument()
         doc.makeWindowControllers(withPageName: "posts")
         doc.showWindows()
     }
 
-    @IBAction func showTeam(sender: Any?) {
+    @IBAction func showTeam(sender: Any) {
         let doc = openNewDocument()
         doc.makeWindowControllers(withPageName: "team")
         doc.showWindows()
     }
 
-    @IBAction func showMarkdownHelp(sender : AnyObject) {
+    @IBAction func showMarkdownHelp(sender : Any) {
         let url = URL(string: "https://docs.esa.io/posts/49")!
         NSWorkspace.shared().open(url)
     }
