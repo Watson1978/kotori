@@ -91,14 +91,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     @IBAction func resetZoom(_ sender: Any) {
-        let viewController : ViewController = NSApp.mainWindow?.windowController?.contentViewController as! ViewController
+        let viewController: ViewController = NSApp.mainWindow?.windowController?.contentViewController as! ViewController
         let webView = viewController.webView
         UserDefaults.standard.set(1.0, forKey: "textZoomFactor")
         webView!.setTextZoomFactor(1.0)
     }
 
     @IBAction func zoomIn(_ sender: Any) {
-        let viewController : ViewController = NSApp.mainWindow?.windowController?.contentViewController as! ViewController
+        let viewController: ViewController = NSApp.mainWindow?.windowController?.contentViewController as! ViewController
         let webView = viewController.webView
         let factor = webView!.textZoomFactor() + 0.05
         UserDefaults.standard.set(factor, forKey: "textZoomFactor")
@@ -106,7 +106,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     @IBAction func zoomOut(_ sender: Any) {
-        let viewController : ViewController = NSApp.mainWindow?.windowController?.contentViewController as! ViewController
+        let viewController: ViewController = NSApp.mainWindow?.windowController?.contentViewController as! ViewController
         let webView = viewController.webView
         let factor = webView!.textZoomFactor() - 0.05
         UserDefaults.standard.set(factor, forKey: "textZoomFactor")

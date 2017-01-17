@@ -8,7 +8,7 @@ class Document: NSDocument, WKNavigationDelegate, WKUIDelegate {
     }
 
     override var isDocumentEdited: Bool {
-        get { return false }
+        return false
     }
 
     func makeWindowControllersOnly() {
@@ -19,7 +19,7 @@ class Document: NSDocument, WKNavigationDelegate, WKUIDelegate {
 
     func makeWindowControllers(withURLString url: String) {
         makeWindowControllersOnly()
-        let viewController : ViewController = self.windowControllers.first!.contentViewController as! ViewController
+        let viewController: ViewController = self.windowControllers.first!.contentViewController as! ViewController
         viewController.load(withURLString: url)
     }
 
