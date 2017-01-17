@@ -5,17 +5,16 @@
     <link>https://raw.githubusercontent.com/Watson1978/kotori/master/sparkle.xml</link>
     <description>Most recent changes with links to updates.</description>
     <item>
-      <title>Version 0.11</title>
+      <title>Version 0.12</title>
       <description>
         <![CDATA[
           <ul>
-            <li>target="_blank" なリンクはブラウザで開くように変更しました。</li>
-            <li>Sparkle.framework を追加し、アプリが自動更新されるようにしました。</li>
+            <li>テキストを拡大・縮小するためのメニューを追加しました。</li>
           </ul>
         ]]>
       </description>
-      <pubDate>Mon, 16 Jan 2017 12:43:36 +0900</pubDate>
-      <enclosure url="https://github.com/Watson1978/kotori/releases/download/v0.11/kotori_0.11.dmg" sparkle:version="0.11" sparkle:dsaSignature="MC4CFQCDXR2BwbyVG9da3FFc2Xgec033uAIVAKX8C7YHbT/kF+AMcQNZyna0MkB1" />
+      <pubDate>Tue, 17 Jan 2017 13:05:25 +0900</pubDate>
+      <enclosure url="https://github.com/Watson1978/kotori/releases/download/v0.12/kotori_0.12.dmg" sparkle:version="0.12" sparkle:dsaSignature="MC0CFQDSnv4sEXVrwqX5oqQBROMAJiXtLgIUTzuXvPQkKohXN3J1XifXnduT4Vg=" />
     </item>
   </channel>
 </rss>
