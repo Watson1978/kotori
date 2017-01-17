@@ -12,6 +12,13 @@ class ViewController: NSViewController, WKNavigationDelegate, WKUIDelegate {
         webView.autoresizingMask = NSAutoresizingMaskOptions(arrayLiteral: .viewWidthSizable, .viewHeightSizable)
         webView.navigationDelegate = self
         webView.uiDelegate = self
+
+        var factor = UserDefaults.standard.double(forKey: "textZoomFactor")
+        if factor == 0.0 {
+            // If cannot retrieve value of textZoomFactor, use 1.0 as default value.
+            factor = 1.0
+        }
+        webView.setTextZoomFactor(factor)
         self.view.addSubview(webView)
     }
 

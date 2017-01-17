@@ -342,6 +342,22 @@
                                                 <action selector="showTeamWithSender:" target="Voe-Tx-rLC" id="QvX-IB-0gL"/>
                                             </connections>
                                         </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="CRE-d1-0u3"/>
+                                        <menuItem title="Reset Zoom" keyEquivalent="0" id="Aaz-Vg-Y79">
+                                            <connections>
+                                                <action selector="resetZoom:" target="Voe-Tx-rLC" id="jJo-vd-qub"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Zoom In" keyEquivalent="+" id="WfA-aC-0Ed">
+                                            <connections>
+                                                <action selector="zoomIn:" target="Voe-Tx-rLC" id="J5A-TO-iqk"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Zoom Out" keyEquivalent="-" id="bMg-h3-ukn">
+                                            <connections>
+                                                <action selector="zoomOut:" target="Voe-Tx-rLC" id="heK-jq-ZXw"/>
+                                            </connections>
+                                        </menuItem>
                                     </items>
                                 </menu>
                             </menuItem>

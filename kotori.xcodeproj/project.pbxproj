@@ -16,6 +16,7 @@
 		A9943DE81E22747A00FBA718 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9943DE71E22747A00FBA718 /* Document.swift */; };
 		A9943DEA1E22747A00FBA718 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9943DE91E22747A00FBA718 /* Assets.xcassets */; };
 		A9943DED1E22747A00FBA718 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9943DEB1E22747A00FBA718 /* Main.storyboard */; };
+		A9EAF6491E2DB07E00D34B47 /* WKWebView+TextZoom.m in Sources */ = {isa = PBXBuildFile; fileRef = A9EAF6481E2DB07E00D34B47 /* WKWebView+TextZoom.m */; };
 		CC814E10E7488FF25328B3A1 /* Pods_kotori.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFCEAE5681C4370551247B3A /* Pods_kotori.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,9 @@
 		A9943DE91E22747A00FBA718 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9943DEC1E22747A00FBA718 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A9943DEE1E22747A00FBA718 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9EAF6461E2DB07E00D34B47 /* kotori-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "kotori-Bridging-Header.h"; sourceTree = "<group>"; };
+		A9EAF6471E2DB07E00D34B47 /* WKWebView+TextZoom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WKWebView+TextZoom.h"; sourceTree = "<group>"; };
+		A9EAF6481E2DB07E00D34B47 /* WKWebView+TextZoom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WKWebView+TextZoom.m"; sourceTree = "<group>"; };
 		CFCEAE5681C4370551247B3A /* Pods_kotori.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kotori.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -92,6 +96,9 @@
 				A9943DE51E22747A00FBA718 /* ViewController.swift */,
 				A90E64C61E22A198002BD997 /* PreferencesWindowController.swift */,
 				A9943DE71E22747A00FBA718 /* Document.swift */,
+				A9EAF6461E2DB07E00D34B47 /* kotori-Bridging-Header.h */,
+				A9EAF6471E2DB07E00D34B47 /* WKWebView+TextZoom.h */,
+				A9EAF6481E2DB07E00D34B47 /* WKWebView+TextZoom.m */,
 				A9943DE91E22747A00FBA718 /* Assets.xcassets */,
 				A9943DEB1E22747A00FBA718 /* Main.storyboard */,
 				A90E64C11E229F30002BD997 /* Preferences.xib */,
@@ -137,6 +144,7 @@
 					A9943DDF1E22747A00FBA718 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = KQ572MNR73;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Manual;
 					};
 				};
@@ -228,6 +236,7 @@
 			files = (
 				A9943DE61E22747A00FBA718 /* ViewController.swift in Sources */,
 				A90E64C71E22A198002BD997 /* PreferencesWindowController.swift in Sources */,
+				A9EAF6491E2DB07E00D34B47 /* WKWebView+TextZoom.m in Sources */,
 				A9943DE41E22747A00FBA718 /* AppDelegate.swift in Sources */,
 				A9943DE81E22747A00FBA718 /* Document.swift in Sources */,
 			);
@@ -350,6 +359,7 @@
 			baseConfigurationReference = 3B1227ABE27811A6AE9B2F71 /* Pods-kotori.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = KQ572MNR73;
@@ -358,6 +368,8 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.cat-soft.kotori";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "kotori/kotori-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -367,6 +379,7 @@
 			baseConfigurationReference = 7D0060BC96575BF9F89AC2BC /* Pods-kotori.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = KQ572MNR73;
@@ -375,6 +388,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.cat-soft.kotori";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "kotori/kotori-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
