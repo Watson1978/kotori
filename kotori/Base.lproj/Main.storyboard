@@ -343,6 +343,17 @@
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="CRE-d1-0u3"/>
+                                        <menuItem title="Go Back" keyEquivalent="[" id="1Ky-o4-bcw">
+                                            <connections>
+                                                <action selector="goBack:" target="Ady-hI-5gd" id="Tss-0E-YMm"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Go Forward" keyEquivalent="]" id="K3J-Gc-jaP">
+                                            <connections>
+                                                <action selector="goForward:" target="Ady-hI-5gd" id="j7Z-OU-x6F"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="E74-aG-nPr"/>
                                         <menuItem title="Reset Zoom" keyEquivalent="0" id="Aaz-Vg-Y79">
                                             <connections>
                                                 <action selector="resetZoom:" target="Voe-Tx-rLC" id="jJo-vd-qub"/>
