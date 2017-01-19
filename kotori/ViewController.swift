@@ -4,6 +4,10 @@ import WebKit
 class ViewController: NSViewController, WKNavigationDelegate, WKUIDelegate {
     var webView: WKWebView!
 
+    deinit {
+        webView.removeObserver(self, forKeyPath: "title", context: nil)
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
