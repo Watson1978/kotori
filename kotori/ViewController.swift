@@ -12,6 +12,7 @@ class ViewController: NSViewController, WKNavigationDelegate, WKUIDelegate {
         webView.autoresizingMask = NSAutoresizingMaskOptions(arrayLiteral: .viewWidthSizable, .viewHeightSizable)
         webView.navigationDelegate = self
         webView.uiDelegate = self
+        webView.addObserver(self, forKeyPath:"title", options:NSKeyValueObservingOptions.new, context:nil)
 
         var factor = UserDefaults.standard.double(forKey: "textZoomFactor")
         if factor == 0.0 {
@@ -31,11 +32,13 @@ class ViewController: NSViewController, WKNavigationDelegate, WKUIDelegate {
         load(withRequest: request)
     }
 
-    // MARK: Delegate - Called when the page title of a frame loads or changes.
-    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        self.view.window!.title = webView.title ?? ""
+    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey: Any]?, context: UnsafeMutableRawPointer?) {
+        if keyPath == "title" {
+            self.view.window!.title = webView.title ?? ""
+        }
     }
 
+    // MARK: Delegate - Called when the page title of a frame loads or changes.
     func webView(_ webView: WKWebView, createWebViewWith configuration: WKWebViewConfiguration, for navigationAction: WKNavigationAction, windowFeatures: WKWindowFeatures) -> WKWebView? {
         NSWorkspace.shared().open(navigationAction.request.url!)
         return nil
