@@ -6,17 +6,16 @@
     <description>Most recent changes with links to updates.</description>
     <language>en</language>
     <item>
-      <title>Version 0.13</title>
+      <title>Version 0.13.1</title>
       <description>
         <![CDATA[
           <ul>
-            <li>記事を「戻る」「進む」ためのメニューを追加しました。</li>
-            <li>`command` キーを押してリンクをクリックすると、OS X 10.12 では新しいタブでページが表示されます。古い OS X ではタブの代わりに新しいウィンドウで表示されます。</li>
+            <li>「戻る」「進む」メニューで、ショートカットキーを用いると意図せず新しいウィンドウが生成されていたのを修正しました。</li>
           </ul>
         ]]>
       </description>
-      <pubDate>Fri, 20 Jan 2017 10:12:21 +0900</pubDate>
-      <enclosure url="https://github.com/Watson1978/kotori/releases/download/v0.13/kotori_0.13.dmg" sparkle:version="0.13" type="application/octet-stream" length="2910405" sparkle:dsaSignature="MCwCFEDE6Zuot0HXEpxF4WssSzEB0q9+AhRptSearEHOHutjA41+JKA4ZIF4jA==" />
+      <pubDate>Fri, 20 Jan 2017 11:15:27 +0900</pubDate>
+      <enclosure url="https://github.com/Watson1978/kotori/releases/download/v0.13.1/kotori_0.13.1.dmg" sparkle:version="0.13.1" type="application/octet-stream" length="2910008" sparkle:dsaSignature="MC0CFQCzbEU5tmMxaqvcRg+SLl7ZGPhWWQIUB30u1KzBkX2ycJm4eJyiTVSyua4=" />
     </item>
   </channel>
 </rss>
