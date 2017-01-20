@@ -3,7 +3,6 @@ import WebKit
 
 class ViewController: NSViewController, WKNavigationDelegate, WKUIDelegate {
     var webView: WKWebView!
-    var isLoadedStartPage: Bool = false
 
     deinit {
         webView.removeObserver(self, forKeyPath: "title", context: nil)
@@ -47,7 +46,8 @@ class ViewController: NSViewController, WKNavigationDelegate, WKUIDelegate {
     func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
         if let event = NSApp.currentEvent {
             let commandKey: Bool = Int(event.modifierFlags.rawValue & NSCommandKeyMask.rawValue) != 0
-            if commandKey && isLoadedStartPage {
+            let mouseUp : Bool = event.type == NSLeftMouseUp
+            if commandKey && mouseUp {
                 // Open new window or tab with command key + click
                 let doc = try! NSDocumentController.shared().openUntitledDocumentAndDisplay(false) as! Document
                 doc.makeWindowControllersOnly()
@@ -59,17 +59,13 @@ class ViewController: NSViewController, WKNavigationDelegate, WKUIDelegate {
                 let viewController: ViewController = doc.windowControllers.first!.contentViewController as! ViewController
                 viewController.load(withRequest: navigationAction.request)
 
-                // Cancel the loading webview current window
+                // Cancel the loading webview in current window
                 decisionHandler(.cancel)
                 return
             }
         }
 
         decisionHandler(.allow)
-    }
-
-    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        isLoadedStartPage = true
     }
 
     func webView(_ webView: WKWebView, createWebViewWith configuration: WKWebViewConfiguration, for navigationAction: WKNavigationAction, windowFeatures: WKWindowFeatures) -> WKWebView? {
