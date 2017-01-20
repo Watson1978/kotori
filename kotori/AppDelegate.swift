@@ -7,7 +7,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         guard #available(macOS 10.12, *) else {
             // "New Tab" menu is not available with OS X 10.11 or below
             let mainMenu = NSApp.mainMenu
-            let fileMenu = mainMenu!.item(at:1)!.submenu!
+            let fileMenu = mainMenu!.item(at: 1)!.submenu!
             for menu in fileMenu.items {
                 if menu.title == "New Tab" {
                     fileMenu.removeItem(menu)
@@ -79,7 +79,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         doc.showWindows()
     }
 
-    @IBAction func showMarkdownHelp(_ sender : Any) {
+    @IBAction func showMarkdownHelp(_ sender: Any) {
         let url = URL(string: "https://docs.esa.io/posts/49")!
         NSWorkspace.shared().open(url)
     }

@@ -46,7 +46,7 @@ class ViewController: NSViewController, WKNavigationDelegate, WKUIDelegate {
     func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
         if let event = NSApp.currentEvent {
             let commandKey: Bool = Int(event.modifierFlags.rawValue & NSCommandKeyMask.rawValue) != 0
-            let mouseUp : Bool = event.type == NSLeftMouseUp
+            let mouseUp: Bool = event.type == NSLeftMouseUp
             if commandKey && mouseUp {
                 // Open new window or tab with command key + click
                 let doc = try! NSDocumentController.shared().openUntitledDocumentAndDisplay(false) as! Document
