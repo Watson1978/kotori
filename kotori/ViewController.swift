@@ -14,6 +14,7 @@ class ViewController: NSViewController, WKNavigationDelegate, WKUIDelegate {
         webView = WKWebView()
         webView.frame = self.view.frame
         webView.autoresizingMask = NSAutoresizingMaskOptions(arrayLiteral: .viewWidthSizable, .viewHeightSizable)
+        webView.allowsBackForwardNavigationGestures = true
         webView.navigationDelegate = self
         webView.uiDelegate = self
         webView.addObserver(self, forKeyPath: "title", options: NSKeyValueObservingOptions.new, context: nil)
