@@ -6,16 +6,17 @@
     <description>Most recent changes with links to updates.</description>
     <language>en</language>
     <item>
-      <title>Version 0.13.2</title>
+      <title>Version 0.14</title>
       <description>
         <![CDATA[
           <ul>
-            <li>リンクを新しいタブで開く際に、"http://" から始まる URL を開けなかったのを修正しました。</li>
+            <li>トラックパッドをスワイプすると、ページを「戻る」「進む」ができるようになりました。</li>
+            <li>拡大・縮小でクラッシュする不具合を修正しました。</li>
           </ul>
         ]]>
       </description>
-      <pubDate>Fri, 20 Jan 2017 11:59:06 +0900</pubDate>
-      <enclosure url="https://github.com/Watson1978/kotori/releases/download/v0.13.2/kotori_0.13.2.dmg" sparkle:version="0.13.2" type="application/octet-stream" length="2911099" sparkle:dsaSignature="MC4CFQCZM1t4gVv3Gq8OltAuMiK+sjfybAIVAOUc5lma+dI+sylY8Ce/JlZEKowI" />
+      <pubDate>Tue, 24 Jan 2017 09:38:07 +0900</pubDate>
+      <enclosure url="https://github.com/Watson1978/kotori/releases/download/v0.14/kotori_0.14.dmg" sparkle:version="0.14" type="application/octet-stream" length="2910203" sparkle:dsaSignature="MC0CFFiy3HV88SKyiezLHI5VWhD2eP3UAhUA6Z3UU9DqJwbnY04rDsJtGKE7wbQ=" />
     </item>
   </channel>
 </rss>
