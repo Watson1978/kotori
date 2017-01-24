@@ -54,7 +54,7 @@ class ViewController: NSViewController, WKNavigationDelegate, WKUIDelegate {
                 doc.makeWindowControllersOnly()
 
                 if #available(macOS 10.12, *) {
-                    doc.windowControllers.first?.window?.tabbingMode = .preferred
+                    doc.windowControllers.first!.window!.tabbingMode = .preferred
                 }
                 doc.showWindows()
                 let viewController: ViewController = doc.windowControllers.first!.contentViewController as! ViewController
