@@ -119,7 +119,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func handleGetURLEvent(_ event: NSAppleEventDescriptor, replyEvent: NSAppleEventDescriptor) {
         let doc = try! NSDocumentController.shared().openUntitledDocumentAndDisplay(false) as! Document
         doc.makeWindowControllersOnly()
-        
+
         if #available(macOS 10.12, *) {
             doc.windowControllers.first!.window!.tabbingMode = .preferred
         }
