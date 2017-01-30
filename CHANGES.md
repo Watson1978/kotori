@@ -1,3 +1,7 @@
+## Version 0.15
+
+* コマンドラインから URL を開けるようになりました。(例 : open -a "kotori.app" https://docs.esa.io/posts/18)
+
 ## Version 0.14
 
 * トラックパッドをスワイプすると、ページを「戻る」「進む」ができるようになりました。
