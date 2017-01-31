@@ -117,16 +117,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     func handleGetURLEvent(_ event: NSAppleEventDescriptor, replyEvent: NSAppleEventDescriptor) {
-        let doc = try! NSDocumentController.shared().openUntitledDocumentAndDisplay(false) as! Document
-        doc.makeWindowControllersOnly()
+        let url_string = event.paramDescriptor(forKeyword: AEKeyword(keyDirectObject))!.stringValue!
 
+        let doc = openNewDocument()
+        doc.makeWindowControllers(withURLString: url_string)
         if #available(macOS 10.12, *) {
             doc.windowControllers.first!.window!.tabbingMode = .preferred
         }
         doc.showWindows()
-        let viewController: ViewController = doc.windowControllers.first!.contentViewController as! ViewController
-        let url_string = event.paramDescriptor(forKeyword: AEKeyword(keyDirectObject))!.stringValue!
-
-        viewController.load(withURLString: url_string)
     }
 }
