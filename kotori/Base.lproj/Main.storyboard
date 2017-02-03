@@ -372,6 +372,10 @@
                                     </items>
                                 </menu>
                             </menuItem>
+                            <menuItem title="Snippet" id="lik-pv-jT8">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Snippet" id="tPP-Li-q4K"/>
+                            </menuItem>
                             <menuItem title="Window" id="aUF-d1-5bR">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="Window" systemMenu="window" id="Td7-aD-5lo">

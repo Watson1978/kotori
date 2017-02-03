@@ -3,7 +3,11 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
+    var snippet: Snippet!
+
     func applicationDidFinishLaunching(_ aNotification: Notification) {
+        snippet = Snippet()
+
         let appleEventManager = NSAppleEventManager.shared()
         appleEventManager.setEventHandler(self, andSelector: #selector(AppDelegate.handleGetURLEvent(_:replyEvent:)), forEventClass: AEEventClass(kInternetEventClass), andEventID: AEEventID(kAEGetURL))
 
@@ -125,5 +129,16 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             doc.windowControllers.first!.window!.tabbingMode = .preferred
         }
         doc.showWindows()
+    }
+
+    func selectSnippet(_ sender: AnyObject) {
+        let menu_item: NSMenuItem? = sender as? NSMenuItem
+        guard let index = menu_item?.menu?.index(of: menu_item!) else {
+            return
+        }
+        if let mainWindow = NSApp.mainWindow {
+            let viewController: ViewController = mainWindow.windowController!.contentViewController as! ViewController
+            viewController.insertTextToTextarea(snippet.getText(at: index))
+        }
     }
 }

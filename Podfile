@@ -3,4 +3,5 @@ use_frameworks!
 
 target 'kotori' do
 	pod 'Sparkle'
+    pod 'Yaml'
 end

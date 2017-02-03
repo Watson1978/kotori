@@ -1,3 +1,7 @@
+## Version 0.16
+
+* Markdown を簡単に入力できるように "Snippet" メニューを追加しました。
+
 ## Version 0.15
 
 * コマンドラインから URL を開けるようになりました。(例 : open -a "kotori.app" https://docs.esa.io/posts/18)

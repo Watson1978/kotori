@@ -11,6 +11,8 @@
 		A90E64C71E22A198002BD997 /* PreferencesWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90E64C61E22A198002BD997 /* PreferencesWindowController.swift */; };
 		A912B5111E2C5569007DB154 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = A912B5101E2C5569007DB154 /* dsa_pub.pem */; };
 		A91F69BC1E230D040036CDCF /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A91F69BB1E230D040036CDCF /* WebKit.framework */; };
+		A991AFDB1E324D3200DEAF5B /* snippet.yml in Resources */ = {isa = PBXBuildFile; fileRef = A991AFDA1E324D3200DEAF5B /* snippet.yml */; };
+		A991AFDD1E324FF400DEAF5B /* Snippet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A991AFDC1E324FF400DEAF5B /* Snippet.swift */; };
 		A9943DE41E22747A00FBA718 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9943DE31E22747A00FBA718 /* AppDelegate.swift */; };
 		A9943DE61E22747A00FBA718 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9943DE51E22747A00FBA718 /* ViewController.swift */; };
 		A9943DE81E22747A00FBA718 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9943DE71E22747A00FBA718 /* Document.swift */; };
@@ -27,6 +29,8 @@
 		A90E64C61E22A198002BD997 /* PreferencesWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesWindowController.swift; sourceTree = "<group>"; };
 		A912B5101E2C5569007DB154 /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
 		A91F69BB1E230D040036CDCF /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		A991AFDA1E324D3200DEAF5B /* snippet.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = snippet.yml; sourceTree = "<group>"; };
+		A991AFDC1E324FF400DEAF5B /* Snippet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Snippet.swift; sourceTree = "<group>"; };
 		A9943DE01E22747A00FBA718 /* kotori.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kotori.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9943DE31E22747A00FBA718 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9943DE51E22747A00FBA718 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -96,12 +100,14 @@
 				A9943DE51E22747A00FBA718 /* ViewController.swift */,
 				A90E64C61E22A198002BD997 /* PreferencesWindowController.swift */,
 				A9943DE71E22747A00FBA718 /* Document.swift */,
+				A991AFDC1E324FF400DEAF5B /* Snippet.swift */,
 				A9EAF6461E2DB07E00D34B47 /* kotori-Bridging-Header.h */,
 				A9EAF6471E2DB07E00D34B47 /* WKWebView+TextZoom.h */,
 				A9EAF6481E2DB07E00D34B47 /* WKWebView+TextZoom.m */,
 				A9943DE91E22747A00FBA718 /* Assets.xcassets */,
 				A9943DEB1E22747A00FBA718 /* Main.storyboard */,
 				A90E64C11E229F30002BD997 /* Preferences.xib */,
+				A991AFDA1E324D3200DEAF5B /* snippet.yml */,
 				A9943DEE1E22747A00FBA718 /* Info.plist */,
 				A912B5101E2C5569007DB154 /* dsa_pub.pem */,
 			);
@@ -175,6 +181,7 @@
 				A9943DEA1E22747A00FBA718 /* Assets.xcassets in Resources */,
 				A912B5111E2C5569007DB154 /* dsa_pub.pem in Resources */,
 				A90E64C31E229F30002BD997 /* Preferences.xib in Resources */,
+				A991AFDB1E324D3200DEAF5B /* snippet.yml in Resources */,
 				A9943DED1E22747A00FBA718 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -237,6 +244,7 @@
 				A9943DE61E22747A00FBA718 /* ViewController.swift in Sources */,
 				A90E64C71E22A198002BD997 /* PreferencesWindowController.swift in Sources */,
 				A9EAF6491E2DB07E00D34B47 /* WKWebView+TextZoom.m in Sources */,
+				A991AFDD1E324FF400DEAF5B /* Snippet.swift in Sources */,
 				A9943DE41E22747A00FBA718 /* AppDelegate.swift in Sources */,
 				A9943DE81E22747A00FBA718 /* Document.swift in Sources */,
 			);
@@ -358,6 +366,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3B1227ABE27811A6AE9B2F71 /* Pods-kotori.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Mac Developer";
@@ -378,6 +387,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7D0060BC96575BF9F89AC2BC /* Pods-kotori.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Developer ID Application";

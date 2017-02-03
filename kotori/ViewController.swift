@@ -43,6 +43,15 @@ class ViewController: NSViewController, WKNavigationDelegate, WKUIDelegate {
         }
     }
 
+    func insertTextToTextarea(_ text: String) {
+        let javascript =
+            "var elem = document.activeElement; var startPos = elem.selectionStart; var endPos = elem.selectionEnd;" +
+            "var text = \"\(text)\";" +
+            "elem.value = elem.value.substring(0, startPos) + text + elem.value.substring(endPos, elem.value.length);" +
+            "var caretPos = startPos + text.length; elem.setSelectionRange(caretPos, caretPos);"
+        webView.evaluateJavaScript(javascript, completionHandler: nil)
+    }
+
     // MARK: Delegate - Called when the page title of a frame loads or changes.
     func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
         if let event = NSApp.currentEvent {
