@@ -6,16 +6,16 @@
     <description>Most recent changes with links to updates.</description>
     <language>en</language>
     <item>
-      <title>Version 0.15</title>
+      <title>Version 0.16</title>
       <description>
         <![CDATA[
           <ul>
-            <li>コマンドラインから URL を開けるようになりました。(例 : open -a "kotori.app" https://docs.esa.io/posts/18)</li>
+            <li>Markdown を簡単に入力できるように "Snippet" メニューを追加しました。</li>
           </ul>
         ]]>
       </description>
-      <pubDate>Mon, 30 Jan 2017 20:20:01 +0900</pubDate>
-      <enclosure url="https://github.com/Watson1978/kotori/releases/download/v0.15/kotori_0.15.dmg" sparkle:version="0.15" type="application/octet-stream" length="2911092" sparkle:dsaSignature="MCwCFGxqB6nV2Z+i+OU5ORZhdmN9WZ0xAhRAXQ8btZwwtINESxyee5e7hONAOQ==" />
+      <pubDate>Fri, 03 Feb 2017 22:33:56 +0900</pubDate>
+      <enclosure url="https://github.com/Watson1978/kotori/releases/download/v0.16/kotori_0.16.dmg" sparkle:version="0.16" type="application/octet-stream" length="3079470" sparkle:dsaSignature="MC0CFQD140cWr4r2TvEnvSy8xvbWrbBtbwIUSqCfxKwufAH2im82vtV9vF+vTdE=" />
     </item>
   </channel>
 </rss>
