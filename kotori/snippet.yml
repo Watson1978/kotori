@@ -30,6 +30,10 @@
   Text: "* "
 
 -
+  Title: "Check List"
+  Text: "- [ ] "
+
+-
   Title: "Blockquote"
   Text: "> "
 
