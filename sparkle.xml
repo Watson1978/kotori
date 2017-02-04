@@ -6,16 +6,16 @@
     <description>Most recent changes with links to updates.</description>
     <language>en</language>
     <item>
-      <title>Version 0.16</title>
+      <title>Version 0.17</title>
       <description>
         <![CDATA[
           <ul>
-            <li>Markdown を簡単に入力できるように "Snippet" メニューを追加しました。</li>
+            <li>スマート引用符とスマートダッシュという、`"abc"` が `“abc"` と置き換える macOS の機能をアプリ内で無効にしました。</li>
           </ul>
         ]]>
       </description>
-      <pubDate>Fri, 03 Feb 2017 22:33:56 +0900</pubDate>
-      <enclosure url="https://github.com/Watson1978/kotori/releases/download/v0.16/kotori_0.16.dmg" sparkle:version="0.16" type="application/octet-stream" length="3079470" sparkle:dsaSignature="MC0CFQD140cWr4r2TvEnvSy8xvbWrbBtbwIUSqCfxKwufAH2im82vtV9vF+vTdE=" />
+      <pubDate>Sun, 05 Feb 2017 01:07:34 +0900</pubDate>
+      <enclosure url="https://github.com/Watson1978/kotori/releases/download/v0.17/kotori_0.17.dmg" sparkle:version="0.17" type="application/octet-stream" length="3078234" sparkle:dsaSignature="MC0CFQCrpvbzXVRRYDxzLaVcnJCopzzicQIUA/UxOYRo47WPcCAx8pbRkDJisyQ=" />
     </item>
   </channel>
 </rss>
