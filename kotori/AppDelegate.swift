@@ -6,6 +6,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     var snippet: Snippet!
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
+        // Disable smart quotes & dashes in WebView
+        UserDefaults.standard.set(false, forKey: "WebAutomaticQuoteSubstitutionEnabled");
+        UserDefaults.standard.set(false, forKey: "WebAutomaticDashSubstitutionEnabled");
+
         snippet = Snippet()
 
         let appleEventManager = NSAppleEventManager.shared()
