@@ -18,6 +18,7 @@
 		A9943DE81E22747A00FBA718 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9943DE71E22747A00FBA718 /* Document.swift */; };
 		A9943DEA1E22747A00FBA718 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9943DE91E22747A00FBA718 /* Assets.xcassets */; };
 		A9943DED1E22747A00FBA718 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9943DEB1E22747A00FBA718 /* Main.storyboard */; };
+		A9ADA8F71E46229A004BA589 /* kotori.js in Resources */ = {isa = PBXBuildFile; fileRef = A9ADA8F61E46229A004BA589 /* kotori.js */; };
 		A9EAF6491E2DB07E00D34B47 /* WKWebView+TextZoom.m in Sources */ = {isa = PBXBuildFile; fileRef = A9EAF6481E2DB07E00D34B47 /* WKWebView+TextZoom.m */; };
 		CC814E10E7488FF25328B3A1 /* Pods_kotori.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFCEAE5681C4370551247B3A /* Pods_kotori.framework */; };
 /* End PBXBuildFile section */
@@ -38,6 +39,7 @@
 		A9943DE91E22747A00FBA718 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9943DEC1E22747A00FBA718 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A9943DEE1E22747A00FBA718 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9ADA8F61E46229A004BA589 /* kotori.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = kotori.js; sourceTree = "<group>"; };
 		A9EAF6461E2DB07E00D34B47 /* kotori-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "kotori-Bridging-Header.h"; sourceTree = "<group>"; };
 		A9EAF6471E2DB07E00D34B47 /* WKWebView+TextZoom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WKWebView+TextZoom.h"; sourceTree = "<group>"; };
 		A9EAF6481E2DB07E00D34B47 /* WKWebView+TextZoom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WKWebView+TextZoom.m"; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				A9943DE91E22747A00FBA718 /* Assets.xcassets */,
 				A9943DEB1E22747A00FBA718 /* Main.storyboard */,
 				A90E64C11E229F30002BD997 /* Preferences.xib */,
+				A9ADA8F61E46229A004BA589 /* kotori.js */,
 				A991AFDA1E324D3200DEAF5B /* snippet.yml */,
 				A9943DEE1E22747A00FBA718 /* Info.plist */,
 				A912B5101E2C5569007DB154 /* dsa_pub.pem */,
@@ -182,6 +185,7 @@
 				A912B5111E2C5569007DB154 /* dsa_pub.pem in Resources */,
 				A90E64C31E229F30002BD997 /* Preferences.xib in Resources */,
 				A991AFDB1E324D3200DEAF5B /* snippet.yml in Resources */,
+				A9ADA8F71E46229A004BA589 /* kotori.js in Resources */,
 				A9943DED1E22747A00FBA718 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

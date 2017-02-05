@@ -11,7 +11,14 @@ class ViewController: NSViewController, WKNavigationDelegate, WKUIDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        webView = WKWebView()
+        let config = WKWebViewConfiguration()
+        let scriptURL = Bundle.main.resourcePath! + "/kotori.js"
+        var scriptContent = try! String(contentsOfFile: scriptURL)
+        scriptContent += "changeTextAreaFont();"
+        let script = WKUserScript(source: scriptContent, injectionTime: .atDocumentEnd, forMainFrameOnly: true)
+        config.userContentController.addUserScript(script)
+
+        webView = WKWebView(frame: self.view.bounds, configuration: config)
         webView.frame = self.view.frame
         webView.autoresizingMask = NSAutoresizingMaskOptions(arrayLiteral: .viewWidthSizable, .viewHeightSizable)
         webView.allowsBackForwardNavigationGestures = true
