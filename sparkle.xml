@@ -6,16 +6,16 @@
     <description>Most recent changes with links to updates.</description>
     <language>en</language>
     <item>
-      <title>Version 0.18</title>
+      <title>Version 0.19</title>
       <description>
         <![CDATA[
           <ul>
-            <li>textarea で等幅フォントを使用するように変更しました。</li>
+            <li>ウィンドウサイズと表示位置を保存復元するようにしました。</li>
           </ul>
         ]]>
       </description>
-      <pubDate>Sun, 05 Feb 2017 17:44:02 +0900</pubDate>
-      <enclosure url="https://github.com/Watson1978/kotori/releases/download/v0.18/kotori_0.18.dmg" sparkle:version="0.18" type="application/octet-stream" length="3079036" sparkle:dsaSignature="MC0CFQCJ015XcDT5FbeoXKMPY/VmkbH58gIUbW+m+45ilopVZ0T/9BeK46J+qWs=" />
+      <pubDate>Sun, 05 Feb 2017 21:47:27 +0900</pubDate>
+      <enclosure url="https://github.com/Watson1978/kotori/releases/download/v0.19/kotori_0.19.dmg" sparkle:version="0.19" type="application/octet-stream" length="3079490" sparkle:dsaSignature="MC4CFQDrSQ2UkkAyJWOANL80NfAjhVgwlAIVALfFKMXqbTyt6BjLOelcMB9WX8kP" />
     </item>
   </channel>
 </rss>
