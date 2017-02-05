@@ -6,16 +6,16 @@
     <description>Most recent changes with links to updates.</description>
     <language>en</language>
     <item>
-      <title>Version 0.17</title>
+      <title>Version 0.18</title>
       <description>
         <![CDATA[
           <ul>
-            <li>スマート引用符とスマートダッシュという、`"abc"` が `“abc"` と置き換える macOS の機能をアプリ内で無効にしました。</li>
+            <li>textarea で等幅フォントを使用するように変更しました。</li>
           </ul>
         ]]>
       </description>
-      <pubDate>Sun, 05 Feb 2017 01:07:34 +0900</pubDate>
-      <enclosure url="https://github.com/Watson1978/kotori/releases/download/v0.17/kotori_0.17.dmg" sparkle:version="0.17" type="application/octet-stream" length="3078234" sparkle:dsaSignature="MC0CFQCrpvbzXVRRYDxzLaVcnJCopzzicQIUA/UxOYRo47WPcCAx8pbRkDJisyQ=" />
+      <pubDate>Sun, 05 Feb 2017 17:44:02 +0900</pubDate>
+      <enclosure url="https://github.com/Watson1978/kotori/releases/download/v0.18/kotori_0.18.dmg" sparkle:version="0.18" type="application/octet-stream" length="3079036" sparkle:dsaSignature="MC0CFQCJ015XcDT5FbeoXKMPY/VmkbH58gIUbW+m+45ilopVZ0T/9BeK46J+qWs=" />
     </item>
   </channel>
 </rss>
