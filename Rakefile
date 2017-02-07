@@ -24,7 +24,14 @@ task :archive do
   sh "rsync -a #{build_dir}/kotori.app build/package"
   sh "ln -sf /Applications build/package"
 
-  sh "hdiutil create build/tmp.dmg -volname 'kotori_#{VERSION}' -srcfolder build/package"
+  sh "hdiutil create build/tmp.dmg -fs HFS+ -format UDRW -volname 'kotori_#{VERSION}' -srcfolder build/package"
+  sh "hdiutil attach -readwrite -noverify -noautoopen build/tmp.dmg"
+  sh "./util/package/customize.sh kotori_#{VERSION}"
+
+  # Looks like applescript generate .fseventsd directory which is unnecessary.
+  sh "rm -rf /Volumes/kotori_#{VERSION}/.fseventsd"
+
+  sh "hdiutil detach /Volumes/kotori_#{VERSION}"
   sh "hdiutil convert -format UDBZ build/tmp.dmg -o build/kotori_#{VERSION}.dmg"
   sh "rm -f build/tmp.dmg"
 end
