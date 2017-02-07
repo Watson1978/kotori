@@ -22,6 +22,7 @@ task :archive do
   sh "xcodebuild -workspace kotori.xcworkspace -scheme kotori -configuration Release"
 
   sh "rsync -a #{build_dir}/kotori.app build/package"
+  sh "ln -sf /Applications build/package"
 
   sh "hdiutil create build/tmp.dmg -volname 'kotori_#{VERSION}' -srcfolder build/package"
   sh "hdiutil convert -format UDBZ build/tmp.dmg -o build/kotori_#{VERSION}.dmg"
