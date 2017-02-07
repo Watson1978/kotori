@@ -52,6 +52,7 @@ sparkle_template =<<END
           <ul>
 <%= description %>
           </ul>
+          <p>以前のバージョンのアップデート情報については、<a href="https://github.com/Watson1978/kotori/releases">リリースノート</a>をご覧ください。</p>
         ]]>
       </description>
       <pubDate><%= date %></pubDate>

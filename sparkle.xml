@@ -6,16 +6,17 @@
     <description>Most recent changes with links to updates.</description>
     <language>en</language>
     <item>
-      <title>Version 0.19</title>
+      <title>Version 0.19.1</title>
       <description>
         <![CDATA[
           <ul>
-            <li>ウィンドウサイズと表示位置を保存復元するようにしました。</li>
+            <li>パッケージをカスタマイズしてみました。機能追加等はありません (・ω・)</li>
           </ul>
+          <p>以前のバージョンのアップデート情報については、<a href="https://github.com/Watson1978/kotori/releases">リリースノート</a>をご覧ください。</p>
         ]]>
       </description>
-      <pubDate>Sun, 05 Feb 2017 21:47:27 +0900</pubDate>
-      <enclosure url="https://github.com/Watson1978/kotori/releases/download/v0.19/kotori_0.19.dmg" sparkle:version="0.19" type="application/octet-stream" length="3079490" sparkle:dsaSignature="MC4CFQDrSQ2UkkAyJWOANL80NfAjhVgwlAIVALfFKMXqbTyt6BjLOelcMB9WX8kP" />
+      <pubDate>Wed, 08 Feb 2017 02:00:49 +0900</pubDate>
+      <enclosure url="https://github.com/Watson1978/kotori/releases/download/v0.19.1/kotori_0.19.1.dmg" sparkle:version="0.19.1" type="application/octet-stream" length="3070106" sparkle:dsaSignature="MC0CFQCE7Zzrxu/AMJCSjP9unAeVYHX6fQIUF52KAlkvcLjhLBg4HkyThoXF0B4=" />
     </item>
   </channel>
 </rss>
