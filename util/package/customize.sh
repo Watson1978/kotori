@@ -7,19 +7,22 @@ osascript<<END
 	tell application "Finder"
 		tell disk "${VOLUME_NAME}"
 			open
-			set toolbar visible of container window to false
-			set statusbar visible of container window to false
-			set the bounds of container window to {400, 100, 1000, 600}
+			tell container window
+				set current view to icon view
+				set toolbar visible to false
+				set statusbar visible to false
+				set the bounds to {400, 100, 1000, 600}
+				set position of item "kotori" to {200, 200}
+				set position of item "Applications" to {375, 200}
+			end tell
+
 			set theViewOptions to the icon view options of container window
-			set arrangement of theViewOptions to not arranged
-			set icon size of theViewOptions to 72
+			tell theViewOptions
+				set arrangement to not arranged
+				set icon size to 72
+				set background color to {7168, 39680, 37376}
+			end tell
 
-			set current view of container window to icon view
-			set background color of theViewOptions to {7168, 39680, 37376}
-
-			set position of item "kotori" of container window to {200, 200}
-			set position of item "Applications" of container window to {375, 200}
-			update without registering applications
 		end tell
 	end tell
 END
