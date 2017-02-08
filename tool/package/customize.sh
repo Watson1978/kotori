@@ -23,6 +23,7 @@ osascript<<END
 				set background color to {7168, 39680, 37376}
 			end tell
 
+			update without registering applications
 		end tell
 	end tell
 END
