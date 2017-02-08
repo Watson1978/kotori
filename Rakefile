@@ -26,7 +26,7 @@ task :archive do
 
   sh "hdiutil create build/tmp.dmg -fs HFS+ -format UDRW -volname 'kotori_#{VERSION}' -srcfolder build/package"
   sh "hdiutil attach -readwrite -noverify -noautoopen build/tmp.dmg"
-  sh "./util/package/customize.sh kotori_#{VERSION}"
+  sh "./tool/package/customize.sh kotori_#{VERSION}"
 
   # Looks like applescript generate .fseventsd directory which is unnecessary.
   sh "rm -rf /Volumes/kotori_#{VERSION}/.fseventsd"
