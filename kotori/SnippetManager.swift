@@ -1,13 +1,11 @@
 import Foundation
 import Yaml
 
-class Snippet: NSObject {
+class SnippetManager: NSObject {
 
     var items: Yaml!
 
-    override init () {
-        super.init()
-
+    func load() {
         let path = Bundle.main.resourcePath! + "/snippet.yml"
         let snippet = try? String(contentsOfFile: path)
         if snippet != nil {

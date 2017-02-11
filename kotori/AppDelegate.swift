@@ -3,14 +3,14 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-    var snippet: Snippet!
+    @IBOutlet weak var snippet: SnippetManager!
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Disable smart quotes & dashes in WebView
         UserDefaults.standard.set(false, forKey: "WebAutomaticQuoteSubstitutionEnabled");
         UserDefaults.standard.set(false, forKey: "WebAutomaticDashSubstitutionEnabled");
 
-        snippet = Snippet()
+        snippet.load()
 
         let appleEventManager = NSAppleEventManager.shared()
         appleEventManager.setEventHandler(self, andSelector: #selector(AppDelegate.handleGetURLEvent(_:replyEvent:)), forEventClass: AEEventClass(kInternetEventClass), andEventID: AEEventID(kAEGetURL))
