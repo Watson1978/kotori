@@ -7,34 +7,41 @@ class SnippetManager: NSObject {
 
     func load() {
         let path = Bundle.main.resourcePath! + "/snippet.yml"
-        let snippet = try? String(contentsOfFile: path)
-        if snippet != nil {
-            items = try? Yaml.load(snippet!)
+        guard let snippet = try? String(contentsOfFile: path) else {
+            return
         }
+        guard let yml = try? Yaml.load(snippet) else {
+            return
+        }
+        items = yml
         addMenuItems()
     }
 
     func addMenuItems() {
         let menu = NSMenu(title: "Snippet")
-        let count = Int((items.count)!)
+        let count = Int(items.count!)
         for i in 0 ..< count {
             let item: Dictionary! = items[i].dictionary
-            let title: String = (item["Title"]?.string)!
-            if title == "---" {
-                menu.addItem(NSMenuItem.separator())
-            }
-            else {
-                menu.addItem(withTitle: title, action: #selector(AppDelegate.selectSnippet(_:)), keyEquivalent: "")
+            if let title = item["Title"]?.string {
+                if title == "---" {
+                    menu.addItem(NSMenuItem.separator())
+                }
+                else {
+                    menu.addItem(withTitle: title, action: #selector(AppDelegate.selectSnippet(_:)), keyEquivalent: "")
+                }
             }
         }
-        let menu_item: NSMenuItem! = NSApp.mainMenu?.item(withTitle: "Snippet")
+        let menu_item: NSMenuItem! = NSApp.mainMenu!.item(withTitle: "Snippet")
         menu_item.submenu = menu
     }
 
     func getText(at index: Int) -> String {
         let item: Dictionary! = items[index].dictionary
-        var text = (item["Text"]?.string)!;
+        guard var text = item["Text"]?.string else {
+            return ""
+        }
         text = text.replacingOccurrences(of: "\n", with: "\\n")
+        text = text.replacingOccurrences(of: "\t", with: "\\t")
         return text;
     }
 }
