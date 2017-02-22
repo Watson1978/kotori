@@ -67,7 +67,7 @@ task :"update:sparkle" do
   require 'erb'
   require 'time'
 
-  signature = `./sign_update ./build/kotori_#{VERSION}.dmg dsa_priv.pem`.strip
+  signature = `./tool/sparkle/sign_update ./build/kotori_#{VERSION}.dmg dsa_priv.pem`.strip
   title_version = "Version #{VERSION}"
   version = VERSION
   date = Time.now.rfc2822.to_s
