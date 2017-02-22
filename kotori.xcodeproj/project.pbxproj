@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A905C2EF1E5DD441009D355D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A905C2EE1E5DD441009D355D /* Localizable.strings */; };
 		A90E64C31E229F30002BD997 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = A90E64C11E229F30002BD997 /* Preferences.xib */; };
 		A90E64C71E22A198002BD997 /* PreferencesWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90E64C61E22A198002BD997 /* PreferencesWindowController.swift */; };
 		A912B5111E2C5569007DB154 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = A912B5101E2C5569007DB154 /* dsa_pub.pem */; };
@@ -28,6 +29,7 @@
 		7D0060BC96575BF9F89AC2BC /* Pods-kotori.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kotori.release.xcconfig"; path = "Pods/Target Support Files/Pods-kotori/Pods-kotori.release.xcconfig"; sourceTree = "<group>"; };
 		A905C2EC1E5DC60B009D355D /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
 		A905C2ED1E5DC60B009D355D /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Preferences.strings; sourceTree = "<group>"; };
+		A905C2EE1E5DD441009D355D /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = ../Localizable.strings; sourceTree = "<group>"; };
 		A90E64C21E229F30002BD997 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Preferences.xib; sourceTree = "<group>"; };
 		A90E64C61E22A198002BD997 /* PreferencesWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesWindowController.swift; sourceTree = "<group>"; };
 		A912B5101E2C5569007DB154 /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				A9EAF6481E2DB07E00D34B47 /* WKWebView+TextZoom.m */,
 				A9943DE91E22747A00FBA718 /* Assets.xcassets */,
 				A9943DEB1E22747A00FBA718 /* Main.storyboard */,
+				A905C2EE1E5DD441009D355D /* Localizable.strings */,
 				A90E64C11E229F30002BD997 /* Preferences.xib */,
 				A9ADA8F61E46229A004BA589 /* kotori.js */,
 				A991AFDA1E324D3200DEAF5B /* snippet.yml */,
@@ -186,6 +189,7 @@
 				A9943DEA1E22747A00FBA718 /* Assets.xcassets in Resources */,
 				A912B5111E2C5569007DB154 /* dsa_pub.pem in Resources */,
 				A90E64C31E229F30002BD997 /* Preferences.xib in Resources */,
+				A905C2EF1E5DD441009D355D /* Localizable.strings in Resources */,
 				A991AFDB1E324D3200DEAF5B /* snippet.yml in Resources */,
 				A9ADA8F71E46229A004BA589 /* kotori.js in Resources */,
 				A9943DED1E22747A00FBA718 /* Main.storyboard in Resources */,

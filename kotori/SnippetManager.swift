@@ -18,7 +18,7 @@ class SnippetManager: NSObject {
     }
 
     func addMenuItems() {
-        let menu = NSMenu(title: "Snippet")
+        let menu = NSMenu(title: NSLocalizedString("Snippet", comment: ""))
         let count = Int(items.count!)
         for i in 0 ..< count {
             let item: Dictionary! = items[i].dictionary

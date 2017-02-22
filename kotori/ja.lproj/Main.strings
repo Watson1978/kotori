@@ -141,7 +141,7 @@
 "Ppl-Ck-GTB.title" = "Posts";
 
 /* Class = "NSMenuItem"; title = "Zoom"; ObjectID = "R4o-n2-Eq4"; */
-"R4o-n2-Eq4.title" = "Zoom";
+"R4o-n2-Eq4.title" = "拡大／縮小";
 
 /* Class = "NSMenu"; title = "Spelling"; ObjectID = "SHd-D9-lZm"; */
 "SHd-D9-lZm.title" = "Spelling";
@@ -250,3 +250,5 @@
 
 /* Class = "NSMenuItem"; title = "Cut"; ObjectID = "zUn-eH-Jxy"; */
 "zUn-eH-Jxy.title" = "カット";
+
+"welcome" = "ハローワールド！";
