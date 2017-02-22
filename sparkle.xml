@@ -6,17 +6,17 @@
     <description>Most recent changes with links to updates.</description>
     <language>en</language>
     <item>
-      <title>Version 0.19.1</title>
+      <title>Version 0.20</title>
       <description>
         <![CDATA[
           <ul>
-            <li>パッケージをカスタマイズしてみました。機能追加等はありません (・ω・)</li>
+            <li>メニューを日本語化しました。</li>
           </ul>
           <p>以前のバージョンのアップデート情報については、<a href="https://github.com/Watson1978/kotori/releases">リリースノート</a>をご覧ください。</p>
         ]]>
       </description>
-      <pubDate>Wed, 08 Feb 2017 02:00:49 +0900</pubDate>
-      <enclosure url="https://github.com/Watson1978/kotori/releases/download/v0.19.1/kotori_0.19.1.dmg" sparkle:version="0.19.1" type="application/octet-stream" length="3070106" sparkle:dsaSignature="MC0CFQCE7Zzrxu/AMJCSjP9unAeVYHX6fQIUF52KAlkvcLjhLBg4HkyThoXF0B4=" />
+      <pubDate>Thu, 23 Feb 2017 00:19:00 +0900</pubDate>
+      <enclosure url="https://github.com/Watson1978/kotori/releases/download/v0.20/kotori_0.20.dmg" sparkle:version="0.20" type="application/octet-stream" length="3076374" sparkle:dsaSignature="MC0CFQDpUGUR9PpCtYU/T3VuyUmBfvsv9AIUAL8NeA7dIhSPFlBzd4kjy4hr6DA=" />
     </item>
   </channel>
 </rss>
