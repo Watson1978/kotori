@@ -6,7 +6,15 @@ class SnippetManager: NSObject {
     var items: Yaml!
 
     func load() {
-        let path = Bundle.main.resourcePath! + "/snippet.yml"
+        // TODO : Need better code
+        let lang : String = NSLocale.preferredLanguages[0]
+        let path : String;
+        if lang == "ja-JP" {
+            path = Bundle.main.resourcePath! + "/ja.lproj/snippet.yml"
+        }
+        else {
+            path = Bundle.main.resourcePath! + "/Base.lproj/snippet.yml"
+        }
         guard let snippet = try? String(contentsOfFile: path) else {
             return
         }
