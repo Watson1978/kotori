@@ -1,0 +1,24 @@
+
+/* Class = "NSButtonCell"; title = "Confirm \"Quit Kotori\""; ObjectID = "HhU-aN-wt0"; */
+"HhU-aN-wt0.title" = "Kotoriの終了前に警告メッセージを表示する";
+
+/* Class = "NSWindow"; title = "Preferences"; ObjectID = "QvC-M9-y7g"; */
+"QvC-M9-y7g.title" = "環境設定";
+
+/* Class = "NSTextFieldCell"; title = "Confirm"; ObjectID = "X97-0V-oqK"; */
+"X97-0V-oqK.title" = "確認";
+
+/* Class = "NSTextFieldCell"; title = "https://esa.io/"; ObjectID = "YKH-nd-sfe"; */
+"YKH-nd-sfe.title" = "https://esa.io/";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "https://esa.io/"; ObjectID = "f3V-qU-tET"; */
+"f3V-qU-tET.ibShadowedIsNilPlaceholder" = "https://esa.io/";
+
+/* Class = "NSToolbarItem"; label = "General"; ObjectID = "f7x-cP-NBU"; */
+"f7x-cP-NBU.label" = "一般";
+
+/* Class = "NSToolbarItem"; paletteLabel = "General"; ObjectID = "f7x-cP-NBU"; */
+"f7x-cP-NBU.paletteLabel" = "一般";
+
+/* Class = "NSTextFieldCell"; title = "Startup page"; ObjectID = "h6p-2Q-4Xe"; */
+"h6p-2Q-4Xe.title" = "ホームページ";

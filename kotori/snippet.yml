@@ -1,60 +1,60 @@
 -
-  Title: "Strong"
+  Title: "強調"
   Text: "**TEXT**"
 
 -
-  Title: "Emphasize"
+  Title: "斜体"
   Text: "*TEXT*"
 
 -
-  Title: "Del"
+  Title: "削除"
   Text: "~~TEXT~~"
 
 -
-  Title: "Inline Code"
+  Title: "インラインコード"
   Text: "`CODE`"
 
 -
-  Title: "Comment"
+  Title: "コメント"
   Text: "<!--TEXT-->"
 
 -
   Title: "---"
 
 -
-  Title: "Ordered List"
+  Title: "番号付きリスト"
   Text: "1. "
 
 -
-  Title: "Unordered List"
+  Title: "リスト"
   Text: "* "
 
 -
-  Title: "Check List"
+  Title: "チェックリスト"
   Text: "- [ ] "
 
 -
-  Title: "Blockquote"
+  Title: "引用"
   Text: "> "
 
 -
-  Title: "Line"
+  Title: "水平線"
   Text: "---"
 
 -
   Title: "---"
 
 -
-  Title: "Link"
+  Title: "リンク"
   Text: "[TITLE](URL)"
 
 -
-  Title: "Image"
+  Title: "画像"
   Text: "![TITLE](URL)"
 
 -
   Title: "---"
 
 -
-  Title: "Table"
+  Title: "テーブル"
   Text: "| Item1 | Item2 |\n| ----- | ----- |\n|  |  |"

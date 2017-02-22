@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E154a" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E163f" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -372,7 +372,7 @@
                                     </items>
                                 </menu>
                             </menuItem>
-                            <menuItem title="Snippet" id="lik-pv-jT8">
+                            <menuItem title="Snippet" tag="333" id="lik-pv-jT8">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="Snippet" id="tPP-Li-q4K"/>
                             </menuItem>

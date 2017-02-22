@@ -31,7 +31,7 @@ class SnippetManager: NSObject {
                 }
             }
         }
-        let menu_item: NSMenuItem! = NSApp.mainMenu!.item(withTitle: "Snippet")
+        let menu_item: NSMenuItem! = NSApp.mainMenu!.item(withTag: 333)
         menu_item.submenu = menu
     }
 
