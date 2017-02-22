@@ -1,0 +1,60 @@
+-
+  Title: "Strong"
+  Text: "**TEXT**"
+
+-
+  Title: "Emphasize"
+  Text: "*TEXT*"
+
+-
+  Title: "Del"
+  Text: "~~TEXT~~"
+
+-
+  Title: "Inline Code"
+  Text: "`CODE`"
+
+-
+  Title: "Comment"
+  Text: "<!--TEXT-->"
+
+-
+  Title: "---"
+
+-
+  Title: "Ordered List"
+  Text: "1. "
+
+-
+  Title: "Unordered List"
+  Text: "* "
+
+-
+  Title: "Check List"
+  Text: "- [ ] "
+
+-
+  Title: "Blockquote"
+  Text: "> "
+
+-
+  Title: "Line"
+  Text: "---"
+
+-
+  Title: "---"
+
+-
+  Title: "Link"
+  Text: "[TITLE](URL)"
+
+-
+  Title: "Image"
+  Text: "![TITLE](URL)"
+
+-
+  Title: "---"
+
+-
+  Title: "Table"
+  Text: "| Item1 | Item2 |\n| ----- | ----- |\n|  |  |"

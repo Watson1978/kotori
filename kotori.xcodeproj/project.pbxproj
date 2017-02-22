@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A905C2EF1E5DD441009D355D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A905C2EE1E5DD441009D355D /* Localizable.strings */; };
+		A905C2F41E5DDD66009D355D /* snippet.yml in Resources */ = {isa = PBXBuildFile; fileRef = A905C2F21E5DDD66009D355D /* snippet.yml */; };
+		A905C2F61E5DDD79009D355D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A9943DEE1E22747A00FBA718 /* Info.plist */; };
+		A905C2FD1E5DE180009D355D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A905C2FB1E5DE180009D355D /* Localizable.strings */; };
 		A90E64C31E229F30002BD997 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = A90E64C11E229F30002BD997 /* Preferences.xib */; };
 		A90E64C71E22A198002BD997 /* PreferencesWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90E64C61E22A198002BD997 /* PreferencesWindowController.swift */; };
 		A912B5111E2C5569007DB154 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = A912B5101E2C5569007DB154 /* dsa_pub.pem */; };
 		A91F69BC1E230D040036CDCF /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A91F69BB1E230D040036CDCF /* WebKit.framework */; };
-		A991AFDB1E324D3200DEAF5B /* snippet.yml in Resources */ = {isa = PBXBuildFile; fileRef = A991AFDA1E324D3200DEAF5B /* snippet.yml */; };
 		A991AFDD1E324FF400DEAF5B /* SnippetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A991AFDC1E324FF400DEAF5B /* SnippetManager.swift */; };
 		A9943DE41E22747A00FBA718 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9943DE31E22747A00FBA718 /* AppDelegate.swift */; };
 		A9943DE61E22747A00FBA718 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9943DE51E22747A00FBA718 /* ViewController.swift */; };
@@ -29,12 +30,14 @@
 		7D0060BC96575BF9F89AC2BC /* Pods-kotori.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kotori.release.xcconfig"; path = "Pods/Target Support Files/Pods-kotori/Pods-kotori.release.xcconfig"; sourceTree = "<group>"; };
 		A905C2EC1E5DC60B009D355D /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
 		A905C2ED1E5DC60B009D355D /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Preferences.strings; sourceTree = "<group>"; };
-		A905C2EE1E5DD441009D355D /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = ../Localizable.strings; sourceTree = "<group>"; };
+		A905C2F31E5DDD66009D355D /* Base */ = {isa = PBXFileReference; lastKnownFileType = text; name = Base; path = Base.lproj/snippet.yml; sourceTree = "<group>"; };
+		A905C2F51E5DDD79009D355D /* ja */ = {isa = PBXFileReference; lastKnownFileType = text; name = ja; path = ja.lproj/snippet.yml; sourceTree = "<group>"; };
+		A905C2FC1E5DE180009D355D /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A905C2FE1E5DE188009D355D /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A90E64C21E229F30002BD997 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Preferences.xib; sourceTree = "<group>"; };
 		A90E64C61E22A198002BD997 /* PreferencesWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesWindowController.swift; sourceTree = "<group>"; };
 		A912B5101E2C5569007DB154 /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
 		A91F69BB1E230D040036CDCF /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
-		A991AFDA1E324D3200DEAF5B /* snippet.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = snippet.yml; sourceTree = "<group>"; };
 		A991AFDC1E324FF400DEAF5B /* SnippetManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnippetManager.swift; sourceTree = "<group>"; };
 		A9943DE01E22747A00FBA718 /* kotori.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kotori.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9943DE31E22747A00FBA718 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,7 +45,7 @@
 		A9943DE71E22747A00FBA718 /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
 		A9943DE91E22747A00FBA718 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9943DEC1E22747A00FBA718 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A9943DEE1E22747A00FBA718 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9943DEE1E22747A00FBA718 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9ADA8F61E46229A004BA589 /* kotori.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = kotori.js; sourceTree = "<group>"; };
 		A9EAF6461E2DB07E00D34B47 /* kotori-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "kotori-Bridging-Header.h"; sourceTree = "<group>"; };
 		A9EAF6471E2DB07E00D34B47 /* WKWebView+TextZoom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WKWebView+TextZoom.h"; sourceTree = "<group>"; };
@@ -112,10 +115,10 @@
 				A9EAF6481E2DB07E00D34B47 /* WKWebView+TextZoom.m */,
 				A9943DE91E22747A00FBA718 /* Assets.xcassets */,
 				A9943DEB1E22747A00FBA718 /* Main.storyboard */,
-				A905C2EE1E5DD441009D355D /* Localizable.strings */,
 				A90E64C11E229F30002BD997 /* Preferences.xib */,
 				A9ADA8F61E46229A004BA589 /* kotori.js */,
-				A991AFDA1E324D3200DEAF5B /* snippet.yml */,
+				A905C2F21E5DDD66009D355D /* snippet.yml */,
+				A905C2FB1E5DE180009D355D /* Localizable.strings */,
 				A9943DEE1E22747A00FBA718 /* Info.plist */,
 				A912B5101E2C5569007DB154 /* dsa_pub.pem */,
 			);
@@ -170,6 +173,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ja,
 			);
 			mainGroup = A9943DD71E22747A00FBA718;
 			productRefGroup = A9943DE11E22747A00FBA718 /* Products */;
@@ -186,12 +190,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A905C2F61E5DDD79009D355D /* Info.plist in Resources */,
 				A9943DEA1E22747A00FBA718 /* Assets.xcassets in Resources */,
 				A912B5111E2C5569007DB154 /* dsa_pub.pem in Resources */,
 				A90E64C31E229F30002BD997 /* Preferences.xib in Resources */,
-				A905C2EF1E5DD441009D355D /* Localizable.strings in Resources */,
-				A991AFDB1E324D3200DEAF5B /* snippet.yml in Resources */,
 				A9ADA8F71E46229A004BA589 /* kotori.js in Resources */,
+				A905C2FD1E5DE180009D355D /* Localizable.strings in Resources */,
+				A905C2F41E5DDD66009D355D /* snippet.yml in Resources */,
 				A9943DED1E22747A00FBA718 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,6 +268,24 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		A905C2F21E5DDD66009D355D /* snippet.yml */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A905C2F31E5DDD66009D355D /* Base */,
+				A905C2F51E5DDD79009D355D /* ja */,
+			);
+			name = snippet.yml;
+			sourceTree = "<group>";
+		};
+		A905C2FB1E5DE180009D355D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A905C2FC1E5DE180009D355D /* Base */,
+				A905C2FE1E5DE188009D355D /* ja */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		A90E64C11E229F30002BD997 /* Preferences.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
