@@ -7,8 +7,8 @@ class SnippetManager: NSObject {
 
     func load() {
         // TODO : Need better code
-        let lang : String = NSLocale.preferredLanguages[0]
-        let path : String;
+        let lang: String = NSLocale.preferredLanguages[0]
+        let path: String;
         if lang == "ja-JP" {
             path = Bundle.main.resourcePath! + "/ja.lproj/snippet.yml"
         }
