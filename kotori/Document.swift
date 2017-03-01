@@ -33,6 +33,12 @@ class Document: NSDocument, WKNavigationDelegate, WKUIDelegate {
         makeWindowControllers(withURLString: url)
     }
 
+    func setTabbingMode() {
+        if #available(macOS 10.12, *) {
+            self.windowControllers.first!.window!.tabbingMode = .preferred
+        }
+    }
+
     // MARK: Private
     private func getStartPage() -> String {
         var url = UserDefaults.standard.string(forKey: "startPage") ?? "https://esa.io/"

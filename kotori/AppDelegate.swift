@@ -61,32 +61,35 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBAction func newDocumentAsTab(_ sender: Any) {
         let doc = openNewDocument()
         doc.makeWindowControllers()
-
-        doc.windowControllers.first!.window!.tabbingMode = .preferred
+        doc.setTabbingMode()
         doc.showWindows()
     }
 
     @IBAction func showNewPost(_ sender: Any) {
         let doc = openNewDocument()
         doc.makeWindowControllers(withPageName: "posts/new")
+        doc.setTabbingMode()
         doc.showWindows()
     }
 
     @IBAction func showHome(_ sender: Any) {
         let doc = openNewDocument()
         doc.makeWindowControllers(withPageName: "")
+        doc.setTabbingMode()
         doc.showWindows()
     }
 
     @IBAction func showPosts(_ sender: Any) {
         let doc = openNewDocument()
         doc.makeWindowControllers(withPageName: "posts")
+        doc.setTabbingMode()
         doc.showWindows()
     }
 
     @IBAction func showTeam(_ sender: Any) {
         let doc = openNewDocument()
         doc.makeWindowControllers(withPageName: "team")
+        doc.setTabbingMode()
         doc.showWindows()
     }
 
@@ -129,9 +132,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
         let doc = openNewDocument()
         doc.makeWindowControllers(withURLString: url_string)
-        if #available(macOS 10.12, *) {
-            doc.windowControllers.first!.window!.tabbingMode = .preferred
-        }
+        doc.setTabbingMode()
         doc.showWindows()
     }
 
