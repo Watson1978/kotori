@@ -15,17 +15,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         let appleEventManager = NSAppleEventManager.shared()
         appleEventManager.setEventHandler(self, andSelector: #selector(AppDelegate.handleGetURLEvent(_:replyEvent:)), forEventClass: AEEventClass(kInternetEventClass), andEventID: AEEventID(kAEGetURL))
 
-        guard #available(macOS 10.12, *) else {
+        if #available(macOS 10.12, *) {
+        }
+        else {
             // "New Tab" menu is not available with OS X 10.11 or below
             let mainMenu = NSApp.mainMenu
             let fileMenu = mainMenu!.item(at: 1)!.submenu!
-            for menu in fileMenu.items {
-                if menu.title == "New Tab" {
-                    fileMenu.removeItem(menu)
-                    break
-                }
-            }
-            return
+            let newTabMenu = fileMenu.item(withTag: 111)!
+            fileMenu.removeItem(newTabMenu)
         }
     }
 
