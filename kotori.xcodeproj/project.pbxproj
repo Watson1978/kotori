@@ -74,6 +74,21 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		A91398871E69B6B700746269 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A9943DEB1E22747A00FBA718 /* Main.storyboard */,
+				A90E64C11E229F30002BD997 /* Preferences.xib */,
+				A9943DE91E22747A00FBA718 /* Assets.xcassets */,
+				A905C2FB1E5DE180009D355D /* Localizable.strings */,
+				A905C2F21E5DDD66009D355D /* snippet.yml */,
+				A9ADA8F61E46229A004BA589 /* kotori.js */,
+				A9943DEE1E22747A00FBA718 /* Info.plist */,
+				A912B5101E2C5569007DB154 /* dsa_pub.pem */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		A91F69BA1E230D040036CDCF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -112,14 +127,7 @@
 				A9EAF6461E2DB07E00D34B47 /* kotori-Bridging-Header.h */,
 				A9EAF6471E2DB07E00D34B47 /* WKWebView+TextZoom.h */,
 				A9EAF6481E2DB07E00D34B47 /* WKWebView+TextZoom.m */,
-				A9943DE91E22747A00FBA718 /* Assets.xcassets */,
-				A9943DEB1E22747A00FBA718 /* Main.storyboard */,
-				A90E64C11E229F30002BD997 /* Preferences.xib */,
-				A9ADA8F61E46229A004BA589 /* kotori.js */,
-				A905C2F21E5DDD66009D355D /* snippet.yml */,
-				A905C2FB1E5DE180009D355D /* Localizable.strings */,
-				A9943DEE1E22747A00FBA718 /* Info.plist */,
-				A912B5101E2C5569007DB154 /* dsa_pub.pem */,
+				A91398871E69B6B700746269 /* Resources */,
 			);
 			path = kotori;
 			sourceTree = "<group>";
