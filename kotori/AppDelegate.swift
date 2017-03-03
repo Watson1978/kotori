@@ -5,10 +5,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     @IBOutlet weak var snippet: SnippetManager!
 
-    func applicationDidFinishLaunching(_ aNotification: Notification) {
+    func applicationDidFinishLaunching(_: Notification) {
         // Disable smart quotes & dashes in WebView
-        UserDefaults.standard.set(false, forKey: "WebAutomaticQuoteSubstitutionEnabled");
-        UserDefaults.standard.set(false, forKey: "WebAutomaticDashSubstitutionEnabled");
+        UserDefaults.standard.set(false, forKey: "WebAutomaticQuoteSubstitutionEnabled")
+        UserDefaults.standard.set(false, forKey: "WebAutomaticDashSubstitutionEnabled")
 
         snippet.load()
 
@@ -16,8 +16,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         appleEventManager.setEventHandler(self, andSelector: #selector(AppDelegate.handleGetURLEvent(_:replyEvent:)), forEventClass: AEEventClass(kInternetEventClass), andEventID: AEEventID(kAEGetURL))
 
         if #available(macOS 10.12, *) {
-        }
-        else {
+        } else {
             // "New Tab" menu is not available with OS X 10.11 or below
             let mainMenu = NSApp.mainMenu
             let fileMenu = mainMenu!.item(at: 1)!.submenu!
@@ -27,7 +26,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     // MARK: Delegate - Sent to notify the delegate that the application is about to terminate.
-    func applicationShouldTerminate(_ sender: NSApplication) -> NSApplicationTerminateReply {
+    func applicationShouldTerminate(_: NSApplication) -> NSApplicationTerminateReply {
         let confirm_terminate = UserDefaults.standard.bool(forKey: "confirmQuitting")
         if confirm_terminate == false {
             return NSApplicationTerminateReply.terminateNow
@@ -55,47 +54,47 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     @available(macOS 10.12, *)
-    @IBAction func newDocumentAsTab(_ sender: Any) {
+    @IBAction func newDocumentAsTab(_: Any) {
         let doc = openNewDocument()
         doc.makeWindowControllers()
         doc.setTabbingMode()
         doc.showWindows()
     }
 
-    @IBAction func showNewPost(_ sender: Any) {
+    @IBAction func showNewPost(_: Any) {
         let doc = openNewDocument()
         doc.makeWindowControllers(withPageName: "posts/new")
         doc.setTabbingMode()
         doc.showWindows()
     }
 
-    @IBAction func showHome(_ sender: Any) {
+    @IBAction func showHome(_: Any) {
         let doc = openNewDocument()
         doc.makeWindowControllers(withPageName: "")
         doc.setTabbingMode()
         doc.showWindows()
     }
 
-    @IBAction func showPosts(_ sender: Any) {
+    @IBAction func showPosts(_: Any) {
         let doc = openNewDocument()
         doc.makeWindowControllers(withPageName: "posts")
         doc.setTabbingMode()
         doc.showWindows()
     }
 
-    @IBAction func showTeam(_ sender: Any) {
+    @IBAction func showTeam(_: Any) {
         let doc = openNewDocument()
         doc.makeWindowControllers(withPageName: "team")
         doc.setTabbingMode()
         doc.showWindows()
     }
 
-    @IBAction func showMarkdownHelp(_ sender: Any) {
+    @IBAction func showMarkdownHelp(_: Any) {
         let url = URL(string: "https://docs.esa.io/posts/49")!
         NSWorkspace.shared().open(url)
     }
 
-    @IBAction func resetZoom(_ sender: Any) {
+    @IBAction func resetZoom(_: Any) {
         if let mainWindow = NSApp.mainWindow {
             let viewController: ViewController = mainWindow.windowController!.contentViewController as! ViewController
             let webView = viewController.webView
@@ -104,7 +103,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
     }
 
-    @IBAction func zoomIn(_ sender: Any) {
+    @IBAction func zoomIn(_: Any) {
         if let mainWindow = NSApp.mainWindow {
             let viewController: ViewController = mainWindow.windowController!.contentViewController as! ViewController
             let webView = viewController.webView
@@ -114,7 +113,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
     }
 
-    @IBAction func zoomOut(_ sender: Any) {
+    @IBAction func zoomOut(_: Any) {
         if let mainWindow = NSApp.mainWindow {
             let viewController: ViewController = mainWindow.windowController!.contentViewController as! ViewController
             let webView = viewController.webView
@@ -124,7 +123,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
     }
 
-    func handleGetURLEvent(_ event: NSAppleEventDescriptor, replyEvent: NSAppleEventDescriptor) {
+    func handleGetURLEvent(_ event: NSAppleEventDescriptor, replyEvent _: NSAppleEventDescriptor) {
         let url_string = event.paramDescriptor(forKeyword: AEKeyword(keyDirectObject))!.stringValue!
 
         let doc = openNewDocument()

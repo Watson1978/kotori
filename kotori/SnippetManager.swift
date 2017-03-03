@@ -6,13 +6,12 @@ class SnippetManager: NSObject {
     var items: Yaml!
 
     func load() {
-        // TODO : Need better code
+        // TODO: Need better code
         let lang: String = NSLocale.preferredLanguages[0]
-        let path: String;
+        let path: String
         if lang == "ja-JP" {
             path = Bundle.main.resourcePath! + "/ja.lproj/snippet.yml"
-        }
-        else {
+        } else {
             path = Bundle.main.resourcePath! + "/Base.lproj/snippet.yml"
         }
         guard let snippet = try? String(contentsOfFile: path) else {
@@ -33,8 +32,7 @@ class SnippetManager: NSObject {
             if let title = item["Title"]?.string {
                 if title == "---" {
                     menu.addItem(NSMenuItem.separator())
-                }
-                else {
+                } else {
                     menu.addItem(withTitle: title, action: #selector(AppDelegate.selectSnippet(_:)), keyEquivalent: "")
                 }
             }
@@ -50,6 +48,6 @@ class SnippetManager: NSObject {
         }
         text = text.replacingOccurrences(of: "\n", with: "\\n")
         text = text.replacingOccurrences(of: "\t", with: "\\t")
-        return text;
+        return text
     }
 }

@@ -44,7 +44,7 @@ class ViewController: NSViewController, WKNavigationDelegate, WKUIDelegate {
         load(withRequest: request)
     }
 
-    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey: Any]?, context: UnsafeMutableRawPointer?) {
+    override func observeValue(forKeyPath keyPath: String?, of _: Any?, change _: [NSKeyValueChangeKey: Any]?, context _: UnsafeMutableRawPointer?) {
         if keyPath == "title" {
             self.view.window!.title = webView.title ?? ""
         }
@@ -56,7 +56,7 @@ class ViewController: NSViewController, WKNavigationDelegate, WKUIDelegate {
     }
 
     // MARK: Delegate - Called when the page title of a frame loads or changes.
-    func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
+    func webView(_: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
         if let event = NSApp.currentEvent {
             let commandKey: Bool = Int(event.modifierFlags.rawValue & NSCommandKeyMask.rawValue) != 0
             let mouseUp: Bool = event.type == NSLeftMouseUp
@@ -86,7 +86,7 @@ class ViewController: NSViewController, WKNavigationDelegate, WKUIDelegate {
         return nil
     }
 
-    func webView(_ webView: WKWebView, runJavaScriptAlertPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping () -> Void) {
+    func webView(_: WKWebView, runJavaScriptAlertPanelWithMessage message: String, initiatedByFrame _: WKFrameInfo, completionHandler: @escaping () -> Void) {
         let alert = NSAlert()
         alert.messageText = message
         alert.addButton(withTitle: "OK")
@@ -95,7 +95,7 @@ class ViewController: NSViewController, WKNavigationDelegate, WKUIDelegate {
         completionHandler()
     }
 
-    func webView(_ webView: WKWebView, runJavaScriptConfirmPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping (Bool) -> Void) {
+    func webView(_: WKWebView, runJavaScriptConfirmPanelWithMessage message: String, initiatedByFrame _: WKFrameInfo, completionHandler: @escaping (Bool) -> Void) {
         let alert = NSAlert()
         alert.messageText = message
         alert.addButton(withTitle: "OK")
