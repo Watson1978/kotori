@@ -6,30 +6,35 @@ class SnippetManager: NSObject {
     var items: Yaml!
 
     func load() {
+        guard let resourcePath = Bundle.main.resourcePath else {
+            return
+        }
+
         // TODO: Need better code
-        let lang: String = NSLocale.preferredLanguages[0]
+        let lang = NSLocale.preferredLanguages[0]
         let path: String
         if lang == "ja-JP" {
-            path = Bundle.main.resourcePath! + "/ja.lproj/snippet.yml"
+            path = resourcePath + "/ja.lproj/snippet.yml"
         } else {
-            path = Bundle.main.resourcePath! + "/Base.lproj/snippet.yml"
+            path = resourcePath + "/Base.lproj/snippet.yml"
         }
-        guard let snippet = try? String(contentsOfFile: path) else {
-            return
+
+        do {
+            let snippet = try String(contentsOfFile: path)
+            let yml = try Yaml.load(snippet)
+            items = yml
+            addMenuItems()
+        } catch let error {
+            print("\(error)")
         }
-        guard let yml = try? Yaml.load(snippet) else {
-            return
-        }
-        items = yml
-        addMenuItems()
     }
 
     func addMenuItems() {
+        guard let items = items else { return }
         let menu = NSMenu(title: NSLocalizedString("Snippet", comment: ""))
-        let count = Int(items.count!)
-        for i in 0 ..< count {
-            let item: Dictionary! = items[i].dictionary
-            if let title = item["Title"]?.string {
+        for i in 0 ..< (items.count ?? 0) {
+            let item = items[i].dictionary
+            if let title = item?["Title"]?.string {
                 if title == "---" {
                     menu.addItem(NSMenuItem.separator())
                 } else {
@@ -37,13 +42,13 @@ class SnippetManager: NSObject {
                 }
             }
         }
-        let menu_item: NSMenuItem! = NSApp.mainMenu!.item(withTag: 333)
-        menu_item.submenu = menu
+        let menuItem = NSApp.mainMenu?.item(withTag: 333)
+        menuItem?.submenu = menu
     }
 
     func getText(at index: Int) -> String {
-        let item: Dictionary! = items[index].dictionary
-        guard var text = item["Text"]?.string else {
+        let item = items[index].dictionary
+        guard var text = item?["Text"]?.string else {
             return ""
         }
         text = text.replacingOccurrences(of: "\n", with: "\\n")

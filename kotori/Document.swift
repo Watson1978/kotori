@@ -17,34 +17,35 @@ class Document: NSDocument, WKNavigationDelegate, WKUIDelegate {
         self.addWindowController(windowController)
     }
 
-    func makeWindowControllers(withURLString url: String) {
+    func makeWindowControllers(withURLString urlString: String) {
         makeWindowControllersOnly()
-        let viewController: ViewController = self.windowControllers.first!.contentViewController as! ViewController
-        viewController.load(withURLString: url)
+        if let viewController = windowControllers.first?.contentViewController as? ViewController {
+            viewController.load(withURLString: urlString)
+        }
     }
 
     override func makeWindowControllers() {
-        let url = getStartPage()
-        makeWindowControllers(withURLString: url)
+        let urlString = getStartPage()
+        makeWindowControllers(withURLString: urlString)
     }
 
     func makeWindowControllers(withPageName page: String) {
-        let url = getStartPage() + page
-        makeWindowControllers(withURLString: url)
+        let urlString = getStartPage() + page
+        makeWindowControllers(withURLString: urlString)
     }
 
     func setTabbingMode() {
         if #available(macOS 10.12, *) {
-            self.windowControllers.first!.window!.tabbingMode = .preferred
+            windowControllers.first?.window?.tabbingMode = .preferred
         }
     }
 
     // MARK: Private
     private func getStartPage() -> String {
-        var url = UserDefaults.standard.string(forKey: "startPage") ?? "https://esa.io/"
-        if !url.hasSuffix("/") {
-            url += "/"
+        var urlString = UserDefaults.standard.string(forKey: "startPage") ?? "https://esa.io/"
+        if !urlString.hasSuffix("/") {
+            urlString += "/"
         }
-        return url
+        return urlString
     }
 }

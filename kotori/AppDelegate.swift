@@ -13,80 +13,72 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         snippet.load()
 
         let appleEventManager = NSAppleEventManager.shared()
-        appleEventManager.setEventHandler(self, andSelector: #selector(AppDelegate.handleGetURLEvent(_:replyEvent:)), forEventClass: AEEventClass(kInternetEventClass), andEventID: AEEventID(kAEGetURL))
+        appleEventManager.setEventHandler(self, andSelector: #selector(handleGetURLEvent(_:replyEvent:)), forEventClass: AEEventClass(kInternetEventClass), andEventID: AEEventID(kAEGetURL))
 
         if #available(macOS 10.12, *) {
         } else {
             // "New Tab" menu is not available with OS X 10.11 or below
-            let mainMenu = NSApp.mainMenu
-            let fileMenu = mainMenu!.item(at: 1)!.submenu!
-            let newTabMenu = fileMenu.item(withTag: 111)!
-            fileMenu.removeItem(newTabMenu)
+            let fileMenu = NSApp.mainMenu?.item(at: 1)?.submenu
+            if let newTabMenu = fileMenu?.item(withTag: 111) {
+                fileMenu?.removeItem(newTabMenu)
+            }
         }
     }
 
     // MARK: Delegate - Sent to notify the delegate that the application is about to terminate.
     func applicationShouldTerminate(_: NSApplication) -> NSApplicationTerminateReply {
-        let confirm_terminate = UserDefaults.standard.bool(forKey: "confirmQuitting")
-        if confirm_terminate == false {
-            return NSApplicationTerminateReply.terminateNow
+        let confirmTerminate = UserDefaults.standard.bool(forKey: "confirmQuitting")
+        if confirmTerminate == false {
+            return .terminateNow
         }
 
         let alert = NSAlert()
         alert.messageText = "Quit kotori?"
         alert.addButton(withTitle: "OK")
         alert.addButton(withTitle: "Cancel")
-        alert.alertStyle = NSAlertStyle.warning
+        alert.alertStyle = .warning
         if alert.runModal() == NSAlertFirstButtonReturn {
-            return NSApplicationTerminateReply.terminateNow
+            return .terminateNow
         }
-        return NSApplicationTerminateReply.terminateCancel
+        return .terminateCancel
     }
 
-    private func openNewDocument() -> Document {
-        return try! NSDocumentController.shared().openUntitledDocumentAndDisplay(false) as! Document
+    private func openNewDocument() throws -> Document? {
+        return try NSDocumentController.shared().openUntitledDocumentAndDisplay(false) as? Document
     }
 
     // MARK: Actions
     @IBAction func showPreferencesWindow(_ sender: Any) {
-        let preferences = PreferencesWindowController.sharedInstance
-        preferences.showWindow(sender)
+        PreferencesWindowController.shared.showWindow(sender)
     }
 
     @available(macOS 10.12, *)
     @IBAction func newDocumentAsTab(_: Any) {
-        let doc = openNewDocument()
-        doc.makeWindowControllers()
-        doc.setTabbingMode()
-        doc.showWindows()
+        do {
+            if let doc = try openNewDocument() {
+                doc.makeWindowControllers()
+                doc.setTabbingMode()
+                doc.showWindows()
+            }
+        } catch let error {
+            print("\(error)")
+        }
     }
 
     @IBAction func showNewPost(_: Any) {
-        let doc = openNewDocument()
-        doc.makeWindowControllers(withPageName: "posts/new")
-        doc.setTabbingMode()
-        doc.showWindows()
+        showPage(withPageName: "posts/new")
     }
 
     @IBAction func showHome(_: Any) {
-        let doc = openNewDocument()
-        doc.makeWindowControllers(withPageName: "")
-        doc.setTabbingMode()
-        doc.showWindows()
+        showPage()
     }
 
     @IBAction func showPosts(_: Any) {
-        let doc = openNewDocument()
-        doc.makeWindowControllers(withPageName: "posts")
-        doc.setTabbingMode()
-        doc.showWindows()
+        showPage(withPageName: "posts")
     }
 
     @IBAction func showTeam(_: Any) {
-        let doc = openNewDocument()
-        doc.makeWindowControllers(withPageName: "team")
-        doc.setTabbingMode()
-        doc.showWindows()
+        showPage(withPageName: "team")
     }
 
     @IBAction func showMarkdownHelp(_: Any) {
@@ -95,51 +87,76 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     @IBAction func resetZoom(_: Any) {
-        if let mainWindow = NSApp.mainWindow {
-            let viewController: ViewController = mainWindow.windowController!.contentViewController as! ViewController
-            let webView = viewController.webView
+        if let mainWindow = NSApp.mainWindow,
+            let viewController = mainWindow.windowController?.contentViewController as? ViewController,
+            let webView = viewController.webView {
+
             UserDefaults.standard.set(1.0, forKey: "textZoomFactor")
-            webView!.setTextZoomFactor(1.0)
+            webView.setTextZoomFactor(1.0)
         }
     }
 
     @IBAction func zoomIn(_: Any) {
-        if let mainWindow = NSApp.mainWindow {
-            let viewController: ViewController = mainWindow.windowController!.contentViewController as! ViewController
-            let webView = viewController.webView
-            let factor = webView!.textZoomFactor() + 0.05
+        if let mainWindow = NSApp.mainWindow,
+            let viewController = mainWindow.windowController?.contentViewController as? ViewController,
+            let webView = viewController.webView {
+
+            let factor = webView.textZoomFactor() + 0.05
             UserDefaults.standard.set(factor, forKey: "textZoomFactor")
-            webView!.setTextZoomFactor(factor)
+            webView.setTextZoomFactor(factor)
         }
     }
 
     @IBAction func zoomOut(_: Any) {
-        if let mainWindow = NSApp.mainWindow {
-            let viewController: ViewController = mainWindow.windowController!.contentViewController as! ViewController
-            let webView = viewController.webView
-            let factor = webView!.textZoomFactor() - 0.05
+        if let mainWindow = NSApp.mainWindow,
+            let viewController = mainWindow.windowController?.contentViewController as? ViewController,
+            let webView = viewController.webView {
+
+            let factor = webView.textZoomFactor() - 0.05
             UserDefaults.standard.set(factor, forKey: "textZoomFactor")
-            webView!.setTextZoomFactor(factor)
+            webView.setTextZoomFactor(factor)
         }
     }
 
+    // MARK: Selector
     func handleGetURLEvent(_ event: NSAppleEventDescriptor, replyEvent _: NSAppleEventDescriptor) {
-        let url_string = event.paramDescriptor(forKeyword: AEKeyword(keyDirectObject))!.stringValue!
+        guard let urlString = event.paramDescriptor(forKeyword: AEKeyword(keyDirectObject))?.stringValue else {
+            return
+        }
 
-        let doc = openNewDocument()
-        doc.makeWindowControllers(withURLString: url_string)
-        doc.setTabbingMode()
-        doc.showWindows()
+        do {
+            if let doc = try openNewDocument() {
+                doc.makeWindowControllers(withURLString: urlString)
+                doc.setTabbingMode()
+                doc.showWindows()
+            }
+        } catch let error {
+            print("\(error)")
+        }
     }
 
     func selectSnippet(_ sender: AnyObject) {
-        let menu_item: NSMenuItem? = sender as? NSMenuItem
-        guard let index = menu_item?.menu?.index(of: menu_item!) else {
+        guard let menuItem = sender as? NSMenuItem, let index = menuItem.menu?.index(of: menuItem) else {
             return
         }
-        if let mainWindow = NSApp.mainWindow {
-            let viewController: ViewController = mainWindow.windowController!.contentViewController as! ViewController
+
+        if let mainWindow = NSApp.mainWindow,
+            let viewController = mainWindow.windowController?.contentViewController as? ViewController {
+
             viewController.insertTextToTextarea(snippet.getText(at: index))
+        }
+    }
+
+    // MARK: Private
+    private func showPage(withPageName name: String = "") {
+        do {
+            if let doc = try openNewDocument() {
+                doc.makeWindowControllers(withPageName: name)
+                doc.setTabbingMode()
+                doc.showWindows()
+            }
+        } catch let error {
+            print("\(error)")
         }
     }
 }

@@ -18,8 +18,8 @@ class ViewController: NSViewController, WKNavigationDelegate, WKUIDelegate {
         let script = WKUserScript(source: javascript, injectionTime: .atDocumentEnd, forMainFrameOnly: true)
         config.userContentController.addUserScript(script)
 
-        webView = WKWebView(frame: self.view.bounds, configuration: config)
-        webView.frame = self.view.frame
+        webView = WKWebView(frame: view.bounds, configuration: config)
+        webView.frame = view.frame
         webView.autoresizingMask = NSAutoresizingMaskOptions(arrayLiteral: .viewWidthSizable, .viewHeightSizable)
         webView.allowsBackForwardNavigationGestures = true
         webView.navigationDelegate = self
@@ -32,7 +32,7 @@ class ViewController: NSViewController, WKNavigationDelegate, WKUIDelegate {
             factor = 1.0
         }
         webView.setTextZoomFactor(factor)
-        self.view.addSubview(webView)
+        view.addSubview(webView)
     }
 
     func load(withRequest request: URLRequest) {
@@ -46,34 +46,40 @@ class ViewController: NSViewController, WKNavigationDelegate, WKUIDelegate {
 
     override func observeValue(forKeyPath keyPath: String?, of _: Any?, change _: [NSKeyValueChangeKey: Any]?, context _: UnsafeMutableRawPointer?) {
         if keyPath == "title" {
-            self.view.window!.title = webView.title ?? ""
+            view.window?.title = webView.title ?? ""
         }
     }
 
     func insertTextToTextarea(_ text: String) {
         let javascript = "insertText('\(text)');"
-        webView.evaluateJavaScript(javascript, completionHandler: nil)
+        webView.evaluateJavaScript(javascript)
     }
 
     // MARK: Delegate - Called when the page title of a frame loads or changes.
     func webView(_: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
         if let event = NSApp.currentEvent {
-            let commandKey: Bool = Int(event.modifierFlags.rawValue & NSCommandKeyMask.rawValue) != 0
-            let mouseUp: Bool = event.type == NSLeftMouseUp
+            let commandKey = Int(event.modifierFlags.rawValue & NSCommandKeyMask.rawValue) != 0
+            let mouseUp = event.type == NSLeftMouseUp
             if commandKey && mouseUp {
                 // Open new window or tab with command key + click
-                let doc = try! NSDocumentController.shared().openUntitledDocumentAndDisplay(false) as! Document
-                doc.makeWindowControllersOnly()
+                do {
+                    let doc = try NSDocumentController.shared().openUntitledDocumentAndDisplay(false) as? Document
+                    doc?.makeWindowControllersOnly()
 
-                if #available(macOS 10.12, *) {
-                    doc.windowControllers.first!.window!.tabbingMode = .preferred
+                    if #available(macOS 10.12, *) {
+                        doc?.windowControllers.first?.window?.tabbingMode = .preferred
+                    }
+                    doc?.showWindows()
+
+                    if let viewController = doc?.windowControllers.first?.contentViewController as? ViewController {
+                        viewController.load(withRequest: navigationAction.request)
+                    }
+
+                    // Cancel the loading webview in current window
+                    decisionHandler(.cancel)
+                } catch let error {
+                    print("\(error)")
                 }
-                doc.showWindows()
-                let viewController: ViewController = doc.windowControllers.first!.contentViewController as! ViewController
-                viewController.load(withRequest: navigationAction.request)
-
-                // Cancel the loading webview in current window
-                decisionHandler(.cancel)
                 return
             }
         }
@@ -82,7 +88,9 @@ class ViewController: NSViewController, WKNavigationDelegate, WKUIDelegate {
     }
 
     func webView(_ webView: WKWebView, createWebViewWith configuration: WKWebViewConfiguration, for navigationAction: WKNavigationAction, windowFeatures: WKWindowFeatures) -> WKWebView? {
-        NSWorkspace.shared().open(navigationAction.request.url!)
+        if let url = navigationAction.request.url {
+            NSWorkspace.shared().open(url)
+        }
         return nil
     }
 
@@ -90,7 +98,7 @@ class ViewController: NSViewController, WKNavigationDelegate, WKUIDelegate {
         let alert = NSAlert()
         alert.messageText = message
         alert.addButton(withTitle: "OK")
-        alert.alertStyle = NSAlertStyle.warning
+        alert.alertStyle = .warning
         alert.runModal()
         completionHandler()
     }
@@ -100,7 +108,7 @@ class ViewController: NSViewController, WKNavigationDelegate, WKUIDelegate {
         alert.messageText = message
         alert.addButton(withTitle: "OK")
         alert.addButton(withTitle: "Cancel")
-        alert.alertStyle = NSAlertStyle.warning
+        alert.alertStyle = .warning
         if alert.runModal() == NSAlertFirstButtonReturn {
             return completionHandler(true)
         }
