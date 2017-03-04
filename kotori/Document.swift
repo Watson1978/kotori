@@ -1,7 +1,7 @@
 import Cocoa
 import WebKit
 
-class Document: NSDocument, WKNavigationDelegate, WKUIDelegate {
+class Document: NSDocument {
 
     override class func autosavesInPlace() -> Bool {
         return false
