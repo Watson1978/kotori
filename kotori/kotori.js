@@ -5,6 +5,14 @@ function changeTextAreaFont() {
     }
 }
 
+function resizeFirstTextAreaHeight(size) {
+    var elements = document.getElementsByTagName('textarea');
+    if (elements.length > 0) {
+        var height = parseInt(elements[0].style.height);
+        elements[0].style.height = (height + size) + "px";
+    }
+}
+
 function insertText(text) {
     var elem = document.activeElement;
     var startPos = elem.selectionStart;

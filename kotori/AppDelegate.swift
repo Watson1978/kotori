@@ -118,6 +118,20 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
     }
 
+    @IBAction func reduceTextarea(_: Any) {
+        if let mainWindow = NSApp.mainWindow,
+            let viewController = mainWindow.windowController?.contentViewController as? ViewController {
+            viewController.resizeTextareaBy(pixel: -40)
+        }
+    }
+
+    @IBAction func expandTextarea(_: Any) {
+        if let mainWindow = NSApp.mainWindow,
+            let viewController = mainWindow.windowController?.contentViewController as? ViewController {
+            viewController.resizeTextareaBy(pixel: 40)
+        }
+    }
+
     // MARK: Selector
     func handleGetURLEvent(_ event: NSAppleEventDescriptor, replyEvent _: NSAppleEventDescriptor) {
         guard let urlString = event.paramDescriptor(forKeyword: AEKeyword(keyDirectObject))?.stringValue else {

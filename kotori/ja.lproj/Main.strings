@@ -251,4 +251,8 @@
 /* Class = "NSMenuItem"; title = "Cut"; ObjectID = "zUn-eH-Jxy"; */
 "zUn-eH-Jxy.title" = "カット";
 
-"welcome" = "ハローワールド！";
+/* Class = "NSMenuItem"; title = "Reduce Text Area"; ObjectID = "PvA-rx-que"; */
+"PvA-rx-que.title" = "テキストエリアを縮める";
+
+/* Class = "NSMenuItem"; title = "Expand Text Area"; ObjectID = "VEy-qU-ZzM"; */
+"VEy-qU-ZzM.title" = "テキストエリアを拡げる";

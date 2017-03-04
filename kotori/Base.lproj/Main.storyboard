@@ -369,6 +369,19 @@
                                                 <action selector="zoomOut:" target="Voe-Tx-rLC" id="heK-jq-ZXw"/>
                                             </connections>
                                         </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="isK-k0-87V"/>
+                                        <menuItem title="Reduce Text Area" keyEquivalent="&lt;" id="PvA-rx-que">
+                                            <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                                            <connections>
+                                                <action selector="reduceTextarea:" target="Voe-Tx-rLC" id="UPn-4k-zFF"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Expand Text Area" keyEquivalent="&gt;" id="VEy-qU-ZzM">
+                                            <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                                            <connections>
+                                                <action selector="expandTextarea:" target="Voe-Tx-rLC" id="cZS-qa-EJt"/>
+                                            </connections>
+                                        </menuItem>
                                     </items>
                                 </menu>
                             </menuItem>
