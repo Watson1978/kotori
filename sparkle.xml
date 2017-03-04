@@ -6,18 +6,18 @@
     <description>Most recent changes with links to updates.</description>
     <language>en</language>
     <item>
-      <title>Version 0.21</title>
+      <title>Version 0.22</title>
       <description>
         <![CDATA[
           <ul>
-            <li>メニューの日本語化にともなう軽微な不具合を修正しました。</li>
-            <li>メニューの [New Post] や [Home] など、macOS 10.12 ではタブで表示するようにしました。</li>
+            <li>「テキストエリアを縮める」・「テキストエリアを拡げる」というメニューを追加しました。キーボード操作でテキストエリアのサイズを簡単に変更できるようになります。</li>
+            <li>Hiroki Nagasawa さんに、コードを綺麗にしていただきました。ありがとうございます(\\( ⁰⊖⁰)/)</li>
           </ul>
           <p>以前のバージョンのアップデート情報については、<a href="https://github.com/Watson1978/kotori/releases">リリースノート</a>をご覧ください。</p>
         ]]>
       </description>
-      <pubDate>Thu, 02 Mar 2017 14:04:46 +0900</pubDate>
-      <enclosure url="https://github.com/Watson1978/kotori/releases/download/v0.21/kotori_0.21.dmg" sparkle:version="0.21" type="application/octet-stream" length="3075867" sparkle:dsaSignature="MCwCFBBBOObayjPDUwE9tCkO5iGcZL/kAhQatj4JjeXgTxBrd76Pr8+WHSIEMQ==" />
+      <pubDate>Sun, 05 Mar 2017 04:27:53 +0900</pubDate>
+      <enclosure url="https://github.com/Watson1978/kotori/releases/download/v0.22/kotori_0.22.dmg" sparkle:version="0.22" type="application/octet-stream" length="3173691" sparkle:dsaSignature="MCwCFC1l89B/VIVkKDVaumsv3ltCWK6eAhQtI34AqfZzBnL4jeCHRcnPDtz6mw==" />
     </item>
   </channel>
 </rss>
