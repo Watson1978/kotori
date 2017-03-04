@@ -54,7 +54,15 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     @available(macOS 10.12, *)
     @IBAction func newDocumentAsTab(_: Any) {
-        showPage()
+        do {
+            if let doc = try openNewDocument() {
+                doc.makeWindowControllers()
+                doc.setTabbingMode()
+                doc.showWindows()
+            }
+        } catch let error {
+            print("\(error)")
+        }
     }
 
     @IBAction func showNewPost(_: Any) {
