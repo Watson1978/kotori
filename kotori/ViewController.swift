@@ -89,7 +89,7 @@ class ViewController: NSViewController, WKNavigationDelegate, WKUIDelegate {
 
     func webView(_ webView: WKWebView, createWebViewWith configuration: WKWebViewConfiguration, for navigationAction: WKNavigationAction, windowFeatures: WKWindowFeatures) -> WKWebView? {
         if let url = navigationAction.request.url {
-            NSWorkspace.shared().open(navigationAction.request.url!)
+            NSWorkspace.shared().open(url)
         }
         return nil
     }
