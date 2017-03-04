@@ -65,10 +65,7 @@ class ViewController: NSViewController, WKNavigationDelegate, WKUIDelegate {
                 do {
                     let doc = try NSDocumentController.shared().openUntitledDocumentAndDisplay(false) as? Document
                     doc?.makeWindowControllersOnly()
-
-                    if #available(macOS 10.12, *) {
-                        doc?.windowControllers.first?.window?.tabbingMode = .preferred
-                    }
+                    doc?.setTabbingMode()
                     doc?.showWindows()
 
                     if let viewController = doc?.windowControllers.first?.contentViewController as? ViewController {
