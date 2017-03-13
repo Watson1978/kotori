@@ -6,18 +6,17 @@
     <description>Most recent changes with links to updates.</description>
     <language>en</language>
     <item>
-      <title>Version 0.22</title>
+      <title>Version 0.23</title>
       <description>
         <![CDATA[
           <ul>
-            <li>「テキストエリアを縮める」・「テキストエリアを拡げる」というメニューを追加しました。キーボード操作でテキストエリアのサイズを簡単に変更できるようになります。</li>
-            <li>Hiroki Nagasawa さんに、コードを綺麗にしていただきました。ありがとうございます(\\( ⁰⊖⁰)/)</li>
+            <li>「ページを再読み込み」というメニューを追加しました。</li>
           </ul>
           <p>以前のバージョンのアップデート情報については、<a href="https://github.com/Watson1978/kotori/releases">リリースノート</a>をご覧ください。</p>
         ]]>
       </description>
-      <pubDate>Sun, 05 Mar 2017 04:27:53 +0900</pubDate>
-      <enclosure url="https://github.com/Watson1978/kotori/releases/download/v0.22/kotori_0.22.dmg" sparkle:version="0.22" type="application/octet-stream" length="3173691" sparkle:dsaSignature="MCwCFC1l89B/VIVkKDVaumsv3ltCWK6eAhQtI34AqfZzBnL4jeCHRcnPDtz6mw==" />
+      <pubDate>Mon, 13 Mar 2017 09:31:32 +0900</pubDate>
+      <enclosure url="https://github.com/Watson1978/kotori/releases/download/v0.23/kotori_0.23.dmg" sparkle:version="0.23" type="application/octet-stream" length="3176669" sparkle:dsaSignature="MC0CFEeA/p8dg0U4kOuBDVl+o++crI8iAhUAhlM0sU9K3tolS90LXv9ilcfkD2A=" />
     </item>
   </channel>
 </rss>
