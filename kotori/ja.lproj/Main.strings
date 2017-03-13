@@ -256,3 +256,6 @@
 
 /* Class = "NSMenuItem"; title = "Expand Text Area"; ObjectID = "VEy-qU-ZzM"; */
 "VEy-qU-ZzM.title" = "テキストエリアを拡げる";
+
+/* Class = "NSMenuItem"; title = "Reload Page"; ObjectID = "AtO-Sf-h5y"; */
+"AtO-Sf-h5y.title" = "ページを再読み込み";

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E175b" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E183b" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -353,6 +353,11 @@
                                                 <action selector="goForward:" target="Ady-hI-5gd" id="j7Z-OU-x6F"/>
                                             </connections>
                                         </menuItem>
+                                        <menuItem title="Reload Page" keyEquivalent="r" id="AtO-Sf-h5y">
+                                            <connections>
+                                                <action selector="reload:" target="Ady-hI-5gd" id="ADW-Bl-4Gz"/>
+                                            </connections>
+                                        </menuItem>
                                         <menuItem isSeparatorItem="YES" id="E74-aG-nPr"/>
                                         <menuItem title="Reset Zoom" keyEquivalent="0" id="Aaz-Vg-Y79">
                                             <connections>
@@ -371,13 +376,11 @@
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="isK-k0-87V"/>
                                         <menuItem title="Reduce Text Area" keyEquivalent="&lt;" id="PvA-rx-que">
-                                            <modifierMask key="keyEquivalentModifierMask" command="YES"/>
                                             <connections>
                                                 <action selector="reduceTextarea:" target="Voe-Tx-rLC" id="UPn-4k-zFF"/>
                                             </connections>
                                         </menuItem>
                                         <menuItem title="Expand Text Area" keyEquivalent="&gt;" id="VEy-qU-ZzM">
-                                            <modifierMask key="keyEquivalentModifierMask" command="YES"/>
                                             <connections>
                                                 <action selector="expandTextarea:" target="Voe-Tx-rLC" id="cZS-qa-EJt"/>
                                             </connections>
