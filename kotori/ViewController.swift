@@ -13,10 +13,11 @@ class ViewController: NSViewController, WKNavigationDelegate, WKUIDelegate {
 
         let config = WKWebViewConfiguration()
         let scriptURL = Bundle.main.resourcePath! + "/kotori.js"
-        var javascript = try! String(contentsOfFile: scriptURL)
-        javascript += "changeTextAreaFont();"
-        let script = WKUserScript(source: javascript, injectionTime: .atDocumentEnd, forMainFrameOnly: true)
-        config.userContentController.addUserScript(script)
+        if var javascript = try? String(contentsOfFile: scriptURL) {
+            javascript += "changeTextAreaFont();"
+            let script = WKUserScript(source: javascript, injectionTime: .atDocumentEnd, forMainFrameOnly: true)
+            config.userContentController.addUserScript(script)
+        }
 
         webView = WKWebView(frame: view.bounds, configuration: config)
         webView.frame = view.frame
