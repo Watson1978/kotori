@@ -1,7 +1,7 @@
 import Cocoa
 
 @available(OSX 10.12.2, *)
-class TouchBarController: NSWindowController {
+class WindowController: NSWindowController {
 
     @IBAction func saveAsWIP(_ sender: Any) {
         if let mainWindow = NSApp.mainWindow,
