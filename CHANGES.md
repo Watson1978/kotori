@@ -1,3 +1,7 @@
+## Version 0.24
+
+* 「Save as WIP」と「Ship It!」をメニューとTouch barに追加しました。
+
 ## Version 0.23
 
 * 「ページを再読み込み」というメニューを追加しました。
