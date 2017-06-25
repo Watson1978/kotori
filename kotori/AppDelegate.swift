@@ -16,6 +16,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         appleEventManager.setEventHandler(self, andSelector: #selector(handleGetURLEvent(_:replyEvent:)), forEventClass: AEEventClass(kInternetEventClass), andEventID: AEEventID(kAEGetURL))
 
         if #available(macOS 10.12, *) {
+            if #available(macOS 10.12.2, *) {
+                NSApplication.shared().isAutomaticCustomizeTouchBarMenuItemEnabled = true
+            }
         } else {
             // "New Tab" menu is not available with OS X 10.11 or below
             let fileMenu = NSApp.mainMenu?.item(at: 1)?.submenu
@@ -129,6 +132,20 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         if let mainWindow = NSApp.mainWindow,
             let viewController = mainWindow.windowController?.contentViewController as? ViewController {
             viewController.resizeTextareaBy(pixel: 40)
+        }
+    }
+    
+    @IBAction func saveAsWIPAtMenu(_ sender: Any) {
+        if let mainWindow = NSApp.mainWindow,
+            let viewController = mainWindow.windowController?.contentViewController as? ViewController {
+            viewController.saveAsWIP()
+        }
+    }
+
+    @IBAction func shipItAtMenu(_ sender: Any) {
+        if let mainWindow = NSApp.mainWindow,
+            let viewController = mainWindow.windowController?.contentViewController as? ViewController {
+            viewController.shipIt()
         }
     }
 

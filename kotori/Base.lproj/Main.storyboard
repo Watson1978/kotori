@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E183b" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F2073" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaDFRPlugin" version="12062"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12121"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="the Touch Bar" message="Use a version of macOS with Touch Bar support." minToolsVersion="8.1" minSystemVersion="10.12.1" requiredIntegratedClassName="NSTouchBar"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -92,9 +94,21 @@
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="Edit" id="Y5v-Gf-Y1w">
                                     <items>
-                                        <menuItem title="Undo" keyEquivalent="z" id="0Ve-WC-fOA">
+                                        <menuItem title="Save as WIP" keyEquivalent="s" id="pSH-ak-gtc">
                                             <connections>
-                                                <action selector="undo:" target="Ady-hI-5gd" id="CcJ-WB-EnT"/>
+                                                <action selector="saveAsWIPAtMenu:" target="Voe-Tx-rLC" id="05L-vr-QKt"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Ship It!" keyEquivalent="S" id="2G7-cI-N8C">
+                                            <modifierMask key="keyEquivalentModifierMask" shift="YES" command="YES"/>
+                                            <connections>
+                                                <action selector="shipItAtMenu:" target="Voe-Tx-rLC" id="Lp7-A5-g1n"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="fuB-RS-izI"/>
+                                        <menuItem title="Undo" keyEquivalent="z" id="X6C-ta-gvv">
+                                            <connections>
+                                                <action selector="undo:" target="Ady-hI-5gd" id="tXz-gv-WPi"/>
                                             </connections>
                                         </menuItem>
                                         <menuItem title="Redo" keyEquivalent="Z" id="DOT-i2-ti2">
@@ -455,13 +469,48 @@
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
             <objects>
-                <windowController storyboardIdentifier="Document Window Controller" id="jGA-0Y-lOj" sceneMemberID="viewController">
+                <windowController storyboardIdentifier="Document Window Controller" id="jGA-0Y-lOj" customClass="TouchBarController" customModule="kotori" customModuleProvider="target" sceneMemberID="viewController">
                     <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="KotoriWindow" animationBehavior="default" id="Ckk-yw-fiv">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="850" height="900"/>
-                        <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1280" height="777"/>
                     </window>
+                    <touchBar key="touchBar" id="A2c-zW-chJ">
+                        <touchBarItems>
+                            <touchBarSpacerItem identifier="NSTouchBarItemIdentifierFlexibleSpace" id="PkO-Cl-KUv"/>
+                            <touchBarItem id="p4I-V8-kxE">
+                                <viewController key="viewController" id="i81-EK-D99">
+                                    <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="RA8-L1-1zY">
+                                        <rect key="frame" x="0.0" y="0.0" width="108" height="30"/>
+                                        <buttonCell key="cell" type="push" title="Save as WIP" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="JwU-Fg-yXP">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" usesAppearanceFont="YES"/>
+                                            <connections>
+                                                <action selector="saveAsWIP:" target="jGA-0Y-lOj" id="Q7K-My-qiH"/>
+                                            </connections>
+                                        </buttonCell>
+                                    </button>
+                                </viewController>
+                                <size key="designTimeSize" width="108" height="30"/>
+                            </touchBarItem>
+                            <touchBarItem id="Tdz-f6-iWt">
+                                <viewController key="viewController" id="QNm-SW-ppO">
+                                    <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="4uJ-24-G9d">
+                                        <rect key="frame" x="0.0" y="0.0" width="72" height="30"/>
+                                        <buttonCell key="cell" type="push" title="Ship It!" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="mjL-ti-Q4V">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" usesAppearanceFont="YES"/>
+                                            <connections>
+                                                <action selector="ShipIt:" target="jGA-0Y-lOj" id="jET-nZ-zNA"/>
+                                            </connections>
+                                        </buttonCell>
+                                    </button>
+                                </viewController>
+                                <size key="designTimeSize" width="72" height="30"/>
+                            </touchBarItem>
+                        </touchBarItems>
+                    </touchBar>
                     <connections>
                         <segue destination="5gI-5U-AMq" kind="relationship" relationship="window.shadowedContentViewController" id="nsd-lR-9xd"/>
                     </connections>
@@ -482,6 +531,31 @@
                 <customObject id="2Tp-Fl-jBw" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="75" y="1221"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="kbi-HR-jz5">
+            <objects>
+                <viewController id="Yh6-BF-YJf" sceneMemberID="viewController">
+                    <view key="view" id="k63-mg-3p3">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="bG4-j9-DKe" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-19" y="1901"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="W4V-tQ-v6R">
+            <objects>
+                <viewController id="VnW-i2-Ljl" sceneMemberID="viewController">
+                    <view key="view" id="6jl-hN-PSy">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="5V0-rE-isz" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
         </scene>
     </scenes>
 </document>

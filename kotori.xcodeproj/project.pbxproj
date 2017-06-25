@@ -13,6 +13,7 @@
 		A90E64C71E22A198002BD997 /* PreferencesWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90E64C61E22A198002BD997 /* PreferencesWindowController.swift */; };
 		A912B5111E2C5569007DB154 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = A912B5101E2C5569007DB154 /* dsa_pub.pem */; };
 		A91F69BC1E230D040036CDCF /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A91F69BB1E230D040036CDCF /* WebKit.framework */; };
+		A97B232E1EFEDAF50095AB3C /* TouchBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97B232D1EFEDAF50095AB3C /* TouchBarController.swift */; };
 		A991AFDD1E324FF400DEAF5B /* SnippetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A991AFDC1E324FF400DEAF5B /* SnippetManager.swift */; };
 		A9943DE41E22747A00FBA718 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9943DE31E22747A00FBA718 /* AppDelegate.swift */; };
 		A9943DE61E22747A00FBA718 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9943DE51E22747A00FBA718 /* ViewController.swift */; };
@@ -37,6 +38,7 @@
 		A90E64C61E22A198002BD997 /* PreferencesWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesWindowController.swift; sourceTree = "<group>"; };
 		A912B5101E2C5569007DB154 /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
 		A91F69BB1E230D040036CDCF /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		A97B232D1EFEDAF50095AB3C /* TouchBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchBarController.swift; sourceTree = "<group>"; };
 		A991AFDC1E324FF400DEAF5B /* SnippetManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnippetManager.swift; sourceTree = "<group>"; };
 		A9943DE01E22747A00FBA718 /* kotori.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kotori.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9943DE31E22747A00FBA718 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				A90E64C61E22A198002BD997 /* PreferencesWindowController.swift */,
 				A9943DE71E22747A00FBA718 /* Document.swift */,
 				A991AFDC1E324FF400DEAF5B /* SnippetManager.swift */,
+				A97B232D1EFEDAF50095AB3C /* TouchBarController.swift */,
 				A9EAF6461E2DB07E00D34B47 /* kotori-Bridging-Header.h */,
 				A9EAF6471E2DB07E00D34B47 /* WKWebView+TextZoom.h */,
 				A9EAF6481E2DB07E00D34B47 /* WKWebView+TextZoom.m */,
@@ -263,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9943DE61E22747A00FBA718 /* ViewController.swift in Sources */,
+				A97B232E1EFEDAF50095AB3C /* TouchBarController.swift in Sources */,
 				A90E64C71E22A198002BD997 /* PreferencesWindowController.swift in Sources */,
 				A9EAF6491E2DB07E00D34B47 /* WKWebView+TextZoom.m in Sources */,
 				A991AFDD1E324FF400DEAF5B /* SnippetManager.swift in Sources */,

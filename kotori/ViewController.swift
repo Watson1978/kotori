@@ -61,6 +61,16 @@ class ViewController: NSViewController, WKNavigationDelegate, WKUIDelegate {
         webView.evaluateJavaScript(javascript)
     }
 
+    func saveAsWIP() {
+        let javascript = "saveAsWIP();"
+        webView.evaluateJavaScript(javascript)
+    }
+
+    func shipIt() {
+        let javascript = "shipIt();"
+        webView.evaluateJavaScript(javascript)
+    }
+
     // MARK: Delegate - Called when the page title of a frame loads or changes.
     func webView(_: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
         if let event = NSApp.currentEvent {
