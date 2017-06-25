@@ -6,17 +6,17 @@
     <description>Most recent changes with links to updates.</description>
     <language>en</language>
     <item>
-      <title>Version 0.23</title>
+      <title>Version 0.24</title>
       <description>
         <![CDATA[
           <ul>
-            <li>「ページを再読み込み」というメニューを追加しました。</li>
+            <li>「Save as WIP」と「Ship It!」をメニューとTouch barに追加しました。</li>
           </ul>
           <p>以前のバージョンのアップデート情報については、<a href="https://github.com/Watson1978/kotori/releases">リリースノート</a>をご覧ください。</p>
         ]]>
       </description>
-      <pubDate>Mon, 13 Mar 2017 09:31:32 +0900</pubDate>
-      <enclosure url="https://github.com/Watson1978/kotori/releases/download/v0.23/kotori_0.23.dmg" sparkle:version="0.23" type="application/octet-stream" length="3176669" sparkle:dsaSignature="MC0CFEeA/p8dg0U4kOuBDVl+o++crI8iAhUAhlM0sU9K3tolS90LXv9ilcfkD2A=" />
+      <pubDate>Sun, 25 Jun 2017 15:54:35 +0900</pubDate>
+      <enclosure url="https://github.com/Watson1978/kotori/releases/download/v0.24/kotori_0.24.dmg" sparkle:version="0.24" type="application/octet-stream" length="3193865" sparkle:dsaSignature="MC0CFE6gDasP9NRrJx9vcxIi+AM8BrNMAhUAygVf+wYe1VYSy0buiGMfE4AjvrU=" />
     </item>
   </channel>
 </rss>
