@@ -19,7 +19,7 @@ function insertText(text) {
     var endPos = elem.selectionEnd;
     var caretPos = startPos + text.length;
     elem.value = elem.value.substring(0, startPos) + text + elem.value.substring(endPos, elem.value.length);
-    lem.setSelectionRange(caretPos, caretPos);
+    elem.setSelectionRange(caretPos, caretPos);
 }
 
 function addHidden(theForm, key, value) {
