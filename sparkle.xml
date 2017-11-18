@@ -6,17 +6,17 @@
     <description>Most recent changes with links to updates.</description>
     <language>en</language>
     <item>
-      <title>Version 0.24</title>
+      <title>Version 0.25</title>
       <description>
         <![CDATA[
           <ul>
-            <li>「Save as WIP」と「Ship It!」をメニューとTouch barに追加しました。</li>
+            <li>定型文を挿入したあとにカーソル位置が文章末に移動してしまうのを修正しました。</li>
           </ul>
           <p>以前のバージョンのアップデート情報については、<a href="https://github.com/Watson1978/kotori/releases">リリースノート</a>をご覧ください。</p>
         ]]>
       </description>
-      <pubDate>Sun, 25 Jun 2017 15:54:35 +0900</pubDate>
-      <enclosure url="https://github.com/Watson1978/kotori/releases/download/v0.24/kotori_0.24.dmg" sparkle:version="0.24" type="application/octet-stream" length="3193865" sparkle:dsaSignature="MC0CFE6gDasP9NRrJx9vcxIi+AM8BrNMAhUAygVf+wYe1VYSy0buiGMfE4AjvrU=" />
+      <pubDate>Sun, 19 Nov 2017 01:18:15 +0900</pubDate>
+      <enclosure url="https://github.com/Watson1978/kotori/releases/download/v0.25/kotori_0.25.dmg" sparkle:version="0.25" type="application/octet-stream" length="4154428" sparkle:dsaSignature="MC0CFDThw+c9JeoSjQ6IpMZPJhqFeYZrAhUAh4Ylq7ZnWvsqXuMO7WHZePq/Eu8=" />
     </item>
   </channel>
 </rss>
