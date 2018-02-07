@@ -17,7 +17,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
         if #available(macOS 10.12, *) {
             if #available(macOS 10.12.2, *) {
-                NSApplication.shared().isAutomaticCustomizeTouchBarMenuItemEnabled = true
+                NSApplication.shared.isAutomaticCustomizeTouchBarMenuItemEnabled = true
             }
         } else {
             // "New Tab" menu is not available with OS X 10.11 or below
@@ -29,7 +29,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     // MARK: Delegate - Sent to notify the delegate that the application is about to terminate.
-    func applicationShouldTerminate(_: NSApplication) -> NSApplicationTerminateReply {
+    func applicationShouldTerminate(_: NSApplication) -> NSApplication.TerminateReply {
         let confirmTerminate = UserDefaults.standard.bool(forKey: "confirmQuitting")
         if confirmTerminate == false {
             return .terminateNow
@@ -40,14 +40,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         alert.addButton(withTitle: "OK")
         alert.addButton(withTitle: "Cancel")
         alert.alertStyle = .warning
-        if alert.runModal() == NSAlertFirstButtonReturn {
+        if alert.runModal() == NSApplication.ModalResponse.alertFirstButtonReturn {
             return .terminateNow
         }
         return .terminateCancel
     }
 
     private func openNewDocument() throws -> Document? {
-        return try NSDocumentController.shared().openUntitledDocumentAndDisplay(false) as? Document
+        return try NSDocumentController.shared.openUntitledDocumentAndDisplay(false) as? Document
     }
 
     // MARK: Actions
@@ -86,7 +86,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     @IBAction func showMarkdownHelp(_: Any) {
         let url = URL(string: "https://docs.esa.io/posts/49")!
-        NSWorkspace.shared().open(url)
+        NSWorkspace.shared.open(url)
     }
 
     @IBAction func resetZoom(_: Any) {
@@ -150,7 +150,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     // MARK: Selector
-    func handleGetURLEvent(_ event: NSAppleEventDescriptor, replyEvent _: NSAppleEventDescriptor) {
+    @objc func handleGetURLEvent(_ event: NSAppleEventDescriptor, replyEvent _: NSAppleEventDescriptor) {
         guard let urlString = event.paramDescriptor(forKeyword: AEKeyword(keyDirectObject))?.stringValue else {
             return
         }

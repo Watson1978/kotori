@@ -592,7 +592,7 @@ private func normalizeBreaks (_ s: String) -> String {
 }
 
 private func unwrapQuotedString (_ s: String) -> String {
-  return s[s.index(after: s.startIndex)..<s.index(before: s.endIndex)]
+  return String(s[s.index(after: s.startIndex)..<s.index(before: s.endIndex)])
 }
 
 private func unescapeSingleQuotes (_ s: String) -> String {
