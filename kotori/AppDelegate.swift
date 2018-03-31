@@ -166,7 +166,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
     }
 
-    func selectSnippet(_ sender: AnyObject) {
+    @objc func selectSnippet(_ sender: AnyObject) {
         guard let menuItem = sender as? NSMenuItem, let index = menuItem.menu?.index(of: menuItem) else {
             return
         }
