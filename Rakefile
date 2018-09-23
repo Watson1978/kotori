@@ -67,6 +67,10 @@ task :"update:sparkle" do
   require 'erb'
   require 'time'
 
+  unless File.exist?('dsa_priv.pem')
+    raise 'Not found dsa_priv.pem'
+  end
+
   signature = `./tool/sparkle/sign_update ./build/kotori_#{VERSION}.dmg dsa_priv.pem`.strip
   title_version = "Version #{VERSION}"
   version = VERSION
