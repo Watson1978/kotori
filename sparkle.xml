@@ -6,17 +6,18 @@
     <description>Most recent changes with links to updates.</description>
     <language>en</language>
     <item>
-      <title>Version 0.25</title>
+      <title>Version 0.26</title>
       <description>
         <![CDATA[
           <ul>
-            <li>定型文を挿入したあとにカーソル位置が文章末に移動してしまうのを修正しました。</li>
+            <li>ライブラリのバージョンを更新しました。</li>
+            <li>Xcode 10 でビルドするようにしました。</li>
           </ul>
           <p>以前のバージョンのアップデート情報については、<a href="https://github.com/Watson1978/kotori/releases">リリースノート</a>をご覧ください。</p>
         ]]>
       </description>
-      <pubDate>Sun, 19 Nov 2017 01:18:15 +0900</pubDate>
-      <enclosure url="https://github.com/Watson1978/kotori/releases/download/v0.25/kotori_0.25.dmg" sparkle:version="0.25" type="application/octet-stream" length="4154428" sparkle:dsaSignature="MC0CFDThw+c9JeoSjQ6IpMZPJhqFeYZrAhUAh4Ylq7ZnWvsqXuMO7WHZePq/Eu8=" />
+      <pubDate>Mon, 24 Sep 2018 05:51:47 +0900</pubDate>
+      <enclosure url="https://github.com/Watson1978/kotori/releases/download/v0.26/kotori_0.26.dmg" sparkle:version="0.26" type="application/octet-stream" length="4454218" sparkle:dsaSignature="MCwCFC3VkkE7YzEO/3g25k7pOiefeM6VAhQkV1my5aU0FxI57L5EEMH58MNvig==" />
     </item>
   </channel>
 </rss>
