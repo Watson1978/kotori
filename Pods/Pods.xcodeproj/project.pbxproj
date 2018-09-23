@@ -372,7 +372,41 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		596988AB1833A2A1E8BA99EA41885638 /* Debug */ = {
+		28E952D123924BD246105715B97ED310 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78360BDECFB9B8886B2038EA0452FF0A /* Yaml.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/Yaml/Yaml-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Yaml/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/Yaml/Yaml.modulemap";
+				PRODUCT_MODULE_NAME = Yaml;
+				PRODUCT_NAME = Yaml;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.1;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7C02296F5CF309A4A5810B1DA915692A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 28F15CEC016501895E299A4FB2C01C75 /* Pods-kotori.debug.xcconfig */;
 			buildSettings = {
@@ -388,6 +422,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "Target Support Files/Pods-kotori/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -409,7 +444,7 @@
 			};
 			name = Debug;
 		};
-		87E1D7133A920F93DC05D1334418328F /* Release */ = {
+		9087402DC8D581F8AD5D51130E0F3DF7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 78360BDECFB9B8886B2038EA0452FF0A /* Yaml.xcconfig */;
 			buildSettings = {
@@ -423,6 +458,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_VERSION = A;
 				GCC_PREFIX_HEADER = "Target Support Files/Yaml/Yaml-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Yaml/Info.plist";
@@ -443,40 +479,7 @@
 			};
 			name = Release;
 		};
-		8E9DD2C8B47AC2ECF41528DF721BB2A8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 78360BDECFB9B8886B2038EA0452FF0A /* Yaml.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = "Target Support Files/Yaml/Yaml-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Yaml/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				MODULEMAP_FILE = "Target Support Files/Yaml/Yaml.modulemap";
-				PRODUCT_MODULE_NAME = Yaml;
-				PRODUCT_NAME = Yaml;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.1;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		AF1E8F4151F5B1FF920C1AE4A2ADBEC3 /* Release */ = {
+		9BDC8E5A55E2427D66E6F1F62A9E03AF /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3BAD823F0250A4D29B7EA9E50CDF5B18 /* Pods-kotori.release.xcconfig */;
 			buildSettings = {
@@ -492,6 +495,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "Target Support Files/Pods-kotori/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -651,8 +655,8 @@
 		36C4BFCECBA2EEB473CDFC57EAFBDCFC /* Build configuration list for PBXNativeTarget "Yaml" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8E9DD2C8B47AC2ECF41528DF721BB2A8 /* Debug */,
-				87E1D7133A920F93DC05D1334418328F /* Release */,
+				28E952D123924BD246105715B97ED310 /* Debug */,
+				9087402DC8D581F8AD5D51130E0F3DF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -660,8 +664,8 @@
 		F245DA3DE57D441942AC802844600D81 /* Build configuration list for PBXNativeTarget "Pods-kotori" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				596988AB1833A2A1E8BA99EA41885638 /* Debug */,
-				AF1E8F4151F5B1FF920C1AE4A2ADBEC3 /* Release */,
+				7C02296F5CF309A4A5810B1DA915692A /* Debug */,
+				9BDC8E5A55E2427D66E6F1F62A9E03AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
