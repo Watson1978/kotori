@@ -7,118 +7,130 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		003427CE778A2FFB4BBB364FC9B19726 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */; };
-		03DF838E61201EA3F6C9E6EE5C1F0EDC /* Yaml.swift in Sources */ = {isa = PBXBuildFile; fileRef = E907856BD4B42510D54DB1A029C5819E /* Yaml.swift */; };
-		0ABAD551649387E64BFF28F6EC66CD9D /* YAMLRegex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCB926D79671A7D2E689608A357ABE3 /* YAMLRegex.swift */; };
-		1B4E882E758F86576DCF937430A3CCB7 /* Yaml-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 907015F53073148838E8292F259E8D7C /* Yaml-dummy.m */; };
-		33EEE7677DE653E2F1592EABD5C6258C /* Pods-kotori-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B75E040B4FDB9731065E2449505035C /* Pods-kotori-dummy.m */; };
-		403EE2E423B8F5AB8E4C696EB18C659C /* Yaml-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2765E98E0EE03F89CA06BE5F7EA8A198 /* Yaml-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		613C78EC7F725DA6A153325C9EF32C5D /* YAMLResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E2E4C84ABFD86778E881FB4F582A6B /* YAMLResult.swift */; };
-		7D65128CA8A411089821A3EA90E165D7 /* YAMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1063A6FFEC71B805182AF70090F70C4 /* YAMLParser.swift */; };
-		BD0C3568CD6439D48A51436DEC23FF5F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */; };
-		C698AF5117E10B1C34A6125EECBCF8F7 /* YAMLOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AE44AC320A77487D558BD3EF650609 /* YAMLOperators.swift */; };
-		E69FE376F962446D7046DED1249E7306 /* Pods-kotori-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FFC4BF780CE33322FEB5EC8370D51F9 /* Pods-kotori-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F54EE4A03413DA463AF53AD5C9C56F32 /* YAMLTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C130F6823F21FC7B44E34F288CBA723B /* YAMLTokenizer.swift */; };
+		0E71B39D19447181FDCF0B9C2673747B /* YAMLTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED43625CAD9352E27A0A5CD822F6B6EE /* YAMLTokenizer.swift */; };
+		151751BEDDA8DD63EB47C93D67CBA39B /* Yaml-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 99595BB2E4B0527A7F86BA89B9827C97 /* Yaml-dummy.m */; };
+		432405AE8D53BA7D42BD93C29CB8A4D8 /* YAMLRegex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEB3E622116270E00A812E3F00C1BB5 /* YAMLRegex.swift */; };
+		594D8C924D957F8BA52902B0328E9222 /* Pods-kotori-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E6277B2B765D72F4FD1FC81E154C1FD4 /* Pods-kotori-dummy.m */; };
+		6DA5E8BCCCD85958B2376C7DE62FF046 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF428FC7C7A6555B2B02D8E238C8D8F2 /* Cocoa.framework */; };
+		7C682114CB37F78B45B9255C51345EFC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF428FC7C7A6555B2B02D8E238C8D8F2 /* Cocoa.framework */; };
+		936B4DC15A82DE391A7D5226499C1D40 /* Yaml.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874DE8063C70C393D54B94579B9D508D /* Yaml.swift */; };
+		9F663AA309FFAFBBEB2514201B1A9528 /* YAMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83CDAEFF547DFDFA41EC631BD47DBDA /* YAMLParser.swift */; };
+		AFD89679DD5580C6489C1E31469A11F9 /* YAMLOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E6DC35C6FA5E9F000AAD0E5E888CFB /* YAMLOperators.swift */; };
+		B5013DE0057B07B0AAA38B05D6FFCA86 /* Pods-kotori-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 52DA3EB4B632C8940ADFC9085C5B9E71 /* Pods-kotori-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C111DA24BB52EB14FB887FCBE56AA032 /* YAMLResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3FAB5638C7F388EB287DAD09A19921 /* YAMLResult.swift */; };
+		F1A2140811847D0038A375CE1AF2C431 /* Yaml-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 30CE26E4CA8E81B1F08057E95809C9E3 /* Yaml-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		67A04EF261C58D7A4C44C2F642EA6876 /* PBXContainerItemProxy */ = {
+		0D9137860BAC10FD73651A0265D34A0D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4662CB7B6D9F77630D05D381E0F5D960;
+			remoteGlobalIDString = 407DB54825E72AA0289A1D2B78BBCD44;
 			remoteInfo = Yaml;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0345BC17F94C6EFF0A94245DC409C009 /* Pods-kotori-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-kotori-acknowledgements.markdown"; sourceTree = "<group>"; };
-		08EB0F1359206B7EDEBC8DE88B21EC96 /* SUVersionDisplayProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SUVersionDisplayProtocol.h; path = Sparkle.framework/Versions/A/Headers/SUVersionDisplayProtocol.h; sourceTree = "<group>"; };
-		0909260BA54D1E4B0CF402FB979675C2 /* Yaml.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Yaml.modulemap; sourceTree = "<group>"; };
-		0EAC2EF3BB10C4B17351E62E3F5F28BF /* SUAppcastItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SUAppcastItem.h; path = Sparkle.framework/Versions/A/Headers/SUAppcastItem.h; sourceTree = "<group>"; };
-		214527EB4F5DC5B0FD0B0D0ED0B305A7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		21808D637CAB8ED9C527BA8755EA33FC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
-		2765E98E0EE03F89CA06BE5F7EA8A198 /* Yaml-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Yaml-umbrella.h"; sourceTree = "<group>"; };
-		2AE431B7E7C7B86BCDE8268D433C90ED /* SUVersionComparisonProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SUVersionComparisonProtocol.h; path = Sparkle.framework/Versions/A/Headers/SUVersionComparisonProtocol.h; sourceTree = "<group>"; };
-		30F0FDF8446AE92670FCC86776D896CB /* Pods_kotori.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kotori.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3E7254E737B6C444A3E77D341ACE830F /* SUStandardVersionComparator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SUStandardVersionComparator.h; path = Sparkle.framework/Versions/A/Headers/SUStandardVersionComparator.h; sourceTree = "<group>"; };
-		563EE1C8D84733D134CBA62477348708 /* SUUpdater.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SUUpdater.h; path = Sparkle.framework/Versions/A/Headers/SUUpdater.h; sourceTree = "<group>"; };
-		5C17144E448C3C70A0434CBB4AFCA089 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
-		5C187662E9F9B5D8AF3A889A9EB7A133 /* Pods-kotori-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-kotori-acknowledgements.plist"; sourceTree = "<group>"; };
-		6FFC4BF780CE33322FEB5EC8370D51F9 /* Pods-kotori-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-kotori-umbrella.h"; sourceTree = "<group>"; };
-		7B75E040B4FDB9731065E2449505035C /* Pods-kotori-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-kotori-dummy.m"; sourceTree = "<group>"; };
-		8471FCCB73784B8C8E5A5A8F56351D09 /* SUAppcast.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SUAppcast.h; path = Sparkle.framework/Versions/A/Headers/SUAppcast.h; sourceTree = "<group>"; };
-		8FCB926D79671A7D2E689608A357ABE3 /* YAMLRegex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YAMLRegex.swift; path = Yaml/YAMLRegex.swift; sourceTree = "<group>"; };
-		907015F53073148838E8292F259E8D7C /* Yaml-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Yaml-dummy.m"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9FE9AFFAF05A4391CE854DB3E11A268A /* SUUpdaterDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SUUpdaterDelegate.h; path = Sparkle.framework/Versions/A/Headers/SUUpdaterDelegate.h; sourceTree = "<group>"; };
-		A4E2E4C84ABFD86778E881FB4F582A6B /* YAMLResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YAMLResult.swift; path = Yaml/YAMLResult.swift; sourceTree = "<group>"; };
-		A5F74F44728FB93513EC9327390DE0CC /* Pods-kotori.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-kotori.debug.xcconfig"; sourceTree = "<group>"; };
-		AE3456969761389C2BDF08EECE05E87F /* Pods-kotori.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-kotori.modulemap"; sourceTree = "<group>"; };
-		BC3D9C3FB8F2C244B2EBD08FE8975BB5 /* Yaml-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Yaml-prefix.pch"; sourceTree = "<group>"; };
-		C0715C90A5F8BA823720BD8CCE21F486 /* Sparkle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Sparkle.h; path = Sparkle.framework/Versions/A/Headers/Sparkle.h; sourceTree = "<group>"; };
-		C1063A6FFEC71B805182AF70090F70C4 /* YAMLParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YAMLParser.swift; path = Yaml/YAMLParser.swift; sourceTree = "<group>"; };
-		C130F6823F21FC7B44E34F288CBA723B /* YAMLTokenizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YAMLTokenizer.swift; path = Yaml/YAMLTokenizer.swift; sourceTree = "<group>"; };
-		C3A3E1C61990F561AD711BBA3B67D321 /* SUErrors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SUErrors.h; path = Sparkle.framework/Versions/A/Headers/SUErrors.h; sourceTree = "<group>"; };
-		C711435753FBA835F594AC8B656AF333 /* Pods-kotori-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-kotori-frameworks.sh"; sourceTree = "<group>"; };
-		DAEFB4C30C1DC07C382F7F9C517B63FF /* SUExport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SUExport.h; path = Sparkle.framework/Versions/A/Headers/SUExport.h; sourceTree = "<group>"; };
-		E907856BD4B42510D54DB1A029C5819E /* Yaml.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Yaml.swift; path = Yaml/Yaml.swift; sourceTree = "<group>"; };
-		F2AE44AC320A77487D558BD3EF650609 /* YAMLOperators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YAMLOperators.swift; path = Yaml/YAMLOperators.swift; sourceTree = "<group>"; };
-		F912B3478CF4BFA8223636FAD84C60FA /* Pods-kotori-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-kotori-resources.sh"; sourceTree = "<group>"; };
-		F9BBD82E63CA839FC754287265427354 /* Pods-kotori.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-kotori.release.xcconfig"; sourceTree = "<group>"; };
-		FDA9B242168D67175EDD6960EB08CD7A /* Yaml.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Yaml.xcconfig; sourceTree = "<group>"; };
-		FFBD30103A041D53DBE83A3520A9E597 /* Yaml.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Yaml.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		010C2DCA7B5AB67DAA441771AB85C3C0 /* Pods-kotori-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-kotori-acknowledgements.markdown"; sourceTree = "<group>"; };
+		02E6DC35C6FA5E9F000AAD0E5E888CFB /* YAMLOperators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YAMLOperators.swift; path = Sources/Yaml/YAMLOperators.swift; sourceTree = "<group>"; };
+		0AF195087ABAD7F0022E7B01B2ECAC70 /* SPUURLRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPUURLRequest.h; path = Sparkle.framework/Versions/A/Headers/SPUURLRequest.h; sourceTree = "<group>"; };
+		13747076CDC73F7F0EE267A999100C3A /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
+		14B462B3FF44D551E01B22FD5B012D06 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		176CADB55CE96003FD4535283372747C /* Pods-kotori-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-kotori-resources.sh"; sourceTree = "<group>"; };
+		1EEB3E622116270E00A812E3F00C1BB5 /* YAMLRegex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YAMLRegex.swift; path = Sources/Yaml/YAMLRegex.swift; sourceTree = "<group>"; };
+		2223528457B9DD6AC66DF4487D0F0752 /* Pods-kotori.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-kotori.modulemap"; sourceTree = "<group>"; };
+		28F15CEC016501895E299A4FB2C01C75 /* Pods-kotori.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-kotori.debug.xcconfig"; sourceTree = "<group>"; };
+		30CE26E4CA8E81B1F08057E95809C9E3 /* Yaml-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Yaml-umbrella.h"; sourceTree = "<group>"; };
+		30F0FDF8446AE92670FCC86776D896CB /* Pods_kotori.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_kotori.framework; path = "Pods-kotori.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		381454C5E8EECFFD88B0CF7E99D63A9D /* SPUDownloaderDeprecated.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPUDownloaderDeprecated.h; path = Sparkle.framework/Versions/A/Headers/SPUDownloaderDeprecated.h; sourceTree = "<group>"; };
+		39CCB0DEA514603537CCCFBCF5B0EB65 /* SUVersionDisplayProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SUVersionDisplayProtocol.h; path = Sparkle.framework/Versions/A/Headers/SUVersionDisplayProtocol.h; sourceTree = "<group>"; };
+		3BAD823F0250A4D29B7EA9E50CDF5B18 /* Pods-kotori.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-kotori.release.xcconfig"; sourceTree = "<group>"; };
+		3CB2D434791DC3C7FDFC0CD5BDF9F15B /* SUExport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SUExport.h; path = Sparkle.framework/Versions/A/Headers/SUExport.h; sourceTree = "<group>"; };
+		4A1A662714C8ABC6CF1D610A21AAD6E5 /* SUStandardVersionComparator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SUStandardVersionComparator.h; path = Sparkle.framework/Versions/A/Headers/SUStandardVersionComparator.h; sourceTree = "<group>"; };
+		4A47A77098313E58392C004BF0B5001D /* Yaml.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Yaml.modulemap; sourceTree = "<group>"; };
+		4B380973A78F83200CC076790A6B9161 /* SPUDownloadData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPUDownloadData.h; path = Sparkle.framework/Versions/A/Headers/SPUDownloadData.h; sourceTree = "<group>"; };
+		52DA3EB4B632C8940ADFC9085C5B9E71 /* Pods-kotori-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-kotori-umbrella.h"; sourceTree = "<group>"; };
+		5954430DD41C2E7B760810ED5D48C877 /* SUAppcastItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SUAppcastItem.h; path = Sparkle.framework/Versions/A/Headers/SUAppcastItem.h; sourceTree = "<group>"; };
+		6B7A029A8F22040AF7F2138E6E271787 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E7125537AAA9F727E18B590B193D877 /* Pods-kotori-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-kotori-acknowledgements.plist"; sourceTree = "<group>"; };
+		6EB8A27D906ED83128AD5A859B387EA2 /* SUErrors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SUErrors.h; path = Sparkle.framework/Versions/A/Headers/SUErrors.h; sourceTree = "<group>"; };
+		6F7A7829726E54F30F5020B7E911002D /* Yaml-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Yaml-prefix.pch"; sourceTree = "<group>"; };
+		71434BDD256B1921CEC45E7D8DE68986 /* SUUpdater.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SUUpdater.h; path = Sparkle.framework/Versions/A/Headers/SUUpdater.h; sourceTree = "<group>"; };
+		752FBD1811DAD73A5FCD2EC41334AF3C /* SPUDownloaderProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPUDownloaderProtocol.h; path = Sparkle.framework/Versions/A/Headers/SPUDownloaderProtocol.h; sourceTree = "<group>"; };
+		78360BDECFB9B8886B2038EA0452FF0A /* Yaml.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Yaml.xcconfig; sourceTree = "<group>"; };
+		874DE8063C70C393D54B94579B9D508D /* Yaml.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Yaml.swift; path = Sources/Yaml/Yaml.swift; sourceTree = "<group>"; };
+		8CF7A58E93F7B3DC5C28F8A316DC7498 /* SPUDownloaderDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPUDownloaderDelegate.h; path = Sparkle.framework/Versions/A/Headers/SPUDownloaderDelegate.h; sourceTree = "<group>"; };
+		9132541ADC853AEA7624E59B19DDD85E /* SUVersionComparisonProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SUVersionComparisonProtocol.h; path = Sparkle.framework/Versions/A/Headers/SUVersionComparisonProtocol.h; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		99595BB2E4B0527A7F86BA89B9827C97 /* Yaml-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Yaml-dummy.m"; sourceTree = "<group>"; };
+		9B7CBB9DA243FDB14BE2B7E76A13E7FE /* Pods-kotori-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-kotori-frameworks.sh"; sourceTree = "<group>"; };
+		9CBE00EA5DCD612A8D90CDCE3E53A662 /* SPUDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPUDownloader.h; path = Sparkle.framework/Versions/A/Headers/SPUDownloader.h; sourceTree = "<group>"; };
+		9F53F47555C13864E809622920042741 /* SUAppcast.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SUAppcast.h; path = Sparkle.framework/Versions/A/Headers/SUAppcast.h; sourceTree = "<group>"; };
+		ACA76A29B96245CE0A994F4FAA1C6DC0 /* SUUpdaterDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SUUpdaterDelegate.h; path = Sparkle.framework/Versions/A/Headers/SUUpdaterDelegate.h; sourceTree = "<group>"; };
+		B93408A03143D225931ABF87FF464F39 /* SPUDownloaderSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPUDownloaderSession.h; path = Sparkle.framework/Versions/A/Headers/SPUDownloaderSession.h; sourceTree = "<group>"; };
+		D83CDAEFF547DFDFA41EC631BD47DBDA /* YAMLParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YAMLParser.swift; path = Sources/Yaml/YAMLParser.swift; sourceTree = "<group>"; };
+		D9FF06B1916F47BC518E47B8A63C588D /* Sparkle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Sparkle.h; path = Sparkle.framework/Versions/A/Headers/Sparkle.h; sourceTree = "<group>"; };
+		DE23AFBF923E923596BCFD6A2DB62197 /* SUCodeSigningVerifier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SUCodeSigningVerifier.h; path = Sparkle.framework/Versions/A/Headers/SUCodeSigningVerifier.h; sourceTree = "<group>"; };
+		DF428FC7C7A6555B2B02D8E238C8D8F2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		E6277B2B765D72F4FD1FC81E154C1FD4 /* Pods-kotori-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-kotori-dummy.m"; sourceTree = "<group>"; };
+		ED43625CAD9352E27A0A5CD822F6B6EE /* YAMLTokenizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YAMLTokenizer.swift; path = Sources/Yaml/YAMLTokenizer.swift; sourceTree = "<group>"; };
+		FB3FAB5638C7F388EB287DAD09A19921 /* YAMLResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YAMLResult.swift; path = Sources/Yaml/YAMLResult.swift; sourceTree = "<group>"; };
+		FFBD30103A041D53DBE83A3520A9E597 /* Yaml.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Yaml.framework; path = Yaml.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0167631DF221085C25232808F433BC6E /* Frameworks */ = {
+		9023F68EF55125839E9633212A3ABFC1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD0C3568CD6439D48A51436DEC23FF5F /* Cocoa.framework in Frameworks */,
+				7C682114CB37F78B45B9255C51345EFC /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8A951BBCC54A34BA8163A37A856901F6 /* Frameworks */ = {
+		FCFFAA262F38087C58EC3133FCEF825B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				003427CE778A2FFB4BBB364FC9B19726 /* Cocoa.framework in Frameworks */,
+				6DA5E8BCCCD85958B2376C7DE62FF046 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		04C068A18C5413F804A2959126093416 /* OS X */ = {
+		1959C9B3B9EE35F5AD35C1CBF85EC04E /* Pods-kotori */ = {
 			isa = PBXGroup;
 			children = (
-				270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */,
+				6B7A029A8F22040AF7F2138E6E271787 /* Info.plist */,
+				2223528457B9DD6AC66DF4487D0F0752 /* Pods-kotori.modulemap */,
+				010C2DCA7B5AB67DAA441771AB85C3C0 /* Pods-kotori-acknowledgements.markdown */,
+				6E7125537AAA9F727E18B590B193D877 /* Pods-kotori-acknowledgements.plist */,
+				E6277B2B765D72F4FD1FC81E154C1FD4 /* Pods-kotori-dummy.m */,
+				9B7CBB9DA243FDB14BE2B7E76A13E7FE /* Pods-kotori-frameworks.sh */,
+				176CADB55CE96003FD4535283372747C /* Pods-kotori-resources.sh */,
+				52DA3EB4B632C8940ADFC9085C5B9E71 /* Pods-kotori-umbrella.h */,
+				28F15CEC016501895E299A4FB2C01C75 /* Pods-kotori.debug.xcconfig */,
+				3BAD823F0250A4D29B7EA9E50CDF5B18 /* Pods-kotori.release.xcconfig */,
 			);
-			name = "OS X";
+			name = "Pods-kotori";
+			path = "Target Support Files/Pods-kotori";
+			sourceTree = "<group>";
+		};
+		1C0199AA4A831DABBF92A0A5C5397ADF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13747076CDC73F7F0EE267A999100C3A /* Sparkle.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		39E9EE8210D861DFD82346C1F5EB7218 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				04C068A18C5413F804A2959126093416 /* OS X */,
+				FA7AC8429882A95AA0810A9DCDED54FF /* OS X */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		45D2B0CE10FE49E687F8DF80946CAFF7 /* Yaml */ = {
-			isa = PBXGroup;
-			children = (
-				E907856BD4B42510D54DB1A029C5819E /* Yaml.swift */,
-				F2AE44AC320A77487D558BD3EF650609 /* YAMLOperators.swift */,
-				C1063A6FFEC71B805182AF70090F70C4 /* YAMLParser.swift */,
-				8FCB926D79671A7D2E689608A357ABE3 /* YAMLRegex.swift */,
-				A4E2E4C84ABFD86778E881FB4F582A6B /* YAMLResult.swift */,
-				C130F6823F21FC7B44E34F288CBA723B /* YAMLTokenizer.swift */,
-				E5B004155A607974DAA0971D76A59215 /* Support Files */,
-			);
-			path = Yaml;
 			sourceTree = "<group>";
 		};
 		483AAE8522AC1C5CE2317C6344ED37F5 /* Products */ = {
@@ -133,27 +145,51 @@
 		5CE1AFABC7196227E72DE7EF48F8A56F /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				6B928D48D0DF150C8FB4F43366929DB7 /* Pods-kotori */,
+				1959C9B3B9EE35F5AD35C1CBF85EC04E /* Pods-kotori */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		6B928D48D0DF150C8FB4F43366929DB7 /* Pods-kotori */ = {
+		775C1F0D95C41CA7FD06D57D6B8FE6E2 /* Sparkle */ = {
 			isa = PBXGroup;
 			children = (
-				214527EB4F5DC5B0FD0B0D0ED0B305A7 /* Info.plist */,
-				AE3456969761389C2BDF08EECE05E87F /* Pods-kotori.modulemap */,
-				0345BC17F94C6EFF0A94245DC409C009 /* Pods-kotori-acknowledgements.markdown */,
-				5C187662E9F9B5D8AF3A889A9EB7A133 /* Pods-kotori-acknowledgements.plist */,
-				7B75E040B4FDB9731065E2449505035C /* Pods-kotori-dummy.m */,
-				C711435753FBA835F594AC8B656AF333 /* Pods-kotori-frameworks.sh */,
-				F912B3478CF4BFA8223636FAD84C60FA /* Pods-kotori-resources.sh */,
-				6FFC4BF780CE33322FEB5EC8370D51F9 /* Pods-kotori-umbrella.h */,
-				A5F74F44728FB93513EC9327390DE0CC /* Pods-kotori.debug.xcconfig */,
-				F9BBD82E63CA839FC754287265427354 /* Pods-kotori.release.xcconfig */,
+				D9FF06B1916F47BC518E47B8A63C588D /* Sparkle.h */,
+				4B380973A78F83200CC076790A6B9161 /* SPUDownloadData.h */,
+				9CBE00EA5DCD612A8D90CDCE3E53A662 /* SPUDownloader.h */,
+				8CF7A58E93F7B3DC5C28F8A316DC7498 /* SPUDownloaderDelegate.h */,
+				381454C5E8EECFFD88B0CF7E99D63A9D /* SPUDownloaderDeprecated.h */,
+				752FBD1811DAD73A5FCD2EC41334AF3C /* SPUDownloaderProtocol.h */,
+				B93408A03143D225931ABF87FF464F39 /* SPUDownloaderSession.h */,
+				0AF195087ABAD7F0022E7B01B2ECAC70 /* SPUURLRequest.h */,
+				9F53F47555C13864E809622920042741 /* SUAppcast.h */,
+				5954430DD41C2E7B760810ED5D48C877 /* SUAppcastItem.h */,
+				DE23AFBF923E923596BCFD6A2DB62197 /* SUCodeSigningVerifier.h */,
+				6EB8A27D906ED83128AD5A859B387EA2 /* SUErrors.h */,
+				3CB2D434791DC3C7FDFC0CD5BDF9F15B /* SUExport.h */,
+				4A1A662714C8ABC6CF1D610A21AAD6E5 /* SUStandardVersionComparator.h */,
+				71434BDD256B1921CEC45E7D8DE68986 /* SUUpdater.h */,
+				ACA76A29B96245CE0A994F4FAA1C6DC0 /* SUUpdaterDelegate.h */,
+				9132541ADC853AEA7624E59B19DDD85E /* SUVersionComparisonProtocol.h */,
+				39CCB0DEA514603537CCCFBCF5B0EB65 /* SUVersionDisplayProtocol.h */,
+				1C0199AA4A831DABBF92A0A5C5397ADF /* Frameworks */,
 			);
-			name = "Pods-kotori";
-			path = "Target Support Files/Pods-kotori";
+			name = Sparkle;
+			path = Sparkle;
+			sourceTree = "<group>";
+		};
+		77BABB9232E970287DDC8BAF133C540E /* Yaml */ = {
+			isa = PBXGroup;
+			children = (
+				874DE8063C70C393D54B94579B9D508D /* Yaml.swift */,
+				02E6DC35C6FA5E9F000AAD0E5E888CFB /* YAMLOperators.swift */,
+				D83CDAEFF547DFDFA41EC631BD47DBDA /* YAMLParser.swift */,
+				1EEB3E622116270E00A812E3F00C1BB5 /* YAMLRegex.swift */,
+				FB3FAB5638C7F388EB287DAD09A19921 /* YAMLResult.swift */,
+				ED43625CAD9352E27A0A5CD822F6B6EE /* YAMLTokenizer.swift */,
+				D6F6B165D3777D80B2F51B63FE14EFDB /* Support Files */,
+			);
+			name = Yaml;
+			path = Yaml;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -161,90 +197,92 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				39E9EE8210D861DFD82346C1F5EB7218 /* Frameworks */,
-				F02D73645336E33D104CAD0F25C3BF81 /* Pods */,
+				D2930F574DF3D3051343841AB4CA5C0C /* Pods */,
 				483AAE8522AC1C5CE2317C6344ED37F5 /* Products */,
 				5CE1AFABC7196227E72DE7EF48F8A56F /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		B2F3D3D792730DAAA7D763B2371FAE41 /* Sparkle */ = {
+		D2930F574DF3D3051343841AB4CA5C0C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C0715C90A5F8BA823720BD8CCE21F486 /* Sparkle.h */,
-				8471FCCB73784B8C8E5A5A8F56351D09 /* SUAppcast.h */,
-				0EAC2EF3BB10C4B17351E62E3F5F28BF /* SUAppcastItem.h */,
-				C3A3E1C61990F561AD711BBA3B67D321 /* SUErrors.h */,
-				DAEFB4C30C1DC07C382F7F9C517B63FF /* SUExport.h */,
-				3E7254E737B6C444A3E77D341ACE830F /* SUStandardVersionComparator.h */,
-				563EE1C8D84733D134CBA62477348708 /* SUUpdater.h */,
-				9FE9AFFAF05A4391CE854DB3E11A268A /* SUUpdaterDelegate.h */,
-				2AE431B7E7C7B86BCDE8268D433C90ED /* SUVersionComparisonProtocol.h */,
-				08EB0F1359206B7EDEBC8DE88B21EC96 /* SUVersionDisplayProtocol.h */,
-				EE72D7D5D414C94048F024C20AE0A3BF /* Frameworks */,
+				775C1F0D95C41CA7FD06D57D6B8FE6E2 /* Sparkle */,
+				77BABB9232E970287DDC8BAF133C540E /* Yaml */,
 			);
-			path = Sparkle;
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		E5B004155A607974DAA0971D76A59215 /* Support Files */ = {
+		D6F6B165D3777D80B2F51B63FE14EFDB /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				21808D637CAB8ED9C527BA8755EA33FC /* Info.plist */,
-				0909260BA54D1E4B0CF402FB979675C2 /* Yaml.modulemap */,
-				FDA9B242168D67175EDD6960EB08CD7A /* Yaml.xcconfig */,
-				907015F53073148838E8292F259E8D7C /* Yaml-dummy.m */,
-				BC3D9C3FB8F2C244B2EBD08FE8975BB5 /* Yaml-prefix.pch */,
-				2765E98E0EE03F89CA06BE5F7EA8A198 /* Yaml-umbrella.h */,
+				14B462B3FF44D551E01B22FD5B012D06 /* Info.plist */,
+				4A47A77098313E58392C004BF0B5001D /* Yaml.modulemap */,
+				78360BDECFB9B8886B2038EA0452FF0A /* Yaml.xcconfig */,
+				99595BB2E4B0527A7F86BA89B9827C97 /* Yaml-dummy.m */,
+				6F7A7829726E54F30F5020B7E911002D /* Yaml-prefix.pch */,
+				30CE26E4CA8E81B1F08057E95809C9E3 /* Yaml-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Yaml";
 			sourceTree = "<group>";
 		};
-		EE72D7D5D414C94048F024C20AE0A3BF /* Frameworks */ = {
+		FA7AC8429882A95AA0810A9DCDED54FF /* OS X */ = {
 			isa = PBXGroup;
 			children = (
-				5C17144E448C3C70A0434CBB4AFCA089 /* Sparkle.framework */,
+				DF428FC7C7A6555B2B02D8E238C8D8F2 /* Cocoa.framework */,
 			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		F02D73645336E33D104CAD0F25C3BF81 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				B2F3D3D792730DAAA7D763B2371FAE41 /* Sparkle */,
-				45D2B0CE10FE49E687F8DF80946CAFF7 /* Yaml */,
-			);
-			name = Pods;
+			name = "OS X";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		773A73FA6F107F6998D9CF7470F8E559 /* Headers */ = {
+		502A7A38CB10BDB51F506B3970B617C3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				403EE2E423B8F5AB8E4C696EB18C659C /* Yaml-umbrella.h in Headers */,
+				B5013DE0057B07B0AAA38B05D6FFCA86 /* Pods-kotori-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9F18B501EE6DD61CC1A39CAD498DC20D /* Headers */ = {
+		6DE0240824876CCBD49C6B0772D91051 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E69FE376F962446D7046DED1249E7306 /* Pods-kotori-umbrella.h in Headers */,
+				F1A2140811847D0038A375CE1AF2C431 /* Yaml-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		4662CB7B6D9F77630D05D381E0F5D960 /* Yaml */ = {
+		3E8365301A66BEF6269F7CFDC4D8B49B /* Pods-kotori */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DEBE1D930FCEF6BA20CB97420F166A51 /* Build configuration list for PBXNativeTarget "Yaml" */;
+			buildConfigurationList = F245DA3DE57D441942AC802844600D81 /* Build configuration list for PBXNativeTarget "Pods-kotori" */;
 			buildPhases = (
-				4033347EB02F07643CD9A9A959574F2D /* Sources */,
-				0167631DF221085C25232808F433BC6E /* Frameworks */,
-				773A73FA6F107F6998D9CF7470F8E559 /* Headers */,
+				502A7A38CB10BDB51F506B3970B617C3 /* Headers */,
+				E4849568D1AC984C1446BEB07D77AA93 /* Sources */,
+				FCFFAA262F38087C58EC3133FCEF825B /* Frameworks */,
+				8EDE9F2F4EA96A34FF934924530338A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				75482E9AEA28CCF1B911EDC89391F161 /* PBXTargetDependency */,
+			);
+			name = "Pods-kotori";
+			productName = "Pods-kotori";
+			productReference = 30F0FDF8446AE92670FCC86776D896CB /* Pods_kotori.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		407DB54825E72AA0289A1D2B78BBCD44 /* Yaml */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36C4BFCECBA2EEB473CDFC57EAFBDCFC /* Build configuration list for PBXNativeTarget "Yaml" */;
+			buildPhases = (
+				6DE0240824876CCBD49C6B0772D91051 /* Headers */,
+				F99C64C2D532C1EBFCDB385E53B5EBE4 /* Sources */,
+				9023F68EF55125839E9633212A3ABFC1 /* Frameworks */,
+				224E60A6453EFE60398CCF7BF035C427 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -255,37 +293,14 @@
 			productReference = FFBD30103A041D53DBE83A3520A9E597 /* Yaml.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		F74714E120232D788DE126529337B8D2 /* Pods-kotori */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E84F42D34F9DCB7B0ADD022A58F12ACF /* Build configuration list for PBXNativeTarget "Pods-kotori" */;
-			buildPhases = (
-				C12667C13D4C9498671440CB27822E87 /* Sources */,
-				8A951BBCC54A34BA8163A37A856901F6 /* Frameworks */,
-				9F18B501EE6DD61CC1A39CAD498DC20D /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				62D60733278819CDBE0743EF1519E284 /* PBXTargetDependency */,
-			);
-			name = "Pods-kotori";
-			productName = "Pods-kotori";
-			productReference = 30F0FDF8446AE92670FCC86776D896CB /* Pods_kotori.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
+				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
-				TargetAttributes = {
-					4662CB7B6D9F77630D05D381E0F5D960 = {
-						LastSwiftMigration = 0930;
-					};
-				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -299,84 +314,70 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F74714E120232D788DE126529337B8D2 /* Pods-kotori */,
-				4662CB7B6D9F77630D05D381E0F5D960 /* Yaml */,
+				3E8365301A66BEF6269F7CFDC4D8B49B /* Pods-kotori */,
+				407DB54825E72AA0289A1D2B78BBCD44 /* Yaml */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXSourcesBuildPhase section */
-		4033347EB02F07643CD9A9A959574F2D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
+/* Begin PBXResourcesBuildPhase section */
+		224E60A6453EFE60398CCF7BF035C427 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B4E882E758F86576DCF937430A3CCB7 /* Yaml-dummy.m in Sources */,
-				03DF838E61201EA3F6C9E6EE5C1F0EDC /* Yaml.swift in Sources */,
-				C698AF5117E10B1C34A6125EECBCF8F7 /* YAMLOperators.swift in Sources */,
-				7D65128CA8A411089821A3EA90E165D7 /* YAMLParser.swift in Sources */,
-				0ABAD551649387E64BFF28F6EC66CD9D /* YAMLRegex.swift in Sources */,
-				613C78EC7F725DA6A153325C9EF32C5D /* YAMLResult.swift in Sources */,
-				F54EE4A03413DA463AF53AD5C9C56F32 /* YAMLTokenizer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C12667C13D4C9498671440CB27822E87 /* Sources */ = {
+		8EDE9F2F4EA96A34FF934924530338A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E4849568D1AC984C1446BEB07D77AA93 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33EEE7677DE653E2F1592EABD5C6258C /* Pods-kotori-dummy.m in Sources */,
+				594D8C924D957F8BA52902B0328E9222 /* Pods-kotori-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F99C64C2D532C1EBFCDB385E53B5EBE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				151751BEDDA8DD63EB47C93D67CBA39B /* Yaml-dummy.m in Sources */,
+				936B4DC15A82DE391A7D5226499C1D40 /* Yaml.swift in Sources */,
+				AFD89679DD5580C6489C1E31469A11F9 /* YAMLOperators.swift in Sources */,
+				9F663AA309FFAFBBEB2514201B1A9528 /* YAMLParser.swift in Sources */,
+				432405AE8D53BA7D42BD93C29CB8A4D8 /* YAMLRegex.swift in Sources */,
+				C111DA24BB52EB14FB887FCBE56AA032 /* YAMLResult.swift in Sources */,
+				0E71B39D19447181FDCF0B9C2673747B /* YAMLTokenizer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		62D60733278819CDBE0743EF1519E284 /* PBXTargetDependency */ = {
+		75482E9AEA28CCF1B911EDC89391F161 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Yaml;
-			target = 4662CB7B6D9F77630D05D381E0F5D960 /* Yaml */;
-			targetProxy = 67A04EF261C58D7A4C44C2F642EA6876 /* PBXContainerItemProxy */;
+			target = 407DB54825E72AA0289A1D2B78BBCD44 /* Yaml */;
+			targetProxy = 0D9137860BAC10FD73651A0265D34A0D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1470BAE3FC2EE22D6CA63BDE4C8A985D /* Debug */ = {
+		596988AB1833A2A1E8BA99EA41885638 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FDA9B242168D67175EDD6960EB08CD7A /* Yaml.xcconfig */;
+			baseConfigurationReference = 28F15CEC016501895E299A4FB2C01C75 /* Pods-kotori.debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = "Target Support Files/Yaml/Yaml-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Yaml/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				MODULEMAP_FILE = "Target Support Files/Yaml/Yaml.modulemap";
-				PRODUCT_NAME = Yaml;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		201419766BD2B1FB362643728FBFA2CF /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F9BBD82E63CA839FC754287265427354 /* Pods-kotori.release.xcconfig */;
-			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -398,16 +399,121 @@
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_kotori;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		87E1D7133A920F93DC05D1334418328F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78360BDECFB9B8886B2038EA0452FF0A /* Yaml.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/Yaml/Yaml-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Yaml/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/Yaml/Yaml.modulemap";
+				PRODUCT_MODULE_NAME = Yaml;
+				PRODUCT_NAME = Yaml;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.1;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		7A580D893249EFCBDBEA83EE658FEF8F /* Debug */ = {
+		8E9DD2C8B47AC2ECF41528DF721BB2A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78360BDECFB9B8886B2038EA0452FF0A /* Yaml.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/Yaml/Yaml-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Yaml/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/Yaml/Yaml.modulemap";
+				PRODUCT_MODULE_NAME = Yaml;
+				PRODUCT_NAME = Yaml;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.1;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AF1E8F4151F5B1FF920C1AE4A2ADBEC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BAD823F0250A4D29B7EA9E50CDF5B18 /* Pods-kotori.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-kotori/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Pods-kotori/Pods-kotori.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CD62773D394C5354AFBE474AB939F69A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -417,6 +523,7 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
@@ -438,6 +545,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -459,50 +567,17 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		C7C13D7BBAF90875E6147272323A23F1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FDA9B242168D67175EDD6960EB08CD7A /* Yaml.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = "Target Support Files/Yaml/Yaml-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Yaml/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				MODULEMAP_FILE = "Target Support Files/Yaml/Yaml.modulemap";
-				PRODUCT_NAME = Yaml;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		E8B0732F7D3E5BB15C212C29C806F741 /* Release */ = {
+		CE426DE8F6860F79D2B45C2829F9D5A8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -512,6 +587,7 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
@@ -533,6 +609,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -552,47 +629,12 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
-		};
-		EA9FD8A8851407DD964548F42444C579 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A5F74F44728FB93513EC9327390DE0CC /* Pods-kotori.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "Target Support Files/Pods-kotori/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MODULEMAP_FILE = "Target Support Files/Pods-kotori/Pods-kotori.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_kotori;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
@@ -600,26 +642,26 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7A580D893249EFCBDBEA83EE658FEF8F /* Debug */,
-				E8B0732F7D3E5BB15C212C29C806F741 /* Release */,
+				CD62773D394C5354AFBE474AB939F69A /* Debug */,
+				CE426DE8F6860F79D2B45C2829F9D5A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DEBE1D930FCEF6BA20CB97420F166A51 /* Build configuration list for PBXNativeTarget "Yaml" */ = {
+		36C4BFCECBA2EEB473CDFC57EAFBDCFC /* Build configuration list for PBXNativeTarget "Yaml" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1470BAE3FC2EE22D6CA63BDE4C8A985D /* Debug */,
-				C7C13D7BBAF90875E6147272323A23F1 /* Release */,
+				8E9DD2C8B47AC2ECF41528DF721BB2A8 /* Debug */,
+				87E1D7133A920F93DC05D1334418328F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E84F42D34F9DCB7B0ADD022A58F12ACF /* Build configuration list for PBXNativeTarget "Pods-kotori" */ = {
+		F245DA3DE57D441942AC802844600D81 /* Build configuration list for PBXNativeTarget "Pods-kotori" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EA9FD8A8851407DD964548F42444C579 /* Debug */,
-				201419766BD2B1FB362643728FBFA2CF /* Release */,
+				596988AB1833A2A1E8BA99EA41885638 /* Debug */,
+				AF1E8F4151F5B1FF920C1AE4A2ADBEC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
