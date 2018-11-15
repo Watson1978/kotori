@@ -147,6 +147,7 @@
 				A9943DDD1E22747A00FBA718 /* Frameworks */,
 				A9943DDE1E22747A00FBA718 /* Resources */,
 				53E5FFBD7AF50D7350D64C23 /* [CP] Embed Pods Frameworks */,
+				A978653B219DD4A6005CCCB5 /* Codesign Sparkle.framework */,
 			);
 			buildRules = (
 			);
@@ -249,6 +250,24 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kotori/Pods-kotori-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		A978653B219DD4A6005CCCB5 /* Codesign Sparkle.framework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Codesign Sparkle.framework";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ \"${CONFIGURATION}\" = \"Release\" ]; then\n    codesign --verbose --force --deep -o runtime --sign \"Developer ID Application: Shizuo Fujita\" \"${CODESIGNING_FOLDER_PATH}/Contents/Frameworks/Sparkle.framework/Versions/A/Resources/AutoUpdate.app\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
