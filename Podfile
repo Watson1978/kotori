@@ -1,4 +1,4 @@
-platform :osx, '10.10'
+platform :osx, '10.13'
 use_frameworks!
 
 target 'kotori' do
