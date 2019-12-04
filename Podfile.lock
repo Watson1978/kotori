@@ -1,20 +1,20 @@
 PODS:
-  - Sparkle (1.20.0)
-  - Yaml (3.4.3)
+  - Sparkle (1.22.0)
+  - Yaml (3.4.4)
 
 DEPENDENCIES:
   - Sparkle
   - Yaml
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - Sparkle
     - Yaml
 
 SPEC CHECKSUMS:
-  Sparkle: 48999e7ee032f05ca05e28451eadf4af8ede6b44
-  Yaml: 9f32854890c54304772f02380c3899c8db739800
+  Sparkle: 593ac2e677c07bcb6c3b22d621240e7cbedaab57
+  Yaml: 52831fc1d9ac2db4ddf6d7562993457127256ca6
 
 PODFILE CHECKSUM: 5f098c32be2e6094ffce61391d43d925f425ccb5
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.8.4
