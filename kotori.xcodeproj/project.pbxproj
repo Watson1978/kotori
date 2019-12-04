@@ -171,7 +171,7 @@
 					A9943DDF1E22747A00FBA718 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 3E97Y6CS78;
-						LastSwiftMigration = 0930;
+						LastSwiftMigration = 1120;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -462,7 +462,7 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "kotori/kotori-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -486,7 +486,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "kotori/kotori-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

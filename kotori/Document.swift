@@ -12,8 +12,8 @@ class Document: NSDocument {
     }
 
     func makeWindowControllersOnly() {
-        let storyboard = NSStoryboard(name: NSStoryboard.Name(rawValue: "Main"), bundle: nil)
-        let windowController = storyboard.instantiateController(withIdentifier: NSStoryboard.SceneIdentifier(rawValue: "Document Window Controller")) as! NSWindowController
+        let storyboard = NSStoryboard(name: "Main", bundle: nil)
+        let windowController = storyboard.instantiateController(withIdentifier: "Document Window Controller") as! NSWindowController
         self.addWindowController(windowController)
     }
 
